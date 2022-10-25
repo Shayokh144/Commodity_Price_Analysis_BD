@@ -1,0 +1,20 @@
+url_name,url_type,url_value,provider_name
+oil,other food,https://chaldal.com/oil,Chaldal
+rice,other food,https://chaldal.com/rices,Chaldal
+lentil,other food,https://chaldal.com/dal-or-lentil,Chaldal
+spices,other food,https://chaldal.com/spices,Chaldal
+flour,other food,https://chaldal.com/flour,Chaldal
+egg,dairy and egg,https://chaldal.com/eggs,Chaldal
+powder milk,dairy and egg,https://chaldal.com/powder-milk,Chaldal
+liquid milk,dairy and egg,https://chaldal.com/liquid-uht-milk,Chaldal
+fruits,vegetables and fruits,https://chaldal.com/fresh-fruit,Chaldal
+vegetable,vegetables and fruits,https://chaldal.com/fresh-vegetable,Chaldal
+chicken,fish and meat,https://chaldal.com/chicken-poultry,Chaldal
+meat,fish and meat,https://chaldal.com/meat-new,Chaldal
+frozen fish,fish and meat,https://chaldal.com/frozen-fish,Chaldal
+dried fish,fish and meat,https://chaldal.com/dried-fish,Chaldal
+baby milk,baby food,https://chaldal.com/milk-juice-drinks,Chaldal
+other baby food,baby food,https://chaldal.com/toddler-food,Chaldal
+diapars smallest size,baby products,https://chaldal.com/newborn-2,Chaldal
+diapars small size,baby products,https://chaldal.com/small-2,Chaldal
+diapars large size,baby products,https://chaldal.com/large-2,Chaldal

@@ -9,11 +9,13 @@ import re
 from urllib.request import urlopen, Request
 from bs4 import BeautifulSoup
 import csv
-from datetime import date
+from datetime import datetime
 import os
 
 def get_product_data(productPageUrl):
     productData = []
+    date, time = (get_current_date_time())
+    LOG_DATA = []
     try:
         hdr = {'User-Agent': 'Mozilla/5.0'}
         req = Request(productPageUrl, headers=hdr)
@@ -21,16 +23,16 @@ def get_product_data(productPageUrl):
         statusCode = response.getcode()
         nameText = ""
         weightText = ""
+        priceRawValue = ""
         priceText = ""
+        discountPriceRawValue = ""
         discountPriceText = ""
         weightValue = ""
         weightUnit = ""
-        print ('status code = ',statusCode)
+        LOG_DATA.append("status code: "+ str(statusCode) + " for url: "+productPageUrl)
         if statusCode == 200:
             soupObject = BeautifulSoup(response, "lxml")
             productDivs = soupObject.find_all("div",{"class":"product"})
-            print('number of div found = ',len(productDivs))
-            
             for div in productDivs:
                 try:
                     nameText = div.find("div",{"class":"name"}).get_text()
@@ -48,34 +50,61 @@ def get_product_data(productPageUrl):
                 except:
                     weightText = ""
                 try:
-                    priceText = div.find("div",{"class":"price"}).get_text()
-                    priceText = re.sub('[^.0-9]','', priceText)
+                    priceRawValue = div.find("div",{"class":"price"}).get_text()
+                    priceText = re.sub('[^.0-9]','', priceRawValue)
                 except:
+                    priceRawValue = ""
                     priceText = ""
                 try:
-                    discountPriceText = div.find("div",{"class":"discountedPriceSection"}).get_text()
-                    discountPriceText = re.sub('[^.0-9]','', discountPriceText)
+                    discountPriceRawValue = div.find("div",{"class":"discountedPrice"}).get_text()
+                    discountPriceText = re.sub('[^.0-9]','', discountPriceRawValue)
                 except:
+                    discountPriceRawValue = ""
                     discountPriceText = ""
-                data = [nameText, weightText, weightValue, weightUnit, priceText, discountPriceText]
+                data = [
+                    nameText, 
+                    weightText, 
+                    weightValue, 
+                    weightUnit, 
+                    priceRawValue, 
+                    priceText, 
+                    discountPriceRawValue, 
+                    discountPriceText,
+                    date,
+                    time
+                    ]
                 productData.append(data)
+                #LOG_DATA.append(' '.join(data))
                 nameText = ""
                 weightText = ""
                 priceText = ""
+                priceRawValue = ""
                 discountPriceText = ""
+                discountPriceRawValue = ""
                 weightValue = ""
                 weightUnit = ""
-    except:
-        print("product data not found for given url:", productPageUrl)
+    except Exception as e:
+        LOG_DATA.append("EXception occured: "+e)
+        LOG_DATA.append("Data not found for url = " + productPageUrl)
+    
+    write_log(LOG_DATA)
     return productData
 
 
 
-def write_data_in_csv(path, header, dataList):
-    with open(path, 'w', encoding='UTF8', newline='') as f:
+def write_data_in_csv(filePath, header, dataList):
+    with open(filePath, 'w', encoding='UTF8', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(header)
         writer.writerows(dataList)
+        f.close()
+    return
+
+def add_new_data_in_csv(filePath, dataList):
+    with open(filePath, 'a', encoding='UTF8', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerows(dataList)
+        f.close()
     return
 
 def read_data_from_csv(filePath, skipHeader = True):
@@ -89,19 +118,57 @@ def read_data_from_csv(filePath, skipHeader = True):
             data.append(line)
     return data
 
-def get_current_date():
-    #dd-mm-yyyy
-    today = date.today()
-    return today.strftime("%d-%m-%Y")
+def get_current_date_time():
+    #dd-mm-yyyy HH:MM:SS
+    today = datetime.now()
+    dateTime = today.strftime("%d-%m-%Y %H:%M:%S").split(" ")
+    return (dateTime[0], dateTime[1])
 
-#print(get_product_data(url))
-#write_data_in_csv("../data/URLList.csv", headerData, urlData)
-#read_data_from_csv("../data/URLList.csv")
-print(get_current_date())
-urls = read_data_from_csv("../data/URLList.csv")
-parentDir = "../data/price_data/"
-for url in urls:
-    dirName = url[0].replace(" ", "_")
-    path = os.path.join(parentDir, dirName)
-    os.mkdir(path)
+def create_new_csv_file(parentDir, newDirName, csvHeaders = []):
+    newDirName = newDirName.replace(" ", "_")
+    newFileName = newDirName+".csv"
+    dirPath = os.path.join(parentDir, newDirName)
+    filePath = os.path.join(dirPath, newFileName)
+    if os.path.isdir(dirPath) == False:
+        os.mkdir(dirPath)
+        write_data_in_csv(filePath, csvHeaders, [])
+    else:
+        if os.path.exists(filePath) == False:
+            write_data_in_csv(filePath, csvHeaders, [])
+    return filePath
 
+def write_log(logTextList = []):
+    date, time = (get_current_date_time())
+    logFilePath = "../data/log.txt"
+    with open(logFilePath, 'a') as f:
+        for logText in logTextList:
+            logText = date + "  " + time + "    " + logText + "\n"
+            f.write(logText)
+        f.close()
+    return
+
+def main():
+    parentDir = "../data/price_data/"
+    urlListFilePath = "../data/URLList.csv"
+    headers = [
+        "product_name", 
+        "weight_raw", 
+        "weight_value", 
+        "weight_unit", 
+        "price_raw", 
+        "price", 
+        "discount_price_raw", 
+        "discount_price",
+        "date",
+        "time"
+        ]
+    urls = read_data_from_csv(urlListFilePath)
+    for url in urls:
+        filePath = create_new_csv_file(parentDir, url[0], headers)
+        productData = get_product_data(url[2])
+        add_new_data_in_csv(filePath, productData)
+
+if __name__ == "__main__":
+    write_log(["script starts"])
+    main()
+    write_log(["script ends"])

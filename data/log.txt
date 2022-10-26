@@ -1,0 +1,21 @@
+26-10-2022  12:21:53    script starts
+26-10-2022  12:21:54    status code: 200 for url: https://chaldal.com/oil
+26-10-2022  12:21:55    status code: 200 for url: https://chaldal.com/rices
+26-10-2022  12:21:58    status code: 200 for url: https://chaldal.com/dal-or-lentil
+26-10-2022  12:22:00    status code: 200 for url: https://chaldal.com/spices
+26-10-2022  12:22:01    status code: 200 for url: https://chaldal.com/flour
+26-10-2022  12:22:03    status code: 200 for url: https://chaldal.com/eggs
+26-10-2022  12:22:04    status code: 200 for url: https://chaldal.com/powder-milk
+26-10-2022  12:22:06    status code: 200 for url: https://chaldal.com/liquid-uht-milk
+26-10-2022  12:22:07    status code: 200 for url: https://chaldal.com/fresh-fruit
+26-10-2022  12:22:09    status code: 200 for url: https://chaldal.com/fresh-vegetable
+26-10-2022  12:22:10    status code: 200 for url: https://chaldal.com/chicken-poultry
+26-10-2022  12:22:11    status code: 200 for url: https://chaldal.com/meat-new
+26-10-2022  12:22:13    status code: 200 for url: https://chaldal.com/frozen-fish
+26-10-2022  12:22:14    status code: 200 for url: https://chaldal.com/dried-fish
+26-10-2022  12:22:16    status code: 200 for url: https://chaldal.com/milk-juice-drinks
+26-10-2022  12:22:17    status code: 200 for url: https://chaldal.com/toddler-food
+26-10-2022  12:22:18    status code: 200 for url: https://chaldal.com/newborn-2
+26-10-2022  12:22:20    status code: 200 for url: https://chaldal.com/small-2
+26-10-2022  12:22:21    status code: 200 for url: https://chaldal.com/large-2
+26-10-2022  12:22:21    script ends

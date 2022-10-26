@@ -29,15 +29,17 @@ def get_product_data(productPageUrl):
         discountPriceText = ""
         weightValue = ""
         weightUnit = ""
-        #LOG_DATA.append("status code: "+ str(statusCode) + " for url: "+productPageUrl)
+        LOG_DATA.append("status code: "+ str(statusCode) + " for url: "+productPageUrl)
         if statusCode == 200:
             soupObject = BeautifulSoup(response, "lxml")
             productDivs = soupObject.find_all("div",{"class":"product"})
             for div in productDivs:
+                missingDataCount = 0
                 try:
                     nameText = div.find("div",{"class":"name"}).get_text()
                 except:
                     nameText = ""
+                    missingDataCount += 1
                 try:
                     weightText = div.find("div",{"class":"subText"}).get_text()
                     weightList = weightText.split()
@@ -49,10 +51,14 @@ def get_product_data(productPageUrl):
                         weightUnit = weightText
                 except:
                     weightText = ""
+                    weightValue = ""
+                    weightUnit = ""
+                    missingDataCount += 1
                 try:
                     priceRawValue = div.find("div",{"class":"price"}).get_text()
                     priceText = re.sub('[^.0-9]','', priceRawValue)
                 except:
+                    missingDataCount += 1
                     priceRawValue = ""
                     priceText = ""
                 try:
@@ -73,8 +79,11 @@ def get_product_data(productPageUrl):
                     date,
                     time
                     ]
-                productData.append(data)
-                LOG_DATA.append(' '.join(data))
+                dataStr = ' '.join(data)
+                dataStr = dataStr.lower()
+                if "loading more" not in dataStr and missingDataCount < 2:
+                    productData.append(data)
+                #LOG_DATA.append(' '.join(data))
                 nameText = ""
                 weightText = ""
                 priceText = ""

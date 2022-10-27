@@ -29,7 +29,7 @@ def get_product_data(productPageUrl):
         discountPriceText = ""
         weightValue = ""
         weightUnit = ""
-        LOG_DATA.append("status code: "+ str(statusCode) + " for url: "+productPageUrl)
+        #LOG_DATA.append("status code: "+ str(statusCode) + " for url: "+productPageUrl)
         if statusCode == 200:
             soupObject = BeautifulSoup(response, "lxml")
             productDivs = soupObject.find_all("div",{"class":"product"})

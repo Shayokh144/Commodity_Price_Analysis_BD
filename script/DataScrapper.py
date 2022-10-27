@@ -178,6 +178,7 @@ def main():
         add_new_data_in_csv(filePath, productData)
 
 if __name__ == "__main__":
-    write_log(["script starts"])
-    main()
-    write_log(["script ends"])
+    print("PYTHON CODE STARTED")
+    write_log(["script starts for testing github action"])
+    #main()
+    write_log(["script ends for testing github action"])

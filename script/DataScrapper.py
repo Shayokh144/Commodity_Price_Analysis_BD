@@ -172,13 +172,15 @@ def main():
         "time"
         ]
     urls = read_data_from_csv(urlListFilePath)
+    '''
     for url in urls:
         filePath = create_new_csv_file(parentDir, url[0], headers)
         productData = get_product_data(url[2])
         add_new_data_in_csv(filePath, productData)
+    '''
 
 if __name__ == "__main__":
     print("PYTHON CODE STARTED")
     write_log(["script starts for testing github action"])
-    #main()
+    main()
     write_log(["script ends for testing github action"])

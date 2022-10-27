@@ -181,6 +181,6 @@ def main():
 
 if __name__ == "__main__":
     print("PYTHON CODE STARTED")
-    write_log(["script starts for testing github action"])
+    write_log(["\nscript starts for testing github action"])
     main()
     write_log(["script ends for testing github action"])

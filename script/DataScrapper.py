@@ -148,7 +148,7 @@ def create_new_csv_file(parentDir, newDirName, csvHeaders = []):
 
 def write_log(logTextList = []):
     date, time = (get_current_date_time())
-    logFilePath = "../data/log.txt"
+    logFilePath = "./data/log.txt"
     with open(logFilePath, 'a') as f:
         for logText in logTextList:
             logText = date + "  " + time + "    " + logText + "\n"
@@ -157,8 +157,8 @@ def write_log(logTextList = []):
     return
 
 def main():
-    parentDir = "../data/price_data/"
-    urlListFilePath = "../data/URLList.csv"
+    parentDir = "./data/price_data/"
+    urlListFilePath = "./data/URLList.csv"
     headers = [
         "product_name", 
         "weight_raw", 

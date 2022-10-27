@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./script
+        working-directory: ./
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10
@@ -30,7 +30,22 @@ jobs:
         python -m pip install --upgrade pip
         pip install beautifulsoup4
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Run script
+    - name: Run python script
       run: |
-        python DataScrapper.py
-        
+        python ./script/DataScrapper.py
+    - name: Create commits
+      run: |
+        git config user.name 'Shayokh144'
+        git config user.email 'shayokhbd144@gmail.com'
+        git add .
+        git commit -m "new files added from github action running the script"
+
+    - name: Create PR
+      uses: peter-evans/create-pull-request@v4
+      with:
+        delete-branch: true
+        base: main
+        branch: add-data-from-github-action
+        title: add new data from github action
+        body: add new data from github action
+        assignees: Shayokh144

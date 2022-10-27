@@ -93,7 +93,7 @@ def get_product_data(productPageUrl):
                 weightValue = ""
                 weightUnit = ""
     except Exception as e:
-        LOG_DATA.append("EXception occured: "+e)
+        LOG_DATA.append("EXception occured: " + str(e))
         LOG_DATA.append("Data not found for url = " + productPageUrl)
     
     write_log(LOG_DATA)

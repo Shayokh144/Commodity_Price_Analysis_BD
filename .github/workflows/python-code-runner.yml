@@ -20,7 +20,8 @@ jobs:
       run:
         working-directory: ./
     steps:
-    - uses: actions/checkout@v3
+    - name: Chekout the repo
+      uses: actions/checkout@v3
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
@@ -33,13 +34,6 @@ jobs:
     - name: Run python script
       run: |
         python ./script/DataScrapper.py
-    - name: Create commits
-      run: |
-        git config user.name 'Shayokh144'
-        git config user.email 'shayokhbd144@gmail.com'
-        git add .
-        git commit -m "new files added from github action running the script"
-
     - name: Create PR
       uses: peter-evans/create-pull-request@v4
       with:
@@ -48,4 +42,8 @@ jobs:
         branch: add-data-from-github-action
         title: add new data from github action
         body: add new data from github action
+        labels: automated-pr
+        commit-message: "add new data from github action run"
         assignees: Shayokh144
+        committer: Shayokh144 <shayokhbd144@gmail.com>
+        branch-suffix: timestamp

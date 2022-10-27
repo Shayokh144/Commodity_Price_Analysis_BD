@@ -1,0 +1,2 @@
+27-10-2022  07:24:18    script starts for testing github action
+27-10-2022  07:24:18    script ends for testing github action

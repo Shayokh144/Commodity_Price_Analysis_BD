@@ -16,7 +16,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: ./script
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10
@@ -30,8 +32,5 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run script
       run: |
-        cd ..
-        cd ..
-        cd script
         python DataScrapper.py
         

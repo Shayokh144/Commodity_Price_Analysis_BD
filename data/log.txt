@@ -18,3 +18,13 @@
 31-10-2022  18:13:41    script ends for testing github action
 01-11-2022  04:13:01    script starts for testing github action
 01-11-2022  04:14:03    script ends for testing github action
+01-11-2022  15:47:57    script starts for testing github action
+01-11-2022  15:49:33    EXception occured: HTTP Error 520: 
+01-11-2022  15:49:33    Data not found for url = https://chaldal.com/eggs
+01-11-2022  15:51:48    EXception occured: HTTP Error 520: 
+01-11-2022  15:51:48    Data not found for url = https://chaldal.com/dried-fish
+01-11-2022  15:51:52    EXception occured: HTTP Error 520: 
+01-11-2022  15:51:52    Data not found for url = https://chaldal.com/milk-juice-drinks
+01-11-2022  15:52:53    EXception occured: HTTP Error 520: 
+01-11-2022  15:52:53    Data not found for url = https://chaldal.com/small-2
+01-11-2022  15:53:52    script ends for testing github action

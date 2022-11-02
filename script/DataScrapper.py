@@ -5,6 +5,7 @@ Created on Tue Oct 25 13:05:51 2022
 
 @author: taher
 """
+from time import sleep
 import re
 from urllib.request import urlopen, Request
 from bs4 import BeautifulSoup
@@ -176,6 +177,7 @@ def main():
         filePath = create_new_csv_file(parentDir, url[0], headers)
         productData = get_product_data(url[2])
         add_new_data_in_csv(filePath, productData)
+        sleep(5)
 
 
 if __name__ == "__main__":

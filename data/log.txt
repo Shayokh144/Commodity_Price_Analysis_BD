@@ -32,3 +32,5 @@
 02-11-2022  02:47:54    EXception occured: HTTP Error 520: 
 02-11-2022  02:47:54    Data not found for url = https://chaldal.com/meat-new
 02-11-2022  02:48:13    script ends for testing github action
+03-11-2022  03:05:29    script starts for testing github action
+03-11-2022  03:08:03    script ends for testing github action

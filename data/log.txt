@@ -36,3 +36,7 @@
 03-11-2022  03:08:03    script ends for testing github action
 04-11-2022  02:46:59    script starts for testing github action
 04-11-2022  02:49:35    script ends for testing github action
+05-11-2022  12:33:37    script starts for testing github action
+05-11-2022  12:33:40    EXception occured: HTTP Error 520: 
+05-11-2022  12:33:40    Data not found for url = https://chaldal.com/oil
+05-11-2022  12:36:06    script ends for testing github action

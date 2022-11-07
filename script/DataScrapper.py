@@ -15,6 +15,7 @@ import os
 
 def get_product_data(productPageUrl):
     productData = []
+    shouldRetry = False
     date, time = (get_current_date_time())
     LOG_DATA = []
     try:
@@ -94,11 +95,12 @@ def get_product_data(productPageUrl):
                 weightValue = ""
                 weightUnit = ""
     except Exception as e:
+        shouldRetry = True
         LOG_DATA.append("EXception occured: " + str(e))
         LOG_DATA.append("Data not found for url = " + productPageUrl)
     
     write_log(LOG_DATA)
-    return productData
+    return productData, shouldRetry
 
 
 
@@ -160,6 +162,7 @@ def write_log(logTextList = []):
 def main():
     parentDir = "./data/price_data/"
     urlListFilePath = "./data/URLList.csv"
+    retryList = []
     headers = [
         "product_name", 
         "weight_raw", 
@@ -175,13 +178,19 @@ def main():
     urls = read_data_from_csv(urlListFilePath)
     for url in urls:
         filePath = create_new_csv_file(parentDir, url[0], headers)
-        productData = get_product_data(url[2])
+        productData, shouldRetry = get_product_data(url[2])
+        if shouldRetry == True or len(productData) == 0:
+            sleep(10)
+            retryLog = "Retry for url: " + str(url[0])
+            write_log([retryLog])
+            productData, shouldRetry = get_product_data(url[2])
         add_new_data_in_csv(filePath, productData)
-        sleep(5)
+        sleep(7)
 
 
 if __name__ == "__main__":
     print("PYTHON CODE STARTED")
     write_log(["script starts for testing github action"])
+    sleep(7)
     main()
     write_log(["script ends for testing github action"])

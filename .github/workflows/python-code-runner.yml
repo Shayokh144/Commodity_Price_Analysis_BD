@@ -4,7 +4,7 @@
 name: Python Script Runner
 
 on: 
-  schedule: ## schedule job at 11.30 AM daily
+  schedule: ## schedule job at 11.30 AM UTC time daily
     - cron: '30 11 * * *' 
   workflow_dispatch:
 jobs:

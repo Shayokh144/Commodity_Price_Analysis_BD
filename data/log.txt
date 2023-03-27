@@ -308,3 +308,6 @@
 26-03-2023  11:38:01    script starts for testing github action
 26-03-2023  11:40:39    Retry for url: dried fish
 26-03-2023  11:41:35    script ends for testing github action
+27-03-2023  11:37:55    script starts for testing github action
+27-03-2023  11:39:44    Retry for url: liquid milk
+27-03-2023  11:41:40    script ends for testing github action

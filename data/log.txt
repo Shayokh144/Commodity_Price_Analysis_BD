@@ -337,3 +337,8 @@
 08-04-2023  11:41:01    script ends for testing github action
 09-04-2023  11:37:57    script starts for testing github action
 09-04-2023  11:41:06    script ends for testing github action
+10-04-2023  11:38:04    script starts for testing github action
+10-04-2023  11:40:53    EXception occured: HTTP Error 520: 
+10-04-2023  11:40:53    Data not found for url = https://chaldal.com/large-2
+10-04-2023  11:41:04    Retry for url: diapars large size
+10-04-2023  11:41:13    script ends for testing github action

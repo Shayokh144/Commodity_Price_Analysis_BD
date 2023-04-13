@@ -346,3 +346,11 @@
 11-04-2023  11:40:56    script ends for testing github action
 12-04-2023  11:37:50    script starts for testing github action
 12-04-2023  11:40:48    script ends for testing github action
+13-04-2023  11:37:50    script starts for testing github action
+13-04-2023  11:38:19    EXception occured: HTTP Error 502: Bad Gateway
+13-04-2023  11:38:19    Data not found for url = https://chaldal.com/oil
+13-04-2023  11:38:29    Retry for url: oil
+13-04-2023  11:39:10    EXception occured: HTTP Error 502: Bad Gateway
+13-04-2023  11:39:10    Data not found for url = https://chaldal.com/dal-or-lentil
+13-04-2023  11:39:20    Retry for url: lentil
+13-04-2023  11:42:08    script ends for testing github action

@@ -358,3 +358,17 @@
 14-04-2023  11:41:12    script ends for testing github action
 15-04-2023  11:37:57    script starts for testing github action
 15-04-2023  11:40:55    script ends for testing github action
+16-04-2023  11:37:52    script starts for testing github action
+16-04-2023  11:39:53    EXception occured: IncompleteRead(503549 bytes read)
+16-04-2023  11:39:53    Data not found for url = https://chaldal.com/oil
+16-04-2023  11:40:03    Retry for url: oil
+16-04-2023  11:44:36    EXception occured: IncompleteRead(353183 bytes read)
+16-04-2023  11:44:36    Data not found for url = https://chaldal.com/meat-new
+16-04-2023  11:44:46    Retry for url: meat
+16-04-2023  11:47:14    EXception occured: HTTP Error 502: Bad Gateway
+16-04-2023  11:47:14    Data not found for url = https://chaldal.com/dried-fish
+16-04-2023  11:47:24    Retry for url: dried fish
+16-04-2023  11:50:00    EXception occured: HTTP Error 502: Bad Gateway
+16-04-2023  11:50:00    Data not found for url = https://chaldal.com/small-2
+16-04-2023  11:50:10    Retry for url: diapars small size
+16-04-2023  11:50:29    script ends for testing github action

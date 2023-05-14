@@ -426,3 +426,8 @@
 12-05-2023  11:41:14    script ends for testing github action
 13-05-2023  11:37:53    script starts for testing github action
 13-05-2023  11:40:50    script ends for testing github action
+14-05-2023  11:38:17    script starts for testing github action
+14-05-2023  11:41:03    EXception occured: HTTP Error 520: 
+14-05-2023  11:41:03    Data not found for url = https://chaldal.com/milk-juice-drinks
+14-05-2023  11:41:13    Retry for url: baby milk
+14-05-2023  11:41:59    script ends for testing github action

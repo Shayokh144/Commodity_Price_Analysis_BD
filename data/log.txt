@@ -478,3 +478,5 @@
 31-05-2023  11:41:07    script ends for testing github action
 01-06-2023  11:37:52    script starts for testing github action
 01-06-2023  11:41:08    script ends for testing github action
+02-06-2023  11:38:13    script starts for testing github action
+02-06-2023  11:41:31    script ends for testing github action

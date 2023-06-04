@@ -482,3 +482,10 @@
 02-06-2023  11:41:31    script ends for testing github action
 03-06-2023  11:38:12    script starts for testing github action
 03-06-2023  11:41:23    script ends for testing github action
+04-06-2023  11:37:52    script starts for testing github action
+04-06-2023  11:38:21    Retry for url: rice
+04-06-2023  11:39:27    Retry for url: liquid milk
+04-06-2023  11:39:57    Retry for url: vegetable
+04-06-2023  11:40:46    Retry for url: dried fish
+04-06-2023  11:41:08    Retry for url: baby milk
+04-06-2023  11:41:55    script ends for testing github action

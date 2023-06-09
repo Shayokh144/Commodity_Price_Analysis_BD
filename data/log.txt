@@ -497,3 +497,6 @@
 07-06-2023  11:41:32    script ends for testing github action
 08-06-2023  11:38:05    script starts for testing github action
 08-06-2023  11:41:18    script ends for testing github action
+09-06-2023  11:38:12    script starts for testing github action
+09-06-2023  11:39:31    Retry for url: egg
+09-06-2023  11:41:41    script ends for testing github action

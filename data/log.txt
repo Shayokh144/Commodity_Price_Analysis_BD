@@ -643,3 +643,7 @@
 13-08-2023  11:41:04    script ends for testing github action
 14-08-2023  11:37:59    script starts for testing github action
 14-08-2023  11:41:00    script ends for testing github action
+15-08-2023  11:38:02    script starts for testing github action
+15-08-2023  11:38:30    Retry for url: rice
+15-08-2023  11:40:31    Retry for url: dried fish
+15-08-2023  11:41:23    script ends for testing github action

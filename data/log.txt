@@ -659,3 +659,11 @@
 18-08-2023  11:40:34    Retry for url: frozen fish
 18-08-2023  11:40:56    Retry for url: dried fish
 18-08-2023  11:41:51    script ends for testing github action
+19-08-2023  11:38:10    script starts for testing github action
+19-08-2023  11:38:39    Retry for url: rice
+19-08-2023  11:39:01    Retry for url: lentil
+19-08-2023  11:40:38    Retry for url: meat
+19-08-2023  11:41:00    Retry for url: frozen fish
+19-08-2023  11:41:22    Retry for url: dried fish
+19-08-2023  11:41:42    Retry for url: baby milk
+19-08-2023  11:42:28    script ends for testing github action

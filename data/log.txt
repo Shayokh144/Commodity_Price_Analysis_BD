@@ -669,3 +669,7 @@
 19-08-2023  11:42:28    script ends for testing github action
 20-08-2023  11:38:00    script starts for testing github action
 20-08-2023  11:41:04    script ends for testing github action
+21-08-2023  11:38:05    script starts for testing github action
+21-08-2023  11:39:14    Retry for url: egg
+21-08-2023  11:41:21    Retry for url: diapars large size
+21-08-2023  11:41:29    script ends for testing github action

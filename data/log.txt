@@ -730,3 +730,8 @@
 14-09-2023  11:41:17    script ends for testing github action
 15-09-2023  11:38:05    script starts for testing github action
 15-09-2023  11:41:10    script ends for testing github action
+16-09-2023  11:38:15    script starts for testing github action
+16-09-2023  11:40:44    EXception occured: HTTP Error 520: 
+16-09-2023  11:40:44    Data not found for url = https://chaldal.com/toddler-food
+16-09-2023  11:40:54    Retry for url: other baby food
+16-09-2023  11:41:32    script ends for testing github action

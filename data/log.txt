@@ -761,3 +761,8 @@
 28-09-2023  11:41:28    script ends for testing github action
 29-09-2023  11:38:04    script starts for testing github action
 29-09-2023  11:41:09    script ends for testing github action
+30-09-2023  11:38:10    script starts for testing github action
+30-09-2023  11:39:18    EXception occured: HTTP Error 520: 
+30-09-2023  11:39:18    Data not found for url = https://chaldal.com/powder-milk
+30-09-2023  11:39:28    Retry for url: powder milk
+30-09-2023  11:41:23    script ends for testing github action

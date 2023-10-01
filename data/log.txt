@@ -766,3 +766,5 @@
 30-09-2023  11:39:18    Data not found for url = https://chaldal.com/powder-milk
 30-09-2023  11:39:28    Retry for url: powder milk
 30-09-2023  11:41:23    script ends for testing github action
+01-10-2023  11:37:58    script starts for testing github action
+01-10-2023  11:40:58    script ends for testing github action

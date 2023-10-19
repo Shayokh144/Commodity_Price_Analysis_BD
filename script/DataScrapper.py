@@ -58,6 +58,7 @@ def get_product_data(productPageUrl):
                     missingDataCount += 1
                 try:
                     priceRawValue = div.find("div",{"class":"price"}).get_text()
+                    priceRawValue = priceRawValue.replace(',','')
                     priceStr = re.findall(r'\d+', priceRawValue)
                     priceText = str(sum(map(int, priceStr)))
                 except:

@@ -10,6 +10,7 @@ import csv
 import re
 
 def get_actual_price(raw_price):
+    raw_price = raw_price.replace(',','')
     priceStr = re.findall(r'\d+', raw_price)
     priceText = str(sum(map(int, priceStr)))
     return priceText
@@ -32,9 +33,7 @@ def update_price(fileUrls):
             data = list(reader)
             for row in data:
                 if "+" in row[4]:
-                    print(row[5])
                     row[5] = get_actual_price(row[4])
-                    print(row[5])
             write_data_in_csv(csv_file, data)
 
 def write_data_in_csv(filePath, dataList):

@@ -873,3 +873,8 @@
 20-11-2023  11:41:06    script ends for testing github action
 21-11-2023  11:38:06    script starts for testing github action
 21-11-2023  11:40:58    script ends for testing github action
+22-11-2023  11:37:55    script starts for testing github action
+22-11-2023  11:40:23    EXception occured: HTTP Error 520: 
+22-11-2023  11:40:23    Data not found for url = https://chaldal.com/frozen-fish
+22-11-2023  11:40:33    Retry for url: frozen fish
+22-11-2023  11:41:33    script ends for testing github action

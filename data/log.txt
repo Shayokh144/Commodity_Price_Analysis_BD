@@ -898,3 +898,5 @@
 29-11-2023  11:39:42    Data not found for url = https://chaldal.com/fresh-fruit
 29-11-2023  11:39:52    Retry for url: fruits
 29-11-2023  11:42:04    script ends for testing github action
+30-11-2023  11:38:00    script starts for testing github action
+30-11-2023  11:41:07    script ends for testing github action

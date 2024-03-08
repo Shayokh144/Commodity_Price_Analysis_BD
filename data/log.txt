@@ -1124,3 +1124,32 @@
 07-03-2024  11:37:56    script starts for testing github action
 07-03-2024  11:40:18    Retry for url: dried fish
 07-03-2024  11:41:15    script ends for testing github action
+08-03-2024  11:38:37    script starts for testing github action
+08-03-2024  11:39:15    EXception occured: HTTP Error 520: 
+08-03-2024  11:39:15    Data not found for url = https://chaldal.com/oil
+08-03-2024  11:39:25    Retry for url: oil
+08-03-2024  11:40:25    EXception occured: HTTP Error 520: 
+08-03-2024  11:40:25    Data not found for url = https://chaldal.com/spices
+08-03-2024  11:40:35    Retry for url: spices
+08-03-2024  11:41:57    EXception occured: HTTP Error 520: 
+08-03-2024  11:41:57    Data not found for url = https://chaldal.com/fresh-fruit
+08-03-2024  11:42:07    Retry for url: fruits
+08-03-2024  11:42:38    EXception occured: HTTP Error 520: 
+08-03-2024  11:42:38    Data not found for url = https://chaldal.com/fresh-fruit
+08-03-2024  11:43:16    EXception occured: HTTP Error 520: 
+08-03-2024  11:43:16    Data not found for url = https://chaldal.com/fresh-vegetable
+08-03-2024  11:43:26    Retry for url: vegetable
+08-03-2024  11:43:58    EXception occured: HTTP Error 520: 
+08-03-2024  11:43:58    Data not found for url = https://chaldal.com/fresh-vegetable
+08-03-2024  11:45:13    EXception occured: HTTP Error 520: 
+08-03-2024  11:45:13    Data not found for url = https://chaldal.com/milk-juice-drinks
+08-03-2024  11:45:24    Retry for url: baby milk
+08-03-2024  11:46:30    EXception occured: HTTP Error 520: 
+08-03-2024  11:46:30    Data not found for url = https://chaldal.com/small-2
+08-03-2024  11:46:40    Retry for url: diapars small size
+08-03-2024  11:47:12    EXception occured: HTTP Error 520: 
+08-03-2024  11:47:12    Data not found for url = https://chaldal.com/small-2
+08-03-2024  11:47:50    EXception occured: HTTP Error 520: 
+08-03-2024  11:47:50    Data not found for url = https://chaldal.com/large-2
+08-03-2024  11:48:00    Retry for url: diapars large size
+08-03-2024  11:48:12    script ends for testing github action

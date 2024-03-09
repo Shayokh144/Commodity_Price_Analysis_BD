@@ -1153,3 +1153,21 @@
 08-03-2024  11:47:50    Data not found for url = https://chaldal.com/large-2
 08-03-2024  11:48:00    Retry for url: diapars large size
 08-03-2024  11:48:12    script ends for testing github action
+09-03-2024  11:38:06    script starts for testing github action
+09-03-2024  11:38:54    EXception occured: HTTP Error 520: 
+09-03-2024  11:38:54    Data not found for url = https://chaldal.com/rices
+09-03-2024  11:39:05    Retry for url: rice
+09-03-2024  11:41:26    EXception occured: HTTP Error 520: 
+09-03-2024  11:41:26    Data not found for url = https://chaldal.com/frozen-fish
+09-03-2024  11:41:36    Retry for url: frozen fish
+09-03-2024  11:42:08    EXception occured: HTTP Error 520: 
+09-03-2024  11:42:08    Data not found for url = https://chaldal.com/frozen-fish
+09-03-2024  11:42:57    EXception occured: HTTP Error 520: 
+09-03-2024  11:42:57    Data not found for url = https://chaldal.com/milk-juice-drinks
+09-03-2024  11:43:07    Retry for url: baby milk
+09-03-2024  11:43:38    EXception occured: HTTP Error 520: 
+09-03-2024  11:43:38    Data not found for url = https://chaldal.com/milk-juice-drinks
+09-03-2024  11:44:16    EXception occured: HTTP Error 520: 
+09-03-2024  11:44:16    Data not found for url = https://chaldal.com/toddler-food
+09-03-2024  11:44:26    Retry for url: other baby food
+09-03-2024  11:45:06    script ends for testing github action

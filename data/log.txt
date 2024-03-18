@@ -1190,3 +1190,8 @@
 16-03-2024  11:41:08    script ends for testing github action
 17-03-2024  11:38:11    script starts for testing github action
 17-03-2024  11:41:11    script ends for testing github action
+18-03-2024  11:37:53    script starts for testing github action
+18-03-2024  11:39:35    EXception occured: HTTP Error 520: 
+18-03-2024  11:39:35    Data not found for url = https://chaldal.com/fresh-vegetable
+18-03-2024  11:39:45    Retry for url: vegetable
+18-03-2024  11:41:29    script ends for testing github action

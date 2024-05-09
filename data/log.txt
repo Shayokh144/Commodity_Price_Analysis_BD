@@ -1326,3 +1326,9 @@
 08-05-2024  11:46:20    Data not found for url = https://chaldal.com/small-2
 08-05-2024  11:46:30    Retry for url: diapars small size
 08-05-2024  11:46:51    script ends for testing github action
+09-05-2024  11:38:25    script starts for testing github action
+09-05-2024  11:41:02    Retry for url: fruits
+09-05-2024  11:42:40    Retry for url: dried fish
+09-05-2024  11:43:49    Retry for url: baby milk
+09-05-2024  11:44:34    Retry for url: other baby food
+09-05-2024  11:45:29    script ends for testing github action

@@ -1332,3 +1332,10 @@
 09-05-2024  11:43:49    Retry for url: baby milk
 09-05-2024  11:44:34    Retry for url: other baby food
 09-05-2024  11:45:29    script ends for testing github action
+10-05-2024  11:38:14    script starts for testing github action
+10-05-2024  11:39:06    Retry for url: rice
+10-05-2024  11:40:05    EXception occured: HTTP Error 520: 
+10-05-2024  11:40:05    Data not found for url = https://chaldal.com/flour
+10-05-2024  11:40:15    Retry for url: flour
+10-05-2024  11:41:44    Retry for url: chicken
+10-05-2024  11:43:12    script ends for testing github action

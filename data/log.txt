@@ -1366,3 +1366,7 @@
 15-05-2024  11:43:23    EXception occured: HTTP Error 520: 
 15-05-2024  11:43:23    Data not found for url = https://chaldal.com/chicken-poultry
 15-05-2024  11:44:59    script ends for testing github action
+16-05-2024  11:38:01    script starts for testing github action
+16-05-2024  11:38:42    Retry for url: oil
+16-05-2024  11:39:43    Retry for url: spices
+16-05-2024  11:42:48    script ends for testing github action

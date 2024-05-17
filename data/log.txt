@@ -1370,3 +1370,6 @@
 16-05-2024  11:38:42    Retry for url: oil
 16-05-2024  11:39:43    Retry for url: spices
 16-05-2024  11:42:48    script ends for testing github action
+17-05-2024  11:38:00    script starts for testing github action
+17-05-2024  11:39:41    Retry for url: powder milk
+17-05-2024  11:42:25    script ends for testing github action

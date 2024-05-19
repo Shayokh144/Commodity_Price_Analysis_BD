@@ -1377,3 +1377,10 @@
 18-05-2024  11:39:48    Retry for url: powder milk
 18-05-2024  11:41:35    Retry for url: meat
 18-05-2024  11:43:14    script ends for testing github action
+19-05-2024  11:37:52    script starts for testing github action
+19-05-2024  11:38:54    Retry for url: lentil
+19-05-2024  11:40:39    Retry for url: liquid milk
+19-05-2024  11:43:03    EXception occured: HTTP Error 520: 
+19-05-2024  11:43:03    Data not found for url = https://chaldal.com/large-2
+19-05-2024  11:43:13    Retry for url: diapars large size
+19-05-2024  11:43:29    script ends for testing github action

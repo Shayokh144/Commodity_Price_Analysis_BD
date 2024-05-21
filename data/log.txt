@@ -1386,3 +1386,9 @@
 19-05-2024  11:43:29    script ends for testing github action
 20-05-2024  11:38:14    script starts for testing github action
 20-05-2024  11:41:33    script ends for testing github action
+21-05-2024  11:38:32    script starts for testing github action
+21-05-2024  11:39:31    Retry for url: lentil
+21-05-2024  11:40:02    EXception occured: HTTP Error 520: 
+21-05-2024  11:40:02    Data not found for url = https://chaldal.com/dal-or-lentil
+21-05-2024  11:43:01    Retry for url: other baby food
+21-05-2024  11:43:49    script ends for testing github action

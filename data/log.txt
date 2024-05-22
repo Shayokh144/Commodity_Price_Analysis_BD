@@ -1392,3 +1392,6 @@
 21-05-2024  11:40:02    Data not found for url = https://chaldal.com/dal-or-lentil
 21-05-2024  11:43:01    Retry for url: other baby food
 21-05-2024  11:43:49    script ends for testing github action
+22-05-2024  11:38:10    script starts for testing github action
+22-05-2024  11:39:47    Retry for url: powder milk
+22-05-2024  11:42:05    script ends for testing github action

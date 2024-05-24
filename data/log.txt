@@ -1405,3 +1405,13 @@
 23-05-2024  11:45:32    Retry for url: baby milk
 23-05-2024  11:46:52    Retry for url: diapars small size
 23-05-2024  11:47:11    script ends for testing github action
+24-05-2024  11:38:17    script starts for testing github action
+24-05-2024  11:40:13    Retry for url: spices
+24-05-2024  11:43:09    Retry for url: baby milk
+24-05-2024  11:43:59    EXception occured: HTTP Error 520: 
+24-05-2024  11:43:59    Data not found for url = https://chaldal.com/newborn-2
+24-05-2024  11:44:09    Retry for url: diapars smallest size
+24-05-2024  11:44:55    Retry for url: diapars small size
+24-05-2024  11:45:25    EXception occured: HTTP Error 520: 
+24-05-2024  11:45:25    Data not found for url = https://chaldal.com/small-2
+24-05-2024  11:45:43    script ends for testing github action

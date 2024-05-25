@@ -1415,3 +1415,7 @@
 24-05-2024  11:45:25    EXception occured: HTTP Error 520: 
 24-05-2024  11:45:25    Data not found for url = https://chaldal.com/small-2
 24-05-2024  11:45:43    script ends for testing github action
+25-05-2024  11:37:46    script starts for testing github action
+25-05-2024  11:38:54    Retry for url: spices
+25-05-2024  11:41:48    Retry for url: diapars large size
+25-05-2024  11:41:57    script ends for testing github action

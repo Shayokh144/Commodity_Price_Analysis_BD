@@ -1419,3 +1419,11 @@
 25-05-2024  11:38:54    Retry for url: spices
 25-05-2024  11:41:48    Retry for url: diapars large size
 25-05-2024  11:41:57    script ends for testing github action
+26-05-2024  11:37:50    script starts for testing github action
+26-05-2024  11:40:09    Retry for url: vegetable
+26-05-2024  11:40:40    EXception occured: HTTP Error 520: 
+26-05-2024  11:40:40    Data not found for url = https://chaldal.com/fresh-vegetable
+26-05-2024  11:41:18    EXception occured: HTTP Error 520: 
+26-05-2024  11:41:18    Data not found for url = https://chaldal.com/chicken-poultry
+26-05-2024  11:41:28    Retry for url: chicken
+26-05-2024  11:43:32    script ends for testing github action

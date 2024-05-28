@@ -1431,3 +1431,11 @@
 27-05-2024  11:41:13    Retry for url: frozen fish
 27-05-2024  11:41:36    Retry for url: dried fish
 27-05-2024  11:42:34    script ends for testing github action
+28-05-2024  11:38:02    script starts for testing github action
+28-05-2024  11:38:43    Retry for url: oil
+28-05-2024  11:39:28    Retry for url: rice
+28-05-2024  11:40:43    Retry for url: egg
+28-05-2024  11:42:19    Retry for url: dried fish
+28-05-2024  11:43:20    Retry for url: diapars smallest size
+28-05-2024  11:44:15    Retry for url: diapars large size
+28-05-2024  11:44:34    script ends for testing github action

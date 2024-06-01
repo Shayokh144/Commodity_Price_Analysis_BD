@@ -1452,3 +1452,8 @@
 31-05-2024  11:40:47    Retry for url: frozen fish
 31-05-2024  11:41:10    Retry for url: dried fish
 31-05-2024  11:42:06    script ends for testing github action
+01-06-2024  11:38:57    script starts for testing github action
+01-06-2024  11:41:30    Retry for url: dried fish
+01-06-2024  11:41:30    EXception occured: HTTP Error 520: 
+01-06-2024  11:41:30    Data not found for url = https://chaldal.com/dried-fish
+01-06-2024  11:42:27    script ends for testing github action

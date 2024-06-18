@@ -1497,3 +1497,8 @@
 16-06-2024  11:42:07    script ends for testing github action
 17-06-2024  11:39:12    script starts for testing github action
 17-06-2024  11:42:47    script ends for testing github action
+18-06-2024  11:38:32    script starts for testing github action
+18-06-2024  11:43:08    EXception occured: IncompleteRead(860404 bytes read)
+18-06-2024  11:43:08    Data not found for url = https://chaldal.com/flour
+18-06-2024  11:43:18    Retry for url: flour
+18-06-2024  11:45:58    script ends for testing github action

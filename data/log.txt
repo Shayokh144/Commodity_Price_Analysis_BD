@@ -1529,3 +1529,11 @@
 29-06-2024  11:42:46    script ends for testing github action
 30-06-2024  11:38:01    script starts for testing github action
 30-06-2024  11:45:04    script ends for testing github action
+01-07-2024  11:38:05    script starts for testing github action
+01-07-2024  11:40:48    EXception occured: IncompleteRead(111084 bytes read)
+01-07-2024  11:40:48    Data not found for url = https://chaldal.com/powder-milk
+01-07-2024  11:40:58    Retry for url: powder milk
+01-07-2024  11:46:59    EXception occured: Remote end closed connection without response
+01-07-2024  11:46:59    Data not found for url = https://chaldal.com/newborn-2
+01-07-2024  11:47:09    Retry for url: diapars smallest size
+01-07-2024  11:49:01    script ends for testing github action

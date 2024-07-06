@@ -1545,3 +1545,8 @@
 04-07-2024  11:42:03    script ends for testing github action
 05-07-2024  11:38:00    script starts for testing github action
 05-07-2024  11:41:23    script ends for testing github action
+06-07-2024  11:38:11    script starts for testing github action
+06-07-2024  11:38:53    Retry for url: oil
+06-07-2024  11:39:59    Retry for url: rice
+06-07-2024  11:41:05    Retry for url: lentil
+06-07-2024  11:44:30    script ends for testing github action

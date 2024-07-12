@@ -1560,3 +1560,9 @@
 10-07-2024  11:49:22    script ends for testing github action
 11-07-2024  11:37:57    script starts for testing github action
 11-07-2024  11:42:10    script ends for testing github action
+12-07-2024  11:38:09    script starts for testing github action
+12-07-2024  11:39:27    EXception occured: HTTP Error 520: 
+12-07-2024  11:39:27    Data not found for url = https://chaldal.com/spices
+12-07-2024  11:39:37    Retry for url: spices
+12-07-2024  11:41:35    Retry for url: dried fish
+12-07-2024  11:42:36    script ends for testing github action

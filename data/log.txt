@@ -2187,3 +2187,13 @@
 28-07-2024  11:43:04    script ends for testing github action
 29-07-2024  11:37:54    script starts for testing github action
 29-07-2024  11:42:51    script ends for testing github action
+30-07-2024  11:38:37    script starts for testing github action
+30-07-2024  11:47:23    EXception occured: <urlopen error [Errno 110] Connection timed out>
+30-07-2024  11:47:23    Data not found for url = https://chaldal.com/dried-fish
+30-07-2024  11:47:33    Retry for url: dried fish
+30-07-2024  11:52:02    EXception occured: <urlopen error [Errno 110] Connection timed out>
+30-07-2024  11:52:02    Data not found for url = https://chaldal.com/dried-fish
+30-07-2024  11:56:38    EXception occured: <urlopen error [Errno 110] Connection timed out>
+30-07-2024  11:56:38    Data not found for url = https://chaldal.com/milk-juice-drinks
+30-07-2024  11:56:48    Retry for url: baby milk
+30-07-2024  11:59:44    script ends for testing github action

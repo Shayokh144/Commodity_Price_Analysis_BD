@@ -2197,3 +2197,40 @@
 30-07-2024  11:56:38    Data not found for url = https://chaldal.com/milk-juice-drinks
 30-07-2024  11:56:48    Retry for url: baby milk
 30-07-2024  11:59:44    script ends for testing github action
+31-07-2024  11:38:47    script starts for testing github action
+31-07-2024  11:46:48    EXception occured: IncompleteRead(1802240 bytes read, 446139 more expected)
+31-07-2024  11:46:48    Data not found for url = https://chaldal.com/rices
+31-07-2024  11:46:58    Retry for url: rice
+31-07-2024  11:48:52    EXception occured: IncompleteRead(98304 bytes read, 2186803 more expected)
+31-07-2024  11:48:52    Data not found for url = https://chaldal.com/rices
+31-07-2024  12:01:27    EXception occured: IncompleteRead(933888 bytes read, 982195 more expected)
+31-07-2024  12:01:27    Data not found for url = https://chaldal.com/eggs
+31-07-2024  12:01:37    Retry for url: egg
+31-07-2024  12:04:43    EXception occured: IncompleteRead(1015808 bytes read, 1233236 more expected)
+31-07-2024  12:04:43    Data not found for url = https://chaldal.com/powder-milk
+31-07-2024  12:04:53    Retry for url: powder milk
+31-07-2024  12:08:05    EXception occured: IncompleteRead(983040 bytes read, 1086459 more expected)
+31-07-2024  12:08:05    Data not found for url = https://chaldal.com/liquid-uht-milk
+31-07-2024  12:08:15    Retry for url: liquid milk
+31-07-2024  12:25:56    EXception occured: <urlopen error [Errno 110] Connection timed out>
+31-07-2024  12:25:56    Data not found for url = https://chaldal.com/liquid-uht-milk
+31-07-2024  12:31:13    EXception occured: IncompleteRead(1032192 bytes read, 1042137 more expected)
+31-07-2024  12:31:13    Data not found for url = https://chaldal.com/chicken-poultry
+31-07-2024  12:31:23    Retry for url: chicken
+31-07-2024  12:37:34    EXception occured: IncompleteRead(1064960 bytes read, 1242081 more expected)
+31-07-2024  12:37:34    Data not found for url = https://chaldal.com/frozen-fish
+31-07-2024  12:37:44    Retry for url: frozen fish
+31-07-2024  12:41:41    EXception occured: IncompleteRead(999424 bytes read, 1013816 more expected)
+31-07-2024  12:41:41    Data not found for url = https://chaldal.com/milk-juice-drinks
+31-07-2024  12:41:51    Retry for url: baby milk
+31-07-2024  12:45:16    EXception occured: HTTP Error 404: Not Found
+31-07-2024  12:45:16    Data not found for url = https://chaldal.com/newborn-2
+31-07-2024  12:45:26    Retry for url: diapars smallest size
+31-07-2024  12:46:10    EXception occured: IncompleteRead(245760 bytes read, 1737760 more expected)
+31-07-2024  12:46:10    Data not found for url = https://chaldal.com/newborn-2
+31-07-2024  12:48:11    EXception occured: IncompleteRead(999424 bytes read, 1195276 more expected)
+31-07-2024  12:48:11    Data not found for url = https://chaldal.com/large-2
+31-07-2024  12:48:21    Retry for url: diapars large size
+31-07-2024  12:51:21    EXception occured: IncompleteRead(999424 bytes read, 1179892 more expected)
+31-07-2024  12:51:21    Data not found for url = https://chaldal.com/large-2
+31-07-2024  12:51:28    script ends for testing github action

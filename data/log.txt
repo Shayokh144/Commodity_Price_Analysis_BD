@@ -2234,3 +2234,8 @@
 31-07-2024  12:51:21    EXception occured: IncompleteRead(999424 bytes read, 1179892 more expected)
 31-07-2024  12:51:21    Data not found for url = https://chaldal.com/large-2
 31-07-2024  12:51:28    script ends for testing github action
+01-08-2024  11:38:00    script starts for testing github action
+01-08-2024  11:54:54    EXception occured: IncompleteRead(622592 bytes read, 1772147 more expected)
+01-08-2024  11:54:54    Data not found for url = https://chaldal.com/fresh-vegetable
+01-08-2024  11:55:04    Retry for url: vegetable
+01-08-2024  12:02:19    script ends for testing github action

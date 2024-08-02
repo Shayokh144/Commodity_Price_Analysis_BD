@@ -2239,3 +2239,5 @@
 01-08-2024  11:54:54    Data not found for url = https://chaldal.com/fresh-vegetable
 01-08-2024  11:55:04    Retry for url: vegetable
 01-08-2024  12:02:19    script ends for testing github action
+02-08-2024  11:38:45    script starts for testing github action
+02-08-2024  11:56:21    script ends for testing github action

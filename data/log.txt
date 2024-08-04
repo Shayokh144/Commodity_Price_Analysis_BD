@@ -2244,3 +2244,9 @@
 03-08-2024  11:37:51    script starts for testing github action
 03-08-2024  11:47:41    Retry for url: dried fish
 03-08-2024  11:51:20    script ends for testing github action
+04-08-2024  11:37:51    script starts for testing github action
+04-08-2024  11:40:30    EXception occured: IncompleteRead(999424 bytes read, 1337366 more expected)
+04-08-2024  11:40:30    Data not found for url = https://chaldal.com/spices
+04-08-2024  11:40:40    Retry for url: spices
+04-08-2024  11:45:40    Retry for url: dried fish
+04-08-2024  11:49:14    script ends for testing github action

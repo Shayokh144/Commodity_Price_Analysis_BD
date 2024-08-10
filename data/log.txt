@@ -2304,3 +2304,14 @@
 09-08-2024  11:46:09    Retry for url: dried fish
 09-08-2024  11:47:08    Retry for url: other baby food
 09-08-2024  11:48:23    script ends for testing github action
+10-08-2024  11:38:03    script starts for testing github action
+10-08-2024  11:39:38    Retry for url: rice
+10-08-2024  11:40:57    Retry for url: lentil
+10-08-2024  11:42:48    Retry for url: spices
+10-08-2024  11:46:12    Retry for url: powder milk
+10-08-2024  11:48:22    Retry for url: chicken
+10-08-2024  11:50:39    Retry for url: frozen fish
+10-08-2024  11:53:03    Retry for url: dried fish
+10-08-2024  11:55:49    Retry for url: diapars small size
+10-08-2024  11:57:14    Retry for url: diapars large size
+10-08-2024  11:57:48    script ends for testing github action

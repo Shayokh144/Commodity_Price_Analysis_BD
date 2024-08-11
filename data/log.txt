@@ -2315,3 +2315,15 @@
 10-08-2024  11:55:49    Retry for url: diapars small size
 10-08-2024  11:57:14    Retry for url: diapars large size
 10-08-2024  11:57:48    script ends for testing github action
+11-08-2024  11:37:56    script starts for testing github action
+11-08-2024  11:38:50    Retry for url: rice
+11-08-2024  11:40:10    Retry for url: spices
+11-08-2024  11:41:23    Retry for url: flour
+11-08-2024  11:42:33    Retry for url: powder milk
+11-08-2024  11:44:37    Retry for url: meat
+11-08-2024  11:45:50    Retry for url: frozen fish
+11-08-2024  11:46:43    Retry for url: dried fish
+11-08-2024  11:48:07    Retry for url: baby milk
+11-08-2024  11:49:21    Retry for url: other baby food
+11-08-2024  11:50:42    Retry for url: diapars large size
+11-08-2024  11:50:59    script ends for testing github action

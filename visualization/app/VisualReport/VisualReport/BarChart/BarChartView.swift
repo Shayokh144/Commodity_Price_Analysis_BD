@@ -18,14 +18,21 @@ struct BarChartView: View {
                     VStack(alignment: .center, spacing: 1.0) {
                         Text("\(Int(uiModel.value))")
                             .font(.system(size: 12, weight: .bold))
-                        if viewModel.isInline {
-                            ZStack(alignment: .bottom) {
-                                barContent(height: uiModel.calculatedValue ?? 0.0)
-                                barName(name: uiModel.name)
-                            }
-                        } else {
-                            barContent(height: uiModel.calculatedValue ?? 0.0)
-                            barName(name: uiModel.name)
+                        Button {
+
+                        } label: {
+                            Rectangle()
+                                .fill(Color.green.opacity(0.9))
+                                .frame(width: 30.0, height: (uiModel.calculatedValue ?? 0.0) * 3)
+                        }
+                        .buttonStyle(.plain)
+                        HStack(alignment: .bottom) {
+                            Text(String(uiModel.name))
+                                .foregroundStyle(Color.gray)
+                                .fixedSize()
+                                .frame(width: 30, height: 90)
+                                .rotationEffect(.degrees(-90))
+
                         }
                     }
                 }
@@ -51,8 +58,50 @@ struct BarChartView: View {
         }
     }
     
+    private var statSection: some View {
+        VStack(alignment: .leading, spacing: 8.0) {
+            HStack(spacing: 8.0) {
+                Text(viewModel.minValueText)
+                Spacer()
+                Text(viewModel.maxValueText)
+            }
+            
+            HStack {
+                Text(viewModel.avgValueText)
+                Spacer()
+                Text(viewModel.dataCountText)
+            }
+            HStack {
+                Text(viewModel.lastPrice)
+                Spacer()
+            }
+        }
+        .padding(.top, 16.0)
+    }
+    
+    private var topSection: some View {
+        VStack(alignment: .center, spacing: .zero) {
+            Text(viewModel.chartName)
+                .foregroundStyle(Color.purple)
+                .font(.system(size: 32.0, weight: .bold))
+                .padding(.bottom, 8.0)
+            Text(viewModel.timeFrame)
+                .font(.system(size: 18.0, weight: .bold))
+                .padding(.bottom, 24.0)
+            HStack {
+                Text(viewModel.weightUnitText)
+                Spacer()
+                Text(viewModel.currencyUnitText)
+                Spacer()
+                Text(viewModel.dataSource)
+            }
+        }
+        .padding(.bottom, 24.0)
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: .zero) {
+            topSection
             barChartSection
             HStack {
                 Spacer()
@@ -63,6 +112,7 @@ struct BarChartView: View {
             }
             .padding(.top, 4.0)
             .padding(.bottom, 16.0)
+            statSection
         }
         .padding()
         .onAppear {
@@ -72,27 +122,6 @@ struct BarChartView: View {
     
     init(viewModel: BarChartViewModel) {
         _viewModel = StateObject(wrappedValue: viewModel)
-    }
-    
-    private func barContent(height: Double) -> some View {
-        Button {
-
-        } label: {
-            Rectangle()
-                .fill(Color.green.opacity(0.9))
-                .frame(width: 30.0, height: (height) * 2)
-        }
-        .buttonStyle(.borderless)
-    }
-    
-    private func barName(name: String) -> some View {
-        HStack(alignment: .bottom) {
-            Text(String(name))
-                .foregroundStyle(Color.blue)
-                .fixedSize()
-                .frame(width: 30, height: 90)
-                .rotationEffect(.degrees(-90))
-        }
     }
 }
 
@@ -116,18 +145,18 @@ extension BarChartData {
 
     static var dummyList: [BarChartData] {
         [
-            .init(name: "04-03-2023", value: 160),
-            .init(name: "04-03-2023", value: 140),
-            .init(name: "04-03-2023", value: 130),
-            .init(name: "04-03-2023", value: 180),
-            .init(name: "04-03-2023", value: 160),
-            .init(name: "04-03-2023", value: 190),
-            .init(name: "04-03-2023", value: 260),
-            .init(name: "04-03-2023", value: 460),
-            .init(name: "04-03-2023", value: 177),
-            .init(name: "04-03-2023", value: 320),
-            .init(name: "04-03-2023", value: 160),
-            .init(name: "04-03-2023", value: 0)
+            .init(name: "January", value: 160),
+            .init(name: "February", value: 140),
+            .init(name: "March", value: 130),
+            .init(name: "April", value: 180),
+            .init(name: "May", value: 160),
+            .init(name: "June", value: 190),
+            .init(name: "July", value: 260),
+            .init(name: "August", value: 460),
+            .init(name: "September", value: 177),
+            .init(name: "October", value: 199),
+            .init(name: "November", value: 160),
+            .init(name: "December", value: 80)
         ]
     }
 }

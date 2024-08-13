@@ -14,6 +14,13 @@
 		043E74DE2BABF81700B9AF91 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E74DD2BABF81700B9AF91 /* BarChartView.swift */; };
 		043E74E02BABF81F00B9AF91 /* BarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E74DF2BABF81F00B9AF91 /* BarChartViewModel.swift */; };
 		043E74E32BAC210E00B9AF91 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 043E74E22BAC210E00B9AF91 /* SwiftCSV */; };
+		048B86C12C67D6CB008036D4 /* ProductSelectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86C02C67D6CB008036D4 /* ProductSelectionScreen.swift */; };
+		048B86C32C67D6D8008036D4 /* ProductSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86C22C67D6D8008036D4 /* ProductSelectionViewModel.swift */; };
+		048B86C62C67E6D0008036D4 /* CSVDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86C52C67E6D0008036D4 /* CSVDataModel.swift */; };
+		048B86C92C67E75C008036D4 /* CSVFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86C82C67E75C008036D4 /* CSVFileReader.swift */; };
+		048B86CC2C67E9CB008036D4 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86CB2C67E9CB008036D4 /* DateFormatter+Extension.swift */; };
+		048B86D02C6B58D6008036D4 /* SingleBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86CF2C6B58D6008036D4 /* SingleBarScreen.swift */; };
+		048B86D22C6B58E9008036D4 /* SingleBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86D12C6B58E9008036D4 /* SingleBarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +32,13 @@
 		043E74D62BABF77800B9AF91 /* VisualReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VisualReport.entitlements; sourceTree = "<group>"; };
 		043E74DD2BABF81700B9AF91 /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		043E74DF2BABF81F00B9AF91 /* BarChartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewModel.swift; sourceTree = "<group>"; };
+		048B86C02C67D6CB008036D4 /* ProductSelectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSelectionScreen.swift; sourceTree = "<group>"; };
+		048B86C22C67D6D8008036D4 /* ProductSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSelectionViewModel.swift; sourceTree = "<group>"; };
+		048B86C52C67E6D0008036D4 /* CSVDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVDataModel.swift; sourceTree = "<group>"; };
+		048B86C82C67E75C008036D4 /* CSVFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVFileReader.swift; sourceTree = "<group>"; };
+		048B86CB2C67E9CB008036D4 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		048B86CF2C6B58D6008036D4 /* SingleBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleBarScreen.swift; sourceTree = "<group>"; };
+		048B86D12C6B58E9008036D4 /* SingleBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleBarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,11 @@
 		043E74CC2BABF77700B9AF91 /* VisualReport */ = {
 			isa = PBXGroup;
 			children = (
+				048B86CD2C6B58B7008036D4 /* Graph */,
+				048B86CA2C67E9BE008036D4 /* Extension */,
+				048B86C72C67E749008036D4 /* Helper */,
+				048B86C42C67E6C1008036D4 /* DataModel */,
+				048B86BF2C67D630008036D4 /* ProductSelection */,
 				043E74DC2BABF7F800B9AF91 /* BarChart */,
 				043E74CD2BABF77700B9AF91 /* VisualReportApp.swift */,
 				043E74CF2BABF77700B9AF91 /* ContentView.swift */,
@@ -83,6 +102,56 @@
 				043E74DD2BABF81700B9AF91 /* BarChartView.swift */,
 			);
 			path = BarChart;
+			sourceTree = "<group>";
+		};
+		048B86BF2C67D630008036D4 /* ProductSelection */ = {
+			isa = PBXGroup;
+			children = (
+				048B86C02C67D6CB008036D4 /* ProductSelectionScreen.swift */,
+				048B86C22C67D6D8008036D4 /* ProductSelectionViewModel.swift */,
+			);
+			path = ProductSelection;
+			sourceTree = "<group>";
+		};
+		048B86C42C67E6C1008036D4 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				048B86C52C67E6D0008036D4 /* CSVDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		048B86C72C67E749008036D4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				048B86C82C67E75C008036D4 /* CSVFileReader.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		048B86CA2C67E9BE008036D4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				048B86CB2C67E9CB008036D4 /* DateFormatter+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		048B86CD2C6B58B7008036D4 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				048B86CE2C6B58BE008036D4 /* SingleBar */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		048B86CE2C6B58BE008036D4 /* SingleBar */ = {
+			isa = PBXGroup;
+			children = (
+				048B86CF2C6B58D6008036D4 /* SingleBarScreen.swift */,
+				048B86D12C6B58E9008036D4 /* SingleBarViewModel.swift */,
+			);
+			path = SingleBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +230,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048B86C32C67D6D8008036D4 /* ProductSelectionViewModel.swift in Sources */,
 				043E74D02BABF77700B9AF91 /* ContentView.swift in Sources */,
+				048B86C12C67D6CB008036D4 /* ProductSelectionScreen.swift in Sources */,
+				048B86D22C6B58E9008036D4 /* SingleBarViewModel.swift in Sources */,
+				048B86D02C6B58D6008036D4 /* SingleBarScreen.swift in Sources */,
+				048B86C62C67E6D0008036D4 /* CSVDataModel.swift in Sources */,
 				043E74E02BABF81F00B9AF91 /* BarChartViewModel.swift in Sources */,
+				048B86CC2C67E9CB008036D4 /* DateFormatter+Extension.swift in Sources */,
+				048B86C92C67E75C008036D4 /* CSVFileReader.swift in Sources */,
 				043E74CE2BABF77700B9AF91 /* VisualReportApp.swift in Sources */,
 				043E74DE2BABF81700B9AF91 /* BarChartView.swift in Sources */,
 			);

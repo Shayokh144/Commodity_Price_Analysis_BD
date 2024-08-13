@@ -14,13 +14,26 @@ struct ContentView: View {
     @State var folderPath = ""
     @State var allFilePaths = [String : String]()
     @State var allFileNames = [String]()
+    @State var shouldShowCsvData = false
+    // NAVIGATION
+    @State private var csvData: CSVDataModel? = nil
+    @State private var navigationPath = NavigationPath()
     
     var nameView: some View {
         VStack {
             ForEach(allFileNames, id: \.self) { name in
                 Button(
                     action: {
-                        readData(filePath: allFilePaths[name] ?? "")
+                        guard let filePath = allFilePaths[name] else {
+                            return
+                        }
+                        if filePath.hasSuffix(".csv") {
+                            if let csvData = readCSVData(filePath: filePath) {
+                                navigationPath.append(csvData)
+                            }
+                        } else {
+                            readTxtData(filePath: filePath)
+                        }
                     },
                     label: {
                         Text(name)
@@ -32,26 +45,23 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack {
-//            BarChartView(
-//                viewModel: BarChartViewModel(
-//                    xAxisName: "time",
-//                    yAxisName: "price",
-//                    isInline: true,
-//                    barChartData: BarChartData.dummyList
-//                )
-//            )
-            if allFileNames.isEmpty {
-                Button(
-                    action: {
-                        getPermission()
-                    },
-                    label: {
-                        Text("Get Folder Permission")
-                    }
-                )
+        NavigationStack(path: $navigationPath){
+            VStack {
+                if allFileNames.isEmpty {
+                    Button(
+                        action: {
+                            getPermission()
+                        },
+                        label: {
+                            Text("Get Folder Permission")
+                        }
+                    )
+                }
+                nameView
             }
-            nameView
+            .navigationDestination(for: CSVDataModel.self) { data in
+                ProductSelectionScreen(viewModel: ProductSelectionViewModel(csvData: data))
+            }
         }
     }
     
@@ -94,12 +104,36 @@ struct ContentView: View {
         }
     }
     
-    func readData(filePath: String) {
+    func readTxtData(filePath: String) {
         do {
-            let csvFile: CSV = try CSV<Named>(url: URL(fileURLWithPath: filePath))
-            print(csvFile.columns?.count)
+            // Read the contents of the file
+            let fileContents = try String(contentsOfFile: filePath, encoding: .utf8)
+            var contentArray = fileContents.components(separatedBy: "\n")
+            contentArray = contentArray.sorted()
+            // Print the contents of the file
+            let writeFilePath = folderPath+"word/BengaliSortedWords.txt"
+            print(writeFilePath)
+            do {
+                // Write the text content to the file
+                let contentToWrite = contentArray.joined(separator: "\n")
+                try contentToWrite.write(toFile: writeFilePath, atomically: true, encoding: .utf8)
+                
+                print("Data has been successfully written to \(writeFilePath)")
+            } catch {
+                // Handle error if writing fails
+                print("Error writing data to \(writeFilePath):", error)
+            }
         } catch {
-            print("ERROR: \(error)")
+            // Handle any errors that occur during file reading
+            print("Error reading contents of \(filePath):", error)
         }
+    }
+    
+    func readCSVData(filePath: String) -> CSVDataModel? {
+        let (data, error) = CSVFileReader().readCSVFile(filePath: filePath)
+        guard error == nil else {
+            return nil
+        }
+        return data
     }
 }

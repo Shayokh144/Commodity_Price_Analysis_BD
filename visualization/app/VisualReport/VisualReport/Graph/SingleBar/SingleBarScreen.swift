@@ -13,9 +13,9 @@ struct SingleBarScreen: View {
     
     private var barChartView: some View {
         let barChartViewModel = BarChartViewModel(
-            chartName: "Price chart for \(viewModel.productName)",
+            chartName: "Price chart for \(viewModel.singleBarViewModelData.productName)",
             timeFrame: viewModel.timeframe,
-            weightUnitText: "Weight unit: \(viewModel.quantity) \(viewModel.quantityUnit)",
+            weightUnitText: "Weight unit: \(viewModel.singleBarViewModelData.quantity) \(viewModel.quantityUnit)",
             currencyUnitText: "Currency unit: BDT(৳)",
             dataSource: "Data collected from ChalDal.com",
             xAxisName: "Timestamp",
@@ -27,6 +27,7 @@ struct SingleBarScreen: View {
     
     var body: some View {
         barChartView
+            .navigationTitle("Single Bar")
     }
     
     init(viewModel: SingleBarViewModel) {

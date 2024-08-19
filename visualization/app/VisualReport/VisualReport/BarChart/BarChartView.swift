@@ -140,23 +140,3 @@ struct BarChartData: Identifiable {
         self.calculatedValue = calculatedValue
     }
 }
-
-extension BarChartData {
-
-    static var dummyList: [BarChartData] {
-        [
-            .init(name: "January", value: 160),
-            .init(name: "February", value: 140),
-            .init(name: "March", value: 130),
-            .init(name: "April", value: 180),
-            .init(name: "May", value: 160),
-            .init(name: "June", value: 190),
-            .init(name: "July", value: 260),
-            .init(name: "August", value: 460),
-            .init(name: "September", value: 177),
-            .init(name: "October", value: 199),
-            .init(name: "November", value: 160),
-            .init(name: "December", value: 80)
-        ]
-    }
-}

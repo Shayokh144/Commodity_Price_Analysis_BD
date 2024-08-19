@@ -65,7 +65,13 @@ final class BarChartViewModel: ObservableObject {
         var avg = 0.0
         barChartUIModel = barChartData.map { barChartData in
             let paddedName = String(repeating: " ", count: maxValueLength - barChartData.name.count + 1) + barChartData.name
-            let mappedValue = (barChartData.value - minValue) / (maxValue - minValue) * 90 + 10
+            var mappedValue = (barChartData.value - minValue) / (maxValue - minValue) * 90 + 10
+            if mappedValue < 0 {
+                mappedValue = 0
+            }
+            if maxValue == minValue {
+                mappedValue = 100.0
+            }
             avg += barChartData.value
             return BarChartData(
                 name: paddedName,

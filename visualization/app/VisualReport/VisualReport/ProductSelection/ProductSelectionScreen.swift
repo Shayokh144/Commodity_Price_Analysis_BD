@@ -11,6 +11,7 @@ struct ProductSelectionScreen: View {
     
     @StateObject private var viewModel: ProductSelectionViewModel
     @State private var showDetails = false
+    @Binding private var navigationPath: NavigationPath
     
     private var nameView: some View {
         ScrollView(.vertical) {
@@ -18,6 +19,15 @@ struct ProductSelectionScreen: View {
                 Button(
                     action: {
                         showDetails = viewModel.selectProduct(givenName: data.name)
+                        if showDetails {
+                            navigationPath.append(
+                                SingleBarViewModelData(
+                                    csvData: viewModel.csvData,
+                                    productName: viewModel.selectedName, 
+                                    quantity: viewModel.selectedQuantity ?? 0.0
+                                )
+                            )
+                        }
                     },
                     label: {
                         HStack(spacing: 16.0) {
@@ -34,46 +44,17 @@ struct ProductSelectionScreen: View {
         }
     }
     
-    private var detailsView: some View {
-        SingleBarScreen(
-            viewModel: SingleBarViewModel(
-                csvData: viewModel.csvData,
-                productName: viewModel.selectedName,
-                quantity: viewModel.selectedQuantity ?? 0.0
-            )
-        )
-    }
-    
-    private var backButton: some View {
-        HStack {
-            Button(
-                action: {
-                    showDetails.toggle()
-                },
-                label: {
-                    Text("< Back")
-                        .font(.system(size: 16.0))
-                }
-            )
-            Spacer()
-        }
-        .padding([.top, .leading])
-    }
-    
     var body: some View {
         VStack(alignment: .leading) {
-            if showDetails {
-                backButton
-                detailsView
-            }
             nameView
-                .opacity(showDetails ? 0.0 : 1.0 )
         }
+        .navigationTitle("Select Product")
         .padding()
     }
     
-    init(viewModel: ProductSelectionViewModel) {
+    init(viewModel: ProductSelectionViewModel, navigationPath: Binding<NavigationPath>) {
         _viewModel = StateObject(wrappedValue: viewModel)
+        _navigationPath = navigationPath
     }
 }
 

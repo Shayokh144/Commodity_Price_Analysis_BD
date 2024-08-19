@@ -12,6 +12,8 @@ final class LineChartViewModel: ObservableObject {
     @Published var uiModels: [LineChartDataSeries]
     @Published var uiFirstDate: Date?
     @Published var uiLastDate: Date?
+    @Published var chartYAxisValues: [Int] = []
+    @Published var chartXAxisValues: [Date] = []
     let viewModelData: LineChartViewModelData
     
     init(lineChartViewModelData: LineChartViewModelData) {
@@ -40,6 +42,27 @@ final class LineChartViewModel: ObservableObject {
             ruleMarkDataList: ruleMarks
         )
         uiModels = [uiModel]
+        
+        // Chart Data
+        let maxValue = Int(viewModelData.lineChartDataList.map { $0.yValue }.max() ?? 0.0) + 20
+        var minValue = Int(viewModelData.lineChartDataList.map { $0.yValue }.min() ?? 0.0) - 20
+        if minValue < 0 {
+            minValue = 0
+        }
+        chartYAxisValues = stride(from: minValue, to: maxValue, by: 20).map { $0 }
+        
+        chartXAxisValues.removeAll()
+        var currentDate = firstDate
+        let calendar = Calendar.current
+        let dayInterval = Int(viewModelData.lineChartDataList.count / 10)
+        while currentDate <= lastDate {
+            chartXAxisValues.append(currentDate)
+            if let nextDate = calendar.date(byAdding: .day, value: dayInterval, to: currentDate) {
+                currentDate = nextDate
+            } else {
+                break
+            }
+        }
     }
     
     private func getRuleMarkList(

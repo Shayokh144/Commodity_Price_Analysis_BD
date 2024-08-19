@@ -9,7 +9,6 @@ import Charts
 import SwiftUI
 
 struct LineChartScreen: View {
-    
     @StateObject private var viewModel: LineChartViewModel
     
     @ViewBuilder private var chartView: some View {
@@ -23,6 +22,8 @@ struct LineChartScreen: View {
                 .foregroundStyle(by: .value("Chart type", dataSeries.type))
                 ForEach($dataSeries.ruleMarkDataList) { $data in
                     RuleMark(y: .value(data.yName, data.yValue))
+                        .foregroundStyle(Color.orange)
+                        .lineStyle(StrokeStyle(lineWidth: 1))
                         .annotation(position: .bottom,
                                     alignment: .bottomLeading) {
                             Text("\(data.ruleMarkName): \(data.yValue.fractionTwoDigitString)")
@@ -30,10 +31,24 @@ struct LineChartScreen: View {
                         }
                 }
             }
+            .chartYAxis{
+                AxisMarks(position: .leading, values: viewModel.chartYAxisValues)
+            }
+            .chartXAxis{
+                AxisMarks(position: .bottom, values: viewModel.chartXAxisValues) { value in
+                    AxisGridLine()
+                    AxisTick()
+                    AxisValueLabel() {
+                        if let date = value.as(Date.self) {
+                            Text(DateFormatter.monthYearShort.string(from: date))
+                        }
+                    }
+                }
+            }
             .chartXScale(
                 domain: firstDate...lastDate
             )
-            .aspectRatio(1, contentMode: .fit)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
     
@@ -75,66 +90,3 @@ struct LineChartScreen: View {
         _viewModel = StateObject(wrappedValue: viewModel)
     }
 }
-
-//struct LineChartScreen: View {
-//
-//    var newData = [PetDataModel]()
-//
-//    var data: [PetDataSeries] {
-//        [PetDataSeries(type: "ABC", petData: newData)]
-//    }
-//    
-//    let firstDate: Date
-//    let lastDate: Date
-//    var body: some View {
-//        Chart(data, id: \.type) { dataSeries in
-//            ForEach(dataSeries.petData) { data in
-//                LineMark(x: .value("Year", data.year, unit: .day),
-//                         y: .value("Population", data.population))
-//            }
-//            .foregroundStyle(by: .value("Pet type", dataSeries.type))
-//            .symbol(by: .value("Pet type", dataSeries.type))
-//            RuleMark(y: .value("Average 1", 1.5))
-//                .annotation(position: .bottom,
-//                            alignment: .bottomLeading) {
-//                    Text("average 1.5")
-//                        .foregroundColor(.orange)
-//                }
-//            RuleMark(y: .value("Average 2", 2.5))
-//                .annotation(position: .bottom,
-//                            alignment: .bottomLeading) {
-//                    Text("average 2.5")
-//                        .foregroundColor(.orange)
-//                }
-//        }
-//        .chartXScale(domain: firstDate...lastDate)
-//        .aspectRatio(1, contentMode: .fit)
-//        .padding()
-//    }
-//    
-//    init() {
-//        for i in 0 ..< 10 {
-//            let date = Calendar.current.date(byAdding: .day, value: i, to: .now) ?? .now
-//            let rep = Double.random(in: 10...100)
-//            newData.append(
-//                .init(year: date, population: rep)
-//            )
-//        }
-//        firstDate = newData[0].year
-//        lastDate = newData[9].year
-//    }
-//}
-//
-//struct PetDataSeries: Identifiable {
-//    let type: String
-//    let petData: [PetDataModel]
-//    var id: String { type }
-//}
-//
-//
-//struct PetDataModel: Identifiable {
-//    
-//    let id = UUID()
-//    let year: Date
-//    let population: Double
-//}

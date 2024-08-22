@@ -25,6 +25,7 @@
 		04DB73752C725FDF0038AEFD /* LineChartDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB73742C725FDF0038AEFD /* LineChartDataModel.swift */; };
 		04DB73772C7265300038AEFD /* LineChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB73762C7265300038AEFD /* LineChartViewModel.swift */; };
 		04DB73792C7346140038AEFD /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB73782C7346140038AEFD /* Double+Extension.swift */; };
+		04DB737B2C748FDE0038AEFD /* OptionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB737A2C748FDE0038AEFD /* OptionPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		04DB73742C725FDF0038AEFD /* LineChartDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartDataModel.swift; sourceTree = "<group>"; };
 		04DB73762C7265300038AEFD /* LineChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewModel.swift; sourceTree = "<group>"; };
 		04DB73782C7346140038AEFD /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		04DB737A2C748FDE0038AEFD /* OptionPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				048B86C82C67E75C008036D4 /* CSVFileReader.swift */,
+				04DB737A2C748FDE0038AEFD /* OptionPickerView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				048B86C32C67D6D8008036D4 /* ProductSelectionViewModel.swift in Sources */,
 				043E74D02BABF77700B9AF91 /* ContentView.swift in Sources */,
 				048B86C12C67D6CB008036D4 /* ProductSelectionScreen.swift in Sources */,
+				04DB737B2C748FDE0038AEFD /* OptionPickerView.swift in Sources */,
 				04DB73752C725FDF0038AEFD /* LineChartDataModel.swift in Sources */,
 				048B86D22C6B58E9008036D4 /* SingleBarViewModel.swift in Sources */,
 				048B86D02C6B58D6008036D4 /* SingleBarScreen.swift in Sources */,

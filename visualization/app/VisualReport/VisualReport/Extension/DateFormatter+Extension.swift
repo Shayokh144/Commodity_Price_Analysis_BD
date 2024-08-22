@@ -36,4 +36,11 @@ extension DateFormatter {
         dateFormatter.dateFormat = "yy-MM"
         return dateFormatter
     }()
+    
+    public static let yearMontDayumber: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.calendar = Calendar(identifier: .gregorian)
+        dateFormatter.dateFormat = "yy-MM-dd"
+        return dateFormatter
+    }()
 }

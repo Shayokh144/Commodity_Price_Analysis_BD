@@ -40,11 +40,22 @@ struct LineChartScreen: View {
                     AxisTick()
                     AxisValueLabel() {
                         if let date = value.as(Date.self) {
-                            Text(DateFormatter.monthYearShort.string(from: date))
+                            if viewModel.selectedChartOption.value == LineChartOption.last2Months.value {
+                                Text(DateFormatter.dayMonthYearShort.string(from: date))
+                                    .rotationEffect(.degrees(-90))
+                                    .padding(.bottom, 20.0)
+                                    .padding(.leading, -16.0)
+                            } else {
+                                Text(DateFormatter.yearMontDayumber.string(from: date))
+                                    .rotationEffect(.degrees(-90))
+                                    .padding(.bottom, 20.0)
+                                    .padding(.leading, -16.0)
+                            }
                         }
                     }
                 }
             }
+            .chartYScale(domain: viewModel.minYValue...viewModel.maxYValue)
             .chartXScale(
                 domain: firstDate...lastDate
             )
@@ -68,6 +79,19 @@ struct LineChartScreen: View {
                 Text(viewModel.viewModelData.currencyUnitText)
                 Spacer()
                 Text(viewModel.viewModelData.dataSource)
+                Spacer()
+                OptionPickerView(
+                    optionList: viewModel.chartOptions,
+                    selectedOption: .init(
+                        get: {
+                            viewModel.selectedChartOption.value
+                        },
+                        set: { newValue in
+                            viewModel.updateSelection(newSelection: newValue)
+                        }
+                    )
+                )
+                .frame(maxWidth: 300.0)
             }
             .font(.system(size: 14.0, weight: .bold))
             .foregroundStyle(Color.purple)

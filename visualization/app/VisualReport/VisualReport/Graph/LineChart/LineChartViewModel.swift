@@ -46,6 +46,9 @@ final class LineChartViewModel: ObservableObject {
             case .last2Months:
                 let last60Elements = Array(viewModelData.lineChartDataList.suffix(60))
                 createUIModelForAllData(dataList: last60Elements)
+            case .last2Weeks:
+                let last14Elements = Array(viewModelData.lineChartDataList.suffix(14))
+                createUIModelForAllData(dataList: last14Elements)
             case .year(let string):
                 let yearData = filterData(forYear: string, from: viewModelData.lineChartDataList)
                 createUIModelForAllData(dataList: yearData)
@@ -127,6 +130,9 @@ final class LineChartViewModel: ObservableObject {
             dateFormat = ""
         } else if selectedChartOption.value == LineChartOption.allMonthlyAverage.value {
             dayInterval = 32
+        } else if selectedChartOption.value == LineChartOption.last2Weeks.value {
+            dayInterval = 2
+            dateFormat = ""
         }
         var currentDate = firstDate
         let calendar = Calendar.current
@@ -202,7 +208,7 @@ struct LineChartViewModelData {
 
 enum LineChartOption {
     
-    case allYear, allMonthlyAverage, last2Months
+    case allYear, allMonthlyAverage, last2Months, last2Weeks
     case year(String)
     
     var value: String {
@@ -213,6 +219,8 @@ enum LineChartOption {
                 "All Monthly Average"
             case .last2Months:
                 "Last 2 Months"
+            case .last2Weeks:
+                "Last 2 Weeks"
             case .year(let string):
                 string
         }
@@ -222,7 +230,8 @@ enum LineChartOption {
         [
             LineChartOption.allYear.value,
             LineChartOption.allMonthlyAverage.value,
-            LineChartOption.last2Months.value
+            LineChartOption.last2Months.value,
+            LineChartOption.last2Weeks.value
         ]
     }
     
@@ -235,6 +244,8 @@ enum LineChartOption {
                 self = .allMonthlyAverage
             case LineChartOption.last2Months.value:
                 self = .last2Months
+            case LineChartOption.last2Weeks.value:
+                self = .last2Weeks
             default:
                 self = .year(value)
         }

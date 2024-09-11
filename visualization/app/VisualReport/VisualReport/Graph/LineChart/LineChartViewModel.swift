@@ -117,7 +117,11 @@ final class LineChartViewModel: ObservableObject {
         if minYValue < 0 {
             minYValue = 0
         }
-        chartYAxisValues = stride(from: minYValue, to: maxYValue, by: 10).map { $0 }
+        var difference = (maxYValue - minYValue) / 16
+//        if difference < 10 {
+//            difference = 10
+//        }
+        chartYAxisValues = stride(from: minYValue, to: maxYValue, by: difference).map { $0 }
         chartXAxisValues.removeAll()
         var dayInterval = Int(dataList.count / 20)
         if dayInterval < 14 {

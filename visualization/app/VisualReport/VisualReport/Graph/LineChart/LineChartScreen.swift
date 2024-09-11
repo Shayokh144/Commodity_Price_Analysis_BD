@@ -40,7 +40,8 @@ struct LineChartScreen: View {
                     AxisTick()
                     AxisValueLabel() {
                         if let date = value.as(Date.self) {
-                            if viewModel.selectedChartOption.value == LineChartOption.last2Months.value {
+                            if viewModel.selectedChartOption.value == LineChartOption.last2Months.value ||
+                                viewModel.selectedChartOption.value == LineChartOption.last2Weeks.value {
                                 Text(DateFormatter.dayMonthYearShort.string(from: date))
                                     .rotationEffect(.degrees(-90))
                                     .padding(.bottom, 20.0)

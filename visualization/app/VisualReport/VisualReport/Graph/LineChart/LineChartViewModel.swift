@@ -18,9 +18,8 @@ final class LineChartViewModel: ObservableObject {
     @Published var chartXAxisValues: [Date] = []
     @Published var chartOptions: [String] = []
     @Published var selectedChartOption: LineChartOption = .allYear
+    @Published var viewModelData: LineChartViewModelData
     private var years: [String] = []
-    
-    let viewModelData: LineChartViewModelData
     
     init(lineChartViewModelData: LineChartViewModelData) {
         uiModels = []
@@ -131,7 +130,7 @@ final class LineChartViewModel: ObservableObject {
         } else if selectedChartOption.value == LineChartOption.allMonthlyAverage.value {
             dayInterval = 32
         } else if selectedChartOption.value == LineChartOption.last2Weeks.value {
-            dayInterval = 2
+            dayInterval = 1
             dateFormat = ""
         }
         var currentDate = firstDate
@@ -144,6 +143,10 @@ final class LineChartViewModel: ObservableObject {
                 break
             }
         }
+        
+        // UPDATE TIME FRAME
+        
+        viewModelData.timeFrame = "\(DateFormatter.dayMonthYearShort.string(from: firstDate)) to \(DateFormatter.dayMonthYearShort.string(from: lastDate))"
         
         // UPDATE UI DATA
         let uiModel = LineChartDataSeries(
@@ -199,7 +202,7 @@ final class LineChartViewModel: ObservableObject {
 struct LineChartViewModelData {
     
     let chartName: String
-    let timeFrame: String
+    var timeFrame: String
     let weightUnitText: String
     let currencyUnitText: String
     let dataSource: String

@@ -2728,3 +2728,6 @@
 06-12-2024  11:42:14    script ends for testing github action
 07-12-2024  11:38:51    script starts for testing github action
 07-12-2024  11:42:13    script ends for testing github action
+08-12-2024  11:38:56    script starts for testing github action
+08-12-2024  11:40:00    Retry for url: rice
+08-12-2024  11:43:12    script ends for testing github action

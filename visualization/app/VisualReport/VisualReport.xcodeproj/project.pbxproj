@@ -20,8 +20,8 @@
 		048B86C62C67E6D0008036D4 /* CSVDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86C52C67E6D0008036D4 /* CSVDataModel.swift */; };
 		048B86C92C67E75C008036D4 /* CSVFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86C82C67E75C008036D4 /* CSVFileReader.swift */; };
 		048B86CC2C67E9CB008036D4 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86CB2C67E9CB008036D4 /* DateFormatter+Extension.swift */; };
-		048B86D02C6B58D6008036D4 /* SingleBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86CF2C6B58D6008036D4 /* SingleBarScreen.swift */; };
-		048B86D22C6B58E9008036D4 /* SingleBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86D12C6B58E9008036D4 /* SingleBarViewModel.swift */; };
+		048B86D02C6B58D6008036D4 /* VisualizationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86CF2C6B58D6008036D4 /* VisualizationScreen.swift */; };
+		048B86D22C6B58E9008036D4 /* VisualizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B86D12C6B58E9008036D4 /* VisualizationViewModel.swift */; };
 		04DB73752C725FDF0038AEFD /* LineChartDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB73742C725FDF0038AEFD /* LineChartDataModel.swift */; };
 		04DB73772C7265300038AEFD /* LineChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB73762C7265300038AEFD /* LineChartViewModel.swift */; };
 		04DB73792C7346140038AEFD /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB73782C7346140038AEFD /* Double+Extension.swift */; };
@@ -43,8 +43,8 @@
 		048B86C52C67E6D0008036D4 /* CSVDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVDataModel.swift; sourceTree = "<group>"; };
 		048B86C82C67E75C008036D4 /* CSVFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVFileReader.swift; sourceTree = "<group>"; };
 		048B86CB2C67E9CB008036D4 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
-		048B86CF2C6B58D6008036D4 /* SingleBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleBarScreen.swift; sourceTree = "<group>"; };
-		048B86D12C6B58E9008036D4 /* SingleBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleBarViewModel.swift; sourceTree = "<group>"; };
+		048B86CF2C6B58D6008036D4 /* VisualizationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationScreen.swift; sourceTree = "<group>"; };
+		048B86D12C6B58E9008036D4 /* VisualizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationViewModel.swift; sourceTree = "<group>"; };
 		04DB73742C725FDF0038AEFD /* LineChartDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartDataModel.swift; sourceTree = "<group>"; };
 		04DB73762C7265300038AEFD /* LineChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewModel.swift; sourceTree = "<group>"; };
 		04DB73782C7346140038AEFD /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
@@ -171,8 +171,8 @@
 		048B86CE2C6B58BE008036D4 /* SingleBar */ = {
 			isa = PBXGroup;
 			children = (
-				048B86CF2C6B58D6008036D4 /* SingleBarScreen.swift */,
-				048B86D12C6B58E9008036D4 /* SingleBarViewModel.swift */,
+				048B86CF2C6B58D6008036D4 /* VisualizationScreen.swift */,
+				048B86D12C6B58E9008036D4 /* VisualizationViewModel.swift */,
 			);
 			path = SingleBar;
 			sourceTree = "<group>";
@@ -258,8 +258,8 @@
 				048B86C12C67D6CB008036D4 /* ProductSelectionScreen.swift in Sources */,
 				04DB737B2C748FDE0038AEFD /* OptionPickerView.swift in Sources */,
 				04DB73752C725FDF0038AEFD /* LineChartDataModel.swift in Sources */,
-				048B86D22C6B58E9008036D4 /* SingleBarViewModel.swift in Sources */,
-				048B86D02C6B58D6008036D4 /* SingleBarScreen.swift in Sources */,
+				048B86D22C6B58E9008036D4 /* VisualizationViewModel.swift in Sources */,
+				048B86D02C6B58D6008036D4 /* VisualizationScreen.swift in Sources */,
 				048B86C62C67E6D0008036D4 /* CSVDataModel.swift in Sources */,
 				043EE2FE2C6F5E0B00F60278 /* LineChartScreen.swift in Sources */,
 				04DB73792C7346140038AEFD /* Double+Extension.swift in Sources */,

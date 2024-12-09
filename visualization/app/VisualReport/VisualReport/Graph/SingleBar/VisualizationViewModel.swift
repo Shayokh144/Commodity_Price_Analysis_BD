@@ -1,5 +1,5 @@
 //
-//  SingleBarViewModel.swift
+//  VisualizationViewModel.swift
 //  VisualReport
 //
 //  Created by Taher's nimble macbook on 13/8/24.
@@ -14,7 +14,7 @@ struct SingleBarViewModelData: Hashable {
     let quantity: Double
 }
 
-final class SingleBarViewModel: ObservableObject {
+final class VisualizationViewModel: ObservableObject {
     
     @Published private(set) var barChartData: [BarChartData] = []
     @Published private(set) var timeframe: String = ""

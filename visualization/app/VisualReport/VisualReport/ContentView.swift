@@ -63,7 +63,7 @@ struct ContentView: View {
                 ProductSelectionScreen(viewModel: ProductSelectionViewModel(csvData: data), navigationPath: $navigationPath)
             }
             .navigationDestination(for: SingleBarViewModelData.self) { data in
-                SingleBarScreen(viewModel: SingleBarViewModel(singleBarViewModelData: data))
+                VisualizationScreen(viewModel: VisualizationViewModel(singleBarViewModelData: data))
             }
         }
     }

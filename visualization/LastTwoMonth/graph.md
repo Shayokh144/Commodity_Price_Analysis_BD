@@ -8,7 +8,7 @@
 
 <img src="2.png" alt="docker host"/>
 
-# Deshi Peyaj
+# Onion
 
 <img src="3.png" alt="docker host"/>
 
@@ -16,26 +16,18 @@
 
 <img src="4.png" alt="docker host"/>
 
-# Kacha Morich
+# Green Chilli
 
 <img src="5.png" alt="docker host"/>
 
-# Whole Hilsha Fish
+# Beef
 
 <img src="6.png" alt="docker host"/>
 
-# Dheros (Ladies Finger)
+# Soyabean oil
 
 <img src="7.png" alt="docker host"/>
 
-# Kacha Pepe
+# Miniket Rice
 
 <img src="8.png" alt="docker host"/>
-
-# Lomba Kalo Begun
-
-<img src="9.png" alt="docker host"/>
-
-# Deshi Shosha
-
-<img src="10.png" alt="docker host"/>

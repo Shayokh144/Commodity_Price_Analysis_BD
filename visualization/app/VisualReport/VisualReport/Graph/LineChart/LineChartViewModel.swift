@@ -117,7 +117,7 @@ final class LineChartViewModel: ObservableObject {
         if minYValue < 0 {
             minYValue = 0
         }
-        var difference = (maxYValue - minYValue) / 16
+        let difference = (maxYValue - minYValue) / 16
 //        if difference < 10 {
 //            difference = 10
 //        }

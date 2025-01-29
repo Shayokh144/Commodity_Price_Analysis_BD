@@ -32,7 +32,7 @@ struct LineChartScreen: View {
                 }
             }
             .chartYAxis{
-                AxisMarks(position: .leading, values: viewModel.chartYAxisValues)
+                AxisMarks(position: .trailing, values: viewModel.chartYAxisValues)
             }
             .chartXAxis{
                 AxisMarks(position: .bottom, values: viewModel.chartXAxisValues) { value in

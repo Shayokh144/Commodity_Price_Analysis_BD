@@ -1,5 +1,5 @@
 //
-//  SingleBarScreen.swift
+//  VisualizationScreen.swift
 //  VisualReport
 //
 //  Created by Taher's nimble macbook on 13/8/24.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct SingleBarScreen: View {
+struct VisualizationScreen: View {
     
-    @StateObject private var viewModel: SingleBarViewModel
+    @StateObject private var viewModel: VisualizationViewModel
     
     
     private var barChartView: some View {
@@ -24,10 +24,13 @@ struct SingleBarScreen: View {
             LineChartScreen(viewModel: viewModel.lineChartViewModel)
                 .navigationTitle("Line chart")
                 .tabItem { Text("Line Chart") }
+            CompareTimeScreen(viewModel: viewModel.compareTimeViewModel)
+                .navigationTitle("Compare Time")
+                .tabItem { Text("Compare Time") }
         }
     }
     
-    init(viewModel: SingleBarViewModel) {
+    init(viewModel: VisualizationViewModel) {
         _viewModel = StateObject(wrappedValue: viewModel)
     }
 }

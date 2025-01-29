@@ -12,13 +12,26 @@ struct ProductSelectionScreen: View {
     @StateObject private var viewModel: ProductSelectionViewModel
     @State private var showDetails = false
     @Binding private var navigationPath: NavigationPath
+    @State private var nameSearchText = ""
+    
+    var nameSearchResults: Set<ProductSelectionViewModel.ProductDetails> {
+        if nameSearchText.isEmpty {
+            return viewModel.productDetails
+        } else {
+            return viewModel.productDetails
+                .filter { $0.name.lowercased().contains(nameSearchText.lowercased()) }
+        }
+    }
     
     private var nameView: some View {
         ScrollView(.vertical) {
-            ForEach(viewModel.productDetails.sorted(by: <), id: \.self) { data in
+            ForEach(nameSearchResults.sorted(by: <), id: \.self) { data in
                 Button(
                     action: {
-                        showDetails = viewModel.selectProduct(givenName: data.name)
+                        showDetails = viewModel.selectProduct(
+                            givenName: data.name,
+                            givenQuantity: data.quantity
+                        )
                         if showDetails {
                             navigationPath.append(
                                 SingleBarViewModelData(
@@ -49,6 +62,10 @@ struct ProductSelectionScreen: View {
             nameView
         }
         .navigationTitle("Select Product")
+        .searchable(
+            text: $nameSearchText,
+            prompt: "write name here"
+        )
         .padding()
     }
     

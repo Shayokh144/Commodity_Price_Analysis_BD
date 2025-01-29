@@ -24,6 +24,9 @@ struct VisualizationScreen: View {
             LineChartScreen(viewModel: viewModel.lineChartViewModel)
                 .navigationTitle("Line chart")
                 .tabItem { Text("Line Chart") }
+            CompareTimeScreen(viewModel: viewModel.compareTimeViewModel)
+                .navigationTitle("Compare Time")
+                .tabItem { Text("Compare Time") }
         }
     }
     

@@ -33,11 +33,12 @@ final class ProductSelectionViewModel: ObservableObject {
         populateNameData()
     }
     
-    func selectProduct(givenName: String) -> Bool {
+    func selectProduct(givenName: String, givenQuantity: String) -> Bool {
         let rows = csvData.rows
         for row in rows {
-            if let productName = row["product_name"] {
-                if productName.lowercased() == givenName {
+            if let productName = row["product_name"],
+               let productQuantity = row["weight_raw"] {
+                if productName.lowercased() == givenName.lowercased() && productQuantity == givenQuantity {
                     selectedName = productName
                     selectedQuantity = Double(row["weight_value"] ?? "0") ?? 0
                     return true

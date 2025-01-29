@@ -23,6 +23,15 @@ final class VisualizationViewModel: ObservableObject {
     let singleBarViewModelData: SingleBarViewModelData
     private var lineChartDataModelList: [LineChartDataModel] = []
     
+    var compareTimeViewModel: CompareTimeViewModel {
+        .init(
+            lineChartDataList: lineChartDataModelList,
+            productName: singleBarViewModelData.productName,
+            quantity: "\(singleBarViewModelData.quantity) \(quantityUnit)",
+            timeFrame: timeframe
+        )
+    }
+    
     init(singleBarViewModelData: SingleBarViewModelData) {
         self.singleBarViewModelData = singleBarViewModelData
         populateData()

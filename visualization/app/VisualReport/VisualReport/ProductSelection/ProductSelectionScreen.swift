@@ -28,7 +28,10 @@ struct ProductSelectionScreen: View {
             ForEach(nameSearchResults.sorted(by: <), id: \.self) { data in
                 Button(
                     action: {
-                        showDetails = viewModel.selectProduct(givenName: data.name)
+                        showDetails = viewModel.selectProduct(
+                            givenName: data.name,
+                            givenQuantity: data.quantity
+                        )
                         if showDetails {
                             navigationPath.append(
                                 SingleBarViewModelData(

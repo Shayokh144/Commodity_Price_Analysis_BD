@@ -16,6 +16,13 @@ extension DateFormatter {
         return dateFormatter
     }()
     
+    public static let dayMonth: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.calendar = Calendar(identifier: .gregorian)
+        dateFormatter.dateFormat = "dd-MM"
+        return dateFormatter
+    }()
+    
     public static let dayMonthYearShort: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.calendar = Calendar(identifier: .gregorian)

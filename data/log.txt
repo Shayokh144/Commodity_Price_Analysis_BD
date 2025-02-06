@@ -2849,3 +2849,8 @@
 04-02-2025  11:43:07    script ends for testing github action
 05-02-2025  11:38:46    script starts for testing github action
 05-02-2025  11:43:12    script ends for testing github action
+06-02-2025  11:38:27    script starts for testing github action
+06-02-2025  11:41:21    EXception occured: HTTP Error 502: Bad Gateway
+06-02-2025  11:41:21    Data not found for url = https://chaldal.com/meat-new
+06-02-2025  11:41:31    Retry for url: meat
+06-02-2025  11:43:12    script ends for testing github action

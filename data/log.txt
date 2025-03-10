@@ -2984,3 +2984,21 @@
 08-03-2025  11:42:09    script ends for testing github action
 09-03-2025  11:37:49    script starts for testing github action
 09-03-2025  11:41:17    script ends for testing github action
+10-03-2025  11:38:49    script starts for testing github action
+10-03-2025  11:41:46    EXception occured: IncompleteRead(654754 bytes read)
+10-03-2025  11:41:46    Data not found for url = https://chaldal.com/spices
+10-03-2025  11:41:56    Retry for url: spices
+10-03-2025  11:45:50    EXception occured: IncompleteRead(1081024 bytes read)
+10-03-2025  11:45:50    Data not found for url = https://chaldal.com/spices
+10-03-2025  11:47:28    EXception occured: IncompleteRead(7534 bytes read)
+10-03-2025  11:47:28    Data not found for url = https://chaldal.com/eggs
+10-03-2025  11:47:38    Retry for url: egg
+10-03-2025  11:49:15    EXception occured: IncompleteRead(114030 bytes read)
+10-03-2025  11:49:15    Data not found for url = https://chaldal.com/eggs
+10-03-2025  11:51:20    EXception occured: IncompleteRead(114023 bytes read)
+10-03-2025  11:51:20    Data not found for url = https://chaldal.com/powder-milk
+10-03-2025  11:51:30    Retry for url: powder milk
+10-03-2025  11:58:11    EXception occured: IncompleteRead(19811 bytes read)
+10-03-2025  11:58:11    Data not found for url = https://chaldal.com/chicken-poultry
+10-03-2025  11:58:21    Retry for url: chicken
+10-03-2025  12:00:15    script ends for testing github action

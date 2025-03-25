@@ -3030,3 +3030,100 @@
 23-03-2025  11:42:28    script ends for testing github action
 24-03-2025  11:39:00    script starts for testing github action
 24-03-2025  11:42:52    script ends for testing github action
+25-03-2025  11:39:06    script starts for testing github action
+25-03-2025  11:43:45    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  11:43:45    Data not found for url = https://chaldal.com/oil
+25-03-2025  11:43:55    Retry for url: oil
+25-03-2025  11:48:24    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  11:48:24    Data not found for url = https://chaldal.com/oil
+25-03-2025  11:53:02    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  11:53:02    Data not found for url = https://chaldal.com/rices
+25-03-2025  11:53:12    Retry for url: rice
+25-03-2025  11:57:41    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  11:57:41    Data not found for url = https://chaldal.com/rices
+25-03-2025  12:02:19    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:02:19    Data not found for url = https://chaldal.com/dal-or-lentil
+25-03-2025  12:02:29    Retry for url: lentil
+25-03-2025  12:06:58    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:06:58    Data not found for url = https://chaldal.com/dal-or-lentil
+25-03-2025  12:11:36    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:11:36    Data not found for url = https://chaldal.com/spices
+25-03-2025  12:11:46    Retry for url: spices
+25-03-2025  12:16:15    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:16:15    Data not found for url = https://chaldal.com/spices
+25-03-2025  12:18:38    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:18:38    Data not found for url = https://chaldal.com/flour
+25-03-2025  12:18:48    Retry for url: flour
+25-03-2025  12:23:17    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:23:17    Data not found for url = https://chaldal.com/flour
+25-03-2025  12:27:55    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:27:55    Data not found for url = https://chaldal.com/eggs
+25-03-2025  12:28:05    Retry for url: egg
+25-03-2025  12:30:19    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:30:19    Data not found for url = https://chaldal.com/eggs
+25-03-2025  12:34:57    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:34:57    Data not found for url = https://chaldal.com/powder-milk
+25-03-2025  12:35:07    Retry for url: powder milk
+25-03-2025  12:39:36    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:39:36    Data not found for url = https://chaldal.com/powder-milk
+25-03-2025  12:44:14    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:44:14    Data not found for url = https://chaldal.com/liquid-uht-milk
+25-03-2025  12:44:24    Retry for url: liquid milk
+25-03-2025  12:48:53    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:48:53    Data not found for url = https://chaldal.com/liquid-uht-milk
+25-03-2025  12:53:31    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:53:31    Data not found for url = https://chaldal.com/fresh-fruit
+25-03-2025  12:53:41    Retry for url: fruits
+25-03-2025  12:58:10    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  12:58:10    Data not found for url = https://chaldal.com/fresh-fruit
+25-03-2025  13:02:48    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:02:48    Data not found for url = https://chaldal.com/fresh-vegetable
+25-03-2025  13:02:58    Retry for url: vegetable
+25-03-2025  13:07:27    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:07:27    Data not found for url = https://chaldal.com/fresh-vegetable
+25-03-2025  13:09:50    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:09:50    Data not found for url = https://chaldal.com/chicken-poultry
+25-03-2025  13:10:00    Retry for url: chicken
+25-03-2025  13:14:29    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:14:29    Data not found for url = https://chaldal.com/chicken-poultry
+25-03-2025  13:19:07    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:19:07    Data not found for url = https://chaldal.com/meat-new
+25-03-2025  13:19:17    Retry for url: meat
+25-03-2025  13:23:46    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:23:46    Data not found for url = https://chaldal.com/meat-new
+25-03-2025  13:28:24    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:28:24    Data not found for url = https://chaldal.com/frozen-fish
+25-03-2025  13:28:34    Retry for url: frozen fish
+25-03-2025  13:33:03    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:33:03    Data not found for url = https://chaldal.com/frozen-fish
+25-03-2025  13:37:41    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:37:41    Data not found for url = https://chaldal.com/dried-fish
+25-03-2025  13:37:51    Retry for url: dried fish
+25-03-2025  13:42:20    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:42:20    Data not found for url = https://chaldal.com/dried-fish
+25-03-2025  13:46:58    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:46:58    Data not found for url = https://chaldal.com/milk-juice-drinks
+25-03-2025  13:47:08    Retry for url: baby milk
+25-03-2025  13:51:37    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:51:37    Data not found for url = https://chaldal.com/milk-juice-drinks
+25-03-2025  13:56:15    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:56:15    Data not found for url = https://chaldal.com/toddler-food
+25-03-2025  13:56:25    Retry for url: other baby food
+25-03-2025  13:58:39    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  13:58:39    Data not found for url = https://chaldal.com/toddler-food
+25-03-2025  14:03:17    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  14:03:17    Data not found for url = https://chaldal.com/newborn-2
+25-03-2025  14:03:27    Retry for url: diapars smallest size
+25-03-2025  14:07:56    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  14:07:56    Data not found for url = https://chaldal.com/newborn-2
+25-03-2025  14:12:34    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  14:12:34    Data not found for url = https://chaldal.com/small-2
+25-03-2025  14:12:44    Retry for url: diapars small size
+25-03-2025  14:17:13    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  14:17:13    Data not found for url = https://chaldal.com/small-2
+25-03-2025  14:21:51    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  14:21:51    Data not found for url = https://chaldal.com/large-2
+25-03-2025  14:22:01    Retry for url: diapars large size
+25-03-2025  14:24:15    EXception occured: <urlopen error [Errno 110] Connection timed out>
+25-03-2025  14:24:15    Data not found for url = https://chaldal.com/large-2
+25-03-2025  14:24:22    script ends for testing github action

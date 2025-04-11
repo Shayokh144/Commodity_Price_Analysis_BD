@@ -3213,3 +3213,23 @@
 10-04-2025  11:45:48    Retry for url: diapars small size
 10-04-2025  11:46:11    Retry for url: diapars large size
 10-04-2025  11:46:21    script ends for testing github action
+11-04-2025  11:39:01    script starts for testing github action
+11-04-2025  11:39:26    Retry for url: oil
+11-04-2025  11:39:49    Retry for url: rice
+11-04-2025  11:40:17    Retry for url: lentil
+11-04-2025  11:40:40    Retry for url: spices
+11-04-2025  11:41:09    Retry for url: flour
+11-04-2025  11:41:48    Retry for url: powder milk
+11-04-2025  11:42:16    Retry for url: liquid milk
+11-04-2025  11:42:50    Retry for url: fruits
+11-04-2025  11:43:24    Retry for url: vegetable
+11-04-2025  11:43:52    Retry for url: chicken
+11-04-2025  11:44:26    Retry for url: meat
+11-04-2025  11:44:54    Retry for url: frozen fish
+11-04-2025  11:45:27    Retry for url: dried fish
+11-04-2025  11:45:56    Retry for url: baby milk
+11-04-2025  11:46:24    Retry for url: other baby food
+11-04-2025  11:46:52    Retry for url: diapars smallest size
+11-04-2025  11:47:16    Retry for url: diapars small size
+11-04-2025  11:47:39    Retry for url: diapars large size
+11-04-2025  11:47:49    script ends for testing github action

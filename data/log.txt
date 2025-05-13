@@ -3316,3 +3316,11 @@
 11-05-2025  11:42:52    script ends for testing github action
 12-05-2025  11:40:00    script starts for testing github action
 12-05-2025  11:43:33    script ends for testing github action
+13-05-2025  11:40:51    script starts for testing github action
+13-05-2025  11:43:31    EXception occured: IncompleteRead(621969 bytes read)
+13-05-2025  11:43:31    Data not found for url = https://chaldal.com/dal-or-lentil
+13-05-2025  11:43:41    Retry for url: lentil
+13-05-2025  11:46:50    EXception occured: IncompleteRead(458087 bytes read)
+13-05-2025  11:46:50    Data not found for url = https://chaldal.com/powder-milk
+13-05-2025  11:47:00    Retry for url: powder milk
+13-05-2025  11:49:30    script ends for testing github action

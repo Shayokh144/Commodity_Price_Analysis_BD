@@ -3334,3 +3334,8 @@
 17-05-2025  11:42:52    script ends for testing github action
 18-05-2025  11:39:24    script starts for testing github action
 18-05-2025  11:43:04    script ends for testing github action
+19-05-2025  11:40:21    script starts for testing github action
+19-05-2025  11:41:38    EXception occured: HTTP Error 502: Bad Gateway
+19-05-2025  11:41:38    Data not found for url = https://chaldal.com/eggs
+19-05-2025  11:41:48    Retry for url: egg
+19-05-2025  11:44:32    script ends for testing github action

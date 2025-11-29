@@ -3731,3 +3731,8 @@
 28-11-2025  11:44:10    Data not found for url = https://chaldal.com/toddler-food
 28-11-2025  11:44:20    Retry for url: other baby food
 28-11-2025  11:45:01    script ends for testing github action
+29-11-2025  11:39:44    script starts for testing github action
+29-11-2025  11:42:31    EXception occured: HTTP Error 504: Gateway Time-out
+29-11-2025  11:42:31    Data not found for url = https://chaldal.com/chicken-poultry
+29-11-2025  11:42:41    Retry for url: chicken
+29-11-2025  11:44:09    script ends for testing github action

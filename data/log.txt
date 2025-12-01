@@ -3738,3 +3738,8 @@
 29-11-2025  11:44:09    script ends for testing github action
 30-11-2025  11:39:34    script starts for testing github action
 30-11-2025  11:42:57    script ends for testing github action
+01-12-2025  11:42:16    script starts for testing github action
+01-12-2025  11:46:26    EXception occured: HTTP Error 504: Gateway Time-out
+01-12-2025  11:46:26    Data not found for url = https://chaldal.com/large-2
+01-12-2025  11:46:36    Retry for url: diapars large size
+01-12-2025  11:46:46    script ends for testing github action

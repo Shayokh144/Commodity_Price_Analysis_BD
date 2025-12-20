@@ -3780,3 +3780,8 @@
 18-12-2025  11:46:41    script ends for testing github action
 19-12-2025  11:42:12    script starts for testing github action
 19-12-2025  11:45:30    script ends for testing github action
+20-12-2025  11:39:24    script starts for testing github action
+20-12-2025  11:43:03    EXception occured: IncompleteRead(0 bytes read)
+20-12-2025  11:43:03    Data not found for url = https://chaldal.com/dried-fish
+20-12-2025  11:43:13    Retry for url: dried fish
+20-12-2025  11:44:50    script ends for testing github action

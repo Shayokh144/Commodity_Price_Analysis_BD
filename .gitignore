@@ -49,3 +49,9 @@ visualization/app/VisualReport/VisualReport.xcodeproj/project.xcworkspace/xcuser
 # Extra2
 visualization/app/VisualReport/VisualReport.xcodeproj/xcuserdata/nimble.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
 
+# VENV
+.venv
+
+# DEBUG
+data/debug
+

@@ -13,16 +13,59 @@ import csv
 from datetime import datetime
 import os
 
-def get_product_data(productPageUrl):
-    productData = []
-    shouldRetry = False
-    date, time = (get_current_date_time())
-    LOG_DATA = []
+def _fetch_html(productPageUrl):
+    hdr = {'User-Agent': 'Mozilla/5.0'}
+    req = Request(productPageUrl, headers=hdr)
+    response = urlopen(req)
+    statusCode = response.getcode()
+    html = response.read().decode("utf-8", errors="ignore")
+    return statusCode, html
+
+
+def _fetch_rendered_html(productPageUrl, log_data):
     try:
-        hdr = {'User-Agent': 'Mozilla/5.0'}
-        req = Request(productPageUrl, headers=hdr)
-        response = urlopen(req)
-        statusCode = response.getcode()
+        from playwright.sync_api import sync_playwright
+    except Exception as e:
+        log_data.append("Playwright not installed: " + str(e))
+        return None
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
+            page = browser.new_page()
+            page.set_extra_http_headers({
+                "User-Agent": "Mozilla/5.0",
+                "Accept-Language": "en-US,en;q=0.9"
+            })
+            page.goto(productPageUrl, wait_until="networkidle", timeout=60000)
+            # Give the app time to render products after initial load.
+            try:
+                page.wait_for_selector("div.productV2Catalog, div.product", timeout=10000)
+            except Exception:
+                log_data.append("No product selector visible after 10s")
+            # Some categories lazy-load; trigger scroll a few times.
+            for _ in range(3):
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                page.wait_for_timeout(2000)
+            page.evaluate("window.scrollTo(0, 0)")
+            page.wait_for_timeout(2000)
+            html = page.content()
+            browser.close()
+            return html
+    except Exception as e:
+        log_data.append("Playwright render failed: " + str(e))
+        return None
+
+
+def _extract_products_from_html(html, date, time):
+    productData = []
+    hasRealProduct = False
+    soupObject = BeautifulSoup(html, "lxml")
+    productDivs = soupObject.find_all("div", {"class": "product"})
+    if len(productDivs) == 0:
+        productDivs = soupObject.find_all("div", {"class": "productV2Catalog"})
+    loadingOnly = False
+    for div in productDivs:
+        missingDataCount = 0
         nameText = ""
         weightText = ""
         priceRawValue = ""
@@ -31,76 +74,140 @@ def get_product_data(productPageUrl):
         discountPriceText = ""
         weightValue = ""
         weightUnit = ""
-        #LOG_DATA.append("status code: "+ str(statusCode) + " for url: "+productPageUrl)
-        if statusCode == 200:
-            soupObject = BeautifulSoup(response, "lxml")
-            productDivs = soupObject.find_all("div",{"class":"product"})
-            for div in productDivs:
-                missingDataCount = 0
-                try:
-                    nameText = div.find("div",{"class":"name"}).get_text()
-                except:
-                    nameText = ""
-                    missingDataCount += 1
-                try:
-                    weightText = div.find("div",{"class":"subText"}).get_text()
-                    weightList = weightText.split()
-                    if len(weightList) == 2:
-                        weightValue = weightList[0]
-                        weightUnit = weightList[1]
-                    if len(weightList) == 1:
-                        weightValue = "1"
-                        weightUnit = weightText
-                except:
-                    weightText = ""
-                    weightValue = ""
-                    weightUnit = ""
-                    missingDataCount += 1
-                try:
-                    priceRawValue = div.find("div",{"class":"price"}).get_text()
-                    priceRawValue = priceRawValue.replace(',','')
-                    priceStr = re.findall(r'\d+', priceRawValue)
-                    priceText = str(sum(map(int, priceStr)))
-                except:
-                    missingDataCount += 1
-                    priceRawValue = ""
-                    priceText = ""
-                try:
-                    discountPriceRawValue = div.find("div",{"class":"discountedPrice"}).get_text()
-                    discountPriceText = re.sub('[^.0-9]','', discountPriceRawValue)
-                except:
-                    discountPriceRawValue = ""
-                    discountPriceText = ""
-                data = [
-                    nameText, 
-                    weightText, 
-                    weightValue, 
-                    weightUnit, 
-                    priceRawValue, 
-                    priceText, 
-                    discountPriceRawValue, 
-                    discountPriceText,
-                    date,
-                    time
-                    ]
-                dataStr = ' '.join(data)
-                dataStr = dataStr.lower()
-                if "loading more" not in dataStr and missingDataCount < 2:
-                    productData.append(data)
-                #LOG_DATA.append(' '.join(data))
+        try:
+            nameText = div.find("div", {"class": "name"}).get_text()
+        except:
+            nameText = ""
+            missingDataCount += 1
+        if nameText == "":
+            try:
+                nameText = div.find("div", {"class": "pvName"}).get_text()
+            except:
                 nameText = ""
-                weightText = ""
-                priceText = ""
-                priceRawValue = ""
-                discountPriceText = ""
+                missingDataCount += 1
+        try:
+            weightText = div.find("div", {"class": "subText"}).get_text()
+            weightMatch = re.search(r'(\d+(?:\.\d+)?)\s*([a-zA-Z]+)', weightText)
+            if weightMatch:
+                weightValue = weightMatch.group(1)
+                weightUnit = weightMatch.group(2)
+                weightText = weightValue + " " + weightUnit
+            else:
+                weightList = weightText.split()
+                if len(weightList) == 2:
+                    weightValue = weightList[0]
+                    weightUnit = weightList[1]
+                if len(weightList) == 1:
+                    weightValue = "1"
+                    weightUnit = weightText
+        except:
+            weightText = ""
+            weightValue = ""
+            weightUnit = ""
+            missingDataCount += 1
+        try:
+            priceRawValue = div.find("div", {"class": "price"}).get_text()
+            priceText = re.sub('[^0-9]', '', priceRawValue)
+        except:
+            missingDataCount += 1
+            priceRawValue = ""
+            priceText = ""
+        try:
+            discountPriceRawValue = div.find("div", {"class": "discountedPrice"}).get_text()
+            nums = re.findall(r'\d+', discountPriceRawValue.replace(',', ''))
+            discountPriceText = nums[0] if len(nums) > 0 else ""
+        except:
+            discountPriceRawValue = ""
+            discountPriceText = ""
+        if discountPriceRawValue == "":
+            try:
+                discountPriceRawValue = div.find("div", {"class": "productV2discountedPrice"}).get_text()
+                nums = re.findall(r'\d+', discountPriceRawValue.replace(',', ''))
+                discountPriceText = nums[0] if len(nums) > 0 else ""
+            except:
                 discountPriceRawValue = ""
-                weightValue = ""
-                weightUnit = ""
+                discountPriceText = ""
+        data = [
+            nameText,
+            weightText,
+            weightValue,
+            weightUnit,
+            priceRawValue,
+            priceText,
+            discountPriceRawValue,
+            discountPriceText,
+            date,
+            time
+            ]
+        dataStr = ' '.join(data).lower()
+        if "loading more" not in dataStr and missingDataCount < 2:
+            productData.append(data)
+            hasRealProduct = True
+        if "loading more" in dataStr and missingDataCount >= 1:
+            loadingOnly = True
+    return productData, len(productDivs), hasRealProduct, loadingOnly
+
+
+def _slug_from_url(url):
+    slug = re.sub(r'^https?://', '', url)
+    slug = re.sub(r'[^a-zA-Z0-9]+', '_', slug)
+    return slug.strip('_')
+
+
+def _save_debug_html(html, filename):
+    debugDir = "./data/debug"
+    if os.path.isdir(debugDir) == False:
+        os.makedirs(debugDir, exist_ok=True)
+    filePath = os.path.join(debugDir, filename)
+    with open(filePath, 'w', encoding='UTF8') as f:
+        f.write(html)
+        f.close()
+    return filePath
+
+
+def get_product_data(productPageUrl, urlLabel = ""):
+    productData = []
+    shouldRetry = False
+    date, time = (get_current_date_time())
+    LOG_DATA = []
+    try:
+        statusCode, html = _fetch_html(productPageUrl)
+        if statusCode == 200:
+            productData, productDivCount, hasRealProduct, loadingOnly = _extract_products_from_html(
+                html, date, time
+            )
+            LOG_DATA.append(
+                "Static parse: product_divs=" + str(productDivCount) +
+                " real_products=" + str(len(productData)) +
+                " loading_only=" + str(loadingOnly)
+            )
+            if productDivCount == 0 or hasRealProduct == False:
+                LOG_DATA.append("Static HTML had no products, trying rendered HTML")
+                rendered_html = _fetch_rendered_html(productPageUrl, LOG_DATA)
+                if rendered_html:
+                    productData, renderDivs, renderHasReal, renderLoadingOnly = _extract_products_from_html(
+                        rendered_html, date, time
+                    )
+                    LOG_DATA.append(
+                        "Rendered parse: product_divs=" + str(renderDivs) +
+                        " real_products=" + str(len(productData)) +
+                        " loading_only=" + str(renderLoadingOnly)
+                    )
+                    if renderHasReal == False:
+                        debugName = "rendered_" + _slug_from_url(productPageUrl) + ".html"
+                        debugPath = _save_debug_html(rendered_html, debugName)
+                        LOG_DATA.append("Rendered HTML saved: " + debugPath)
+                else:
+                    LOG_DATA.append("Rendered HTML not available")
+            if urlLabel != "":
+                LOG_DATA.append("Data rows for " + urlLabel + ": " + str(len(productData)))
+        else:
+            LOG_DATA.append("Non-200 status: " + str(statusCode))
     except Exception as e:
         shouldRetry = True
         LOG_DATA.append("EXception occured: " + str(e))
         LOG_DATA.append("Data not found for url = " + productPageUrl)
-    
+
     write_log(LOG_DATA)
     return productData, shouldRetry
 
@@ -180,12 +287,12 @@ def main():
     urls = read_data_from_csv(urlListFilePath)
     for url in urls:
         filePath = create_new_csv_file(parentDir, url[0], headers)
-        productData, shouldRetry = get_product_data(url[2])
+        productData, shouldRetry = get_product_data(url[2], url[0])
         if shouldRetry == True or len(productData) == 0:
             sleep(10)
             retryLog = "Retry for url: " + str(url[0])
             write_log([retryLog])
-            productData, shouldRetry = get_product_data(url[2])
+            productData, shouldRetry = get_product_data(url[2], url[0])
         add_new_data_in_csv(filePath, productData)
         sleep(7)
 

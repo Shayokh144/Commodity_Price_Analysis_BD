@@ -5958,3 +5958,56 @@ Call log:
 02-03-2026  04:07:11    Static parse: product_divs=28 real_products=28 loading_only=False
 02-03-2026  04:07:11    Data rows for diapars large size: 28
 02-03-2026  04:07:18    script ends for testing github action
+03-03-2026  04:03:34    script starts for testing github action
+03-03-2026  04:04:02    Static parse: product_divs=1 real_products=0 loading_only=True
+03-03-2026  04:04:02    Static HTML had no products, trying rendered HTML
+03-03-2026  04:04:02    Rendered parse: product_divs=60 real_products=60 loading_only=False
+03-03-2026  04:04:02    Data rows for oil: 60
+03-03-2026  04:04:12    Static parse: product_divs=50 real_products=50 loading_only=False
+03-03-2026  04:04:12    Data rows for rice: 50
+03-03-2026  04:04:22    Static parse: product_divs=25 real_products=25 loading_only=False
+03-03-2026  04:04:22    Data rows for lentil: 25
+03-03-2026  04:04:49    Static parse: product_divs=1 real_products=0 loading_only=True
+03-03-2026  04:04:49    Static HTML had no products, trying rendered HTML
+03-03-2026  04:04:49    Rendered parse: product_divs=84 real_products=84 loading_only=False
+03-03-2026  04:04:49    Data rows for spices: 84
+03-03-2026  04:04:59    Static parse: product_divs=30 real_products=30 loading_only=False
+03-03-2026  04:04:59    Data rows for flour: 30
+03-03-2026  04:05:08    Static parse: product_divs=10 real_products=10 loading_only=False
+03-03-2026  04:05:08    Data rows for egg: 10
+03-03-2026  04:05:18    Static parse: product_divs=34 real_products=34 loading_only=False
+03-03-2026  04:05:18    Data rows for powder milk: 34
+03-03-2026  04:05:28    Static parse: product_divs=33 real_products=33 loading_only=False
+03-03-2026  04:05:28    Data rows for liquid milk: 33
+03-03-2026  04:05:42    Static parse: product_divs=30 real_products=30 loading_only=False
+03-03-2026  04:05:42    Data rows for fruits: 30
+03-03-2026  04:06:05    Static parse: product_divs=1 real_products=0 loading_only=True
+03-03-2026  04:06:05    Static HTML had no products, trying rendered HTML
+03-03-2026  04:06:05    Rendered parse: product_divs=91 real_products=91 loading_only=False
+03-03-2026  04:06:05    Data rows for vegetable: 91
+03-03-2026  04:06:15    Static parse: product_divs=25 real_products=25 loading_only=False
+03-03-2026  04:06:15    Data rows for chicken: 25
+03-03-2026  04:06:44    Static parse: product_divs=1 real_products=0 loading_only=True
+03-03-2026  04:06:44    Static HTML had no products, trying rendered HTML
+03-03-2026  04:06:44    Rendered parse: product_divs=55 real_products=55 loading_only=False
+03-03-2026  04:06:44    Data rows for meat: 55
+03-03-2026  04:07:08    Static parse: product_divs=1 real_products=0 loading_only=True
+03-03-2026  04:07:08    Static HTML had no products, trying rendered HTML
+03-03-2026  04:07:08    Rendered parse: product_divs=59 real_products=59 loading_only=False
+03-03-2026  04:07:08    Data rows for frozen fish: 59
+03-03-2026  04:07:21    Static parse: product_divs=10 real_products=10 loading_only=False
+03-03-2026  04:07:21    Data rows for dried fish: 10
+03-03-2026  04:07:29    EXception occured: HTTP Error 502: Bad Gateway
+03-03-2026  04:07:29    Data not found for url = https://chaldal.com/milk-juice-drinks
+03-03-2026  04:07:39    Retry for url: baby milk
+03-03-2026  04:07:42    Static parse: product_divs=16 real_products=16 loading_only=False
+03-03-2026  04:07:42    Data rows for baby milk: 16
+03-03-2026  04:07:52    Static parse: product_divs=29 real_products=29 loading_only=False
+03-03-2026  04:07:52    Data rows for other baby food: 29
+03-03-2026  04:08:05    Static parse: product_divs=9 real_products=9 loading_only=False
+03-03-2026  04:08:05    Data rows for diapars smallest size: 9
+03-03-2026  04:08:15    Static parse: product_divs=19 real_products=19 loading_only=False
+03-03-2026  04:08:15    Data rows for diapars small size: 19
+03-03-2026  04:08:28    Static parse: product_divs=30 real_products=30 loading_only=False
+03-03-2026  04:08:28    Data rows for diapars large size: 30
+03-03-2026  04:08:35    script ends for testing github action

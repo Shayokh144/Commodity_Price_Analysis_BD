@@ -6419,3 +6419,55 @@ Call log:
 10-03-2026  04:06:05    Static parse: product_divs=24 real_products=24 loading_only=False
 10-03-2026  04:06:05    Data rows for diapars large size: 24
 10-03-2026  04:06:12    script ends for testing github action
+11-03-2026  03:58:51    script starts for testing github action
+11-03-2026  03:59:15    Static parse: product_divs=1 real_products=0 loading_only=True
+11-03-2026  03:59:15    Static HTML had no products, trying rendered HTML
+11-03-2026  03:59:15    Rendered parse: product_divs=56 real_products=56 loading_only=False
+11-03-2026  03:59:15    Data rows for oil: 56
+11-03-2026  03:59:39    Static parse: product_divs=1 real_products=0 loading_only=True
+11-03-2026  03:59:39    Static HTML had no products, trying rendered HTML
+11-03-2026  03:59:39    Rendered parse: product_divs=52 real_products=52 loading_only=False
+11-03-2026  03:59:39    Data rows for rice: 52
+11-03-2026  03:59:48    Static parse: product_divs=25 real_products=25 loading_only=False
+11-03-2026  03:59:48    Data rows for lentil: 25
+11-03-2026  04:00:13    Static parse: product_divs=1 real_products=0 loading_only=True
+11-03-2026  04:00:13    Static HTML had no products, trying rendered HTML
+11-03-2026  04:00:13    Rendered parse: product_divs=80 real_products=80 loading_only=False
+11-03-2026  04:00:13    Data rows for spices: 80
+11-03-2026  04:00:23    Static parse: product_divs=28 real_products=28 loading_only=False
+11-03-2026  04:00:23    Data rows for flour: 28
+11-03-2026  04:00:33    Static parse: product_divs=10 real_products=10 loading_only=False
+11-03-2026  04:00:33    Data rows for egg: 10
+11-03-2026  04:00:42    Static parse: product_divs=33 real_products=33 loading_only=False
+11-03-2026  04:00:42    Data rows for powder milk: 33
+11-03-2026  04:00:53    Static parse: product_divs=32 real_products=32 loading_only=False
+11-03-2026  04:00:53    Data rows for liquid milk: 32
+11-03-2026  04:01:03    Static parse: product_divs=34 real_products=34 loading_only=False
+11-03-2026  04:01:03    Data rows for fruits: 34
+11-03-2026  04:01:26    Static parse: product_divs=1 real_products=0 loading_only=True
+11-03-2026  04:01:26    Static HTML had no products, trying rendered HTML
+11-03-2026  04:01:26    Rendered parse: product_divs=89 real_products=89 loading_only=False
+11-03-2026  04:01:26    Data rows for vegetable: 89
+11-03-2026  04:01:36    Static parse: product_divs=25 real_products=25 loading_only=False
+11-03-2026  04:01:36    Data rows for chicken: 25
+11-03-2026  04:02:00    Static parse: product_divs=1 real_products=0 loading_only=True
+11-03-2026  04:02:00    Static HTML had no products, trying rendered HTML
+11-03-2026  04:02:00    Rendered parse: product_divs=54 real_products=54 loading_only=False
+11-03-2026  04:02:00    Data rows for meat: 54
+11-03-2026  04:02:23    Static parse: product_divs=1 real_products=0 loading_only=True
+11-03-2026  04:02:23    Static HTML had no products, trying rendered HTML
+11-03-2026  04:02:23    Rendered parse: product_divs=60 real_products=60 loading_only=False
+11-03-2026  04:02:23    Data rows for frozen fish: 60
+11-03-2026  04:02:33    Static parse: product_divs=9 real_products=9 loading_only=False
+11-03-2026  04:02:33    Data rows for dried fish: 9
+11-03-2026  04:02:43    Static parse: product_divs=16 real_products=16 loading_only=False
+11-03-2026  04:02:43    Data rows for baby milk: 16
+11-03-2026  04:02:52    Static parse: product_divs=29 real_products=29 loading_only=False
+11-03-2026  04:02:52    Data rows for other baby food: 29
+11-03-2026  04:03:02    Static parse: product_divs=7 real_products=7 loading_only=False
+11-03-2026  04:03:02    Data rows for diapars smallest size: 7
+11-03-2026  04:03:12    Static parse: product_divs=17 real_products=17 loading_only=False
+11-03-2026  04:03:12    Data rows for diapars small size: 17
+11-03-2026  04:03:22    Static parse: product_divs=25 real_products=25 loading_only=False
+11-03-2026  04:03:22    Data rows for diapars large size: 25
+11-03-2026  04:03:29    script ends for testing github action

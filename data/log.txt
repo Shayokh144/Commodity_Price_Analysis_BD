@@ -6959,3 +6959,51 @@ Call log:
 20-03-2026  04:07:50    Static parse: product_divs=24 real_products=24 loading_only=False
 20-03-2026  04:07:50    Data rows for diapars large size: 24
 20-03-2026  04:07:57    script ends for testing github action
+21-03-2026  03:54:10    script starts for testing github action
+21-03-2026  03:54:20    Static parse: product_divs=46 real_products=46 loading_only=False
+21-03-2026  03:54:20    Data rows for oil: 46
+21-03-2026  03:54:30    Static parse: product_divs=49 real_products=49 loading_only=False
+21-03-2026  03:54:30    Data rows for rice: 49
+21-03-2026  03:54:39    Static parse: product_divs=25 real_products=25 loading_only=False
+21-03-2026  03:54:39    Data rows for lentil: 25
+21-03-2026  03:55:04    Static parse: product_divs=1 real_products=0 loading_only=True
+21-03-2026  03:55:04    Static HTML had no products, trying rendered HTML
+21-03-2026  03:55:04    Rendered parse: product_divs=80 real_products=80 loading_only=False
+21-03-2026  03:55:04    Data rows for spices: 80
+21-03-2026  03:55:14    Static parse: product_divs=28 real_products=28 loading_only=False
+21-03-2026  03:55:14    Data rows for flour: 28
+21-03-2026  03:55:23    Static parse: product_divs=11 real_products=11 loading_only=False
+21-03-2026  03:55:23    Data rows for egg: 11
+21-03-2026  03:55:33    Static parse: product_divs=32 real_products=32 loading_only=False
+21-03-2026  03:55:33    Data rows for powder milk: 32
+21-03-2026  03:55:43    Static parse: product_divs=31 real_products=31 loading_only=False
+21-03-2026  03:55:43    Data rows for liquid milk: 31
+21-03-2026  03:55:53    Static parse: product_divs=33 real_products=33 loading_only=False
+21-03-2026  03:55:53    Data rows for fruits: 33
+21-03-2026  03:56:17    Static parse: product_divs=1 real_products=0 loading_only=True
+21-03-2026  03:56:17    Static HTML had no products, trying rendered HTML
+21-03-2026  03:56:17    Rendered parse: product_divs=88 real_products=88 loading_only=False
+21-03-2026  03:56:17    Data rows for vegetable: 88
+21-03-2026  03:56:27    Static parse: product_divs=24 real_products=24 loading_only=False
+21-03-2026  03:56:27    Data rows for chicken: 24
+21-03-2026  03:56:50    Static parse: product_divs=1 real_products=0 loading_only=True
+21-03-2026  03:56:50    Static HTML had no products, trying rendered HTML
+21-03-2026  03:56:50    Rendered parse: product_divs=52 real_products=52 loading_only=False
+21-03-2026  03:56:50    Data rows for meat: 52
+21-03-2026  03:57:14    Static parse: product_divs=1 real_products=0 loading_only=True
+21-03-2026  03:57:14    Static HTML had no products, trying rendered HTML
+21-03-2026  03:57:14    Rendered parse: product_divs=60 real_products=60 loading_only=False
+21-03-2026  03:57:14    Data rows for frozen fish: 60
+21-03-2026  03:57:24    Static parse: product_divs=9 real_products=9 loading_only=False
+21-03-2026  03:57:24    Data rows for dried fish: 9
+21-03-2026  03:57:33    Static parse: product_divs=16 real_products=16 loading_only=False
+21-03-2026  03:57:33    Data rows for baby milk: 16
+21-03-2026  03:57:43    Static parse: product_divs=28 real_products=28 loading_only=False
+21-03-2026  03:57:43    Data rows for other baby food: 28
+21-03-2026  03:57:53    Static parse: product_divs=7 real_products=7 loading_only=False
+21-03-2026  03:57:53    Data rows for diapars smallest size: 7
+21-03-2026  03:58:03    Static parse: product_divs=16 real_products=16 loading_only=False
+21-03-2026  03:58:03    Data rows for diapars small size: 16
+21-03-2026  03:58:12    Static parse: product_divs=24 real_products=24 loading_only=False
+21-03-2026  03:58:12    Data rows for diapars large size: 24
+21-03-2026  03:58:19    script ends for testing github action

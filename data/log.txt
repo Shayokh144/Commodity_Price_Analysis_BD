@@ -9509,3 +9509,58 @@ Call log:
 12-05-2026  05:35:12    Static parse: product_divs=20 real_products=20 loading_only=False
 12-05-2026  05:35:12    Data rows for diapars large size: 20
 12-05-2026  05:35:19    script ends for testing github action
+13-05-2026  05:39:20    script starts for testing github action
+13-05-2026  05:39:30    Static parse: product_divs=46 real_products=46 loading_only=False
+13-05-2026  05:39:30    Data rows for oil: 46
+13-05-2026  05:39:41    Static parse: product_divs=40 real_products=40 loading_only=False
+13-05-2026  05:39:41    Data rows for rice: 40
+13-05-2026  05:39:51    Static parse: product_divs=25 real_products=25 loading_only=False
+13-05-2026  05:39:51    Data rows for lentil: 25
+13-05-2026  05:40:18    Static parse: product_divs=1 real_products=0 loading_only=True
+13-05-2026  05:40:18    Static HTML had no products, trying rendered HTML
+13-05-2026  05:40:18    Rendered parse: product_divs=89 real_products=89 loading_only=False
+13-05-2026  05:40:18    Data rows for spices: 89
+13-05-2026  05:40:29    Static parse: product_divs=21 real_products=21 loading_only=False
+13-05-2026  05:40:29    Data rows for flour: 21
+13-05-2026  05:40:39    Static parse: product_divs=8 real_products=8 loading_only=False
+13-05-2026  05:40:39    Data rows for egg: 8
+13-05-2026  05:40:50    Static parse: product_divs=27 real_products=27 loading_only=False
+13-05-2026  05:40:50    Data rows for powder milk: 27
+13-05-2026  05:41:00    Static parse: product_divs=27 real_products=27 loading_only=False
+13-05-2026  05:41:00    Data rows for liquid milk: 27
+13-05-2026  05:41:11    Static parse: product_divs=26 real_products=26 loading_only=False
+13-05-2026  05:41:11    Data rows for fruits: 26
+13-05-2026  05:41:35    Static parse: product_divs=1 real_products=0 loading_only=True
+13-05-2026  05:41:35    Static HTML had no products, trying rendered HTML
+13-05-2026  05:41:35    Rendered parse: product_divs=80 real_products=80 loading_only=False
+13-05-2026  05:41:35    Data rows for vegetable: 80
+13-05-2026  05:41:46    Static parse: product_divs=21 real_products=21 loading_only=False
+13-05-2026  05:41:46    Data rows for chicken: 21
+13-05-2026  05:41:57    Static parse: product_divs=50 real_products=50 loading_only=False
+13-05-2026  05:41:57    Data rows for meat: 50
+13-05-2026  05:43:08    Static parse: product_divs=1 real_products=0 loading_only=True
+13-05-2026  05:43:08    Static HTML had no products, trying rendered HTML
+13-05-2026  05:43:08    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/frozen-fish", waiting until "networkidle"
+
+13-05-2026  05:43:08    Rendered HTML not available
+13-05-2026  05:43:08    Data rows for frozen fish: 0
+13-05-2026  05:43:18    Retry for url: frozen fish
+13-05-2026  05:43:35    Static parse: product_divs=1 real_products=0 loading_only=True
+13-05-2026  05:43:35    Static HTML had no products, trying rendered HTML
+13-05-2026  05:43:35    Rendered parse: product_divs=58 real_products=58 loading_only=False
+13-05-2026  05:43:35    Data rows for frozen fish: 58
+13-05-2026  05:43:46    Static parse: product_divs=4 real_products=4 loading_only=False
+13-05-2026  05:43:46    Data rows for dried fish: 4
+13-05-2026  05:43:56    Static parse: product_divs=14 real_products=14 loading_only=False
+13-05-2026  05:43:56    Data rows for baby milk: 14
+13-05-2026  05:44:07    Static parse: product_divs=23 real_products=23 loading_only=False
+13-05-2026  05:44:07    Data rows for other baby food: 23
+13-05-2026  05:44:18    Static parse: product_divs=7 real_products=7 loading_only=False
+13-05-2026  05:44:18    Data rows for diapars smallest size: 7
+13-05-2026  05:44:28    Static parse: product_divs=15 real_products=15 loading_only=False
+13-05-2026  05:44:28    Data rows for diapars small size: 15
+13-05-2026  05:44:39    Static parse: product_divs=19 real_products=19 loading_only=False
+13-05-2026  05:44:39    Data rows for diapars large size: 19
+13-05-2026  05:44:46    script ends for testing github action

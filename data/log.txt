@@ -10680,3 +10680,58 @@ Call log:
 06-06-2026  05:49:02    Static parse: product_divs=21 real_products=21 loading_only=False
 06-06-2026  05:49:02    Data rows for diapars large size: 21
 06-06-2026  05:49:09    script ends for testing github action
+07-06-2026  06:11:51    script starts for testing github action
+07-06-2026  06:12:02    Static parse: product_divs=48 real_products=48 loading_only=False
+07-06-2026  06:12:02    Data rows for oil: 48
+07-06-2026  06:12:17    Static parse: product_divs=37 real_products=37 loading_only=False
+07-06-2026  06:12:17    Data rows for rice: 37
+07-06-2026  06:12:28    Static parse: product_divs=25 real_products=25 loading_only=False
+07-06-2026  06:12:28    Data rows for lentil: 25
+07-06-2026  06:14:04    Static parse: product_divs=1 real_products=0 loading_only=True
+07-06-2026  06:14:04    Static HTML had no products, trying rendered HTML
+07-06-2026  06:14:04    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/spices", waiting until "networkidle"
+
+07-06-2026  06:14:04    Rendered HTML not available
+07-06-2026  06:14:04    Data rows for spices: 0
+07-06-2026  06:14:14    Retry for url: spices
+07-06-2026  06:14:33    Static parse: product_divs=1 real_products=0 loading_only=True
+07-06-2026  06:14:33    Static HTML had no products, trying rendered HTML
+07-06-2026  06:14:33    Rendered parse: product_divs=91 real_products=91 loading_only=False
+07-06-2026  06:14:33    Data rows for spices: 91
+07-06-2026  06:14:44    Static parse: product_divs=21 real_products=21 loading_only=False
+07-06-2026  06:14:44    Data rows for flour: 21
+07-06-2026  06:14:54    Static parse: product_divs=8 real_products=8 loading_only=False
+07-06-2026  06:14:54    Data rows for egg: 8
+07-06-2026  06:15:04    Static parse: product_divs=24 real_products=24 loading_only=False
+07-06-2026  06:15:04    Data rows for powder milk: 24
+07-06-2026  06:15:15    Static parse: product_divs=25 real_products=25 loading_only=False
+07-06-2026  06:15:15    Data rows for liquid milk: 25
+07-06-2026  06:15:25    Static parse: product_divs=32 real_products=32 loading_only=False
+07-06-2026  06:15:25    Data rows for fruits: 32
+07-06-2026  06:15:50    Static parse: product_divs=1 real_products=0 loading_only=True
+07-06-2026  06:15:50    Static HTML had no products, trying rendered HTML
+07-06-2026  06:15:50    Rendered parse: product_divs=77 real_products=77 loading_only=False
+07-06-2026  06:15:50    Data rows for vegetable: 77
+07-06-2026  06:16:00    Static parse: product_divs=21 real_products=21 loading_only=False
+07-06-2026  06:16:00    Data rows for chicken: 21
+07-06-2026  06:16:11    Static parse: product_divs=50 real_products=50 loading_only=False
+07-06-2026  06:16:11    Data rows for meat: 50
+07-06-2026  06:16:35    Static parse: product_divs=1 real_products=0 loading_only=True
+07-06-2026  06:16:35    Static HTML had no products, trying rendered HTML
+07-06-2026  06:16:35    Rendered parse: product_divs=58 real_products=58 loading_only=False
+07-06-2026  06:16:35    Data rows for frozen fish: 58
+07-06-2026  06:16:47    Static parse: product_divs=6 real_products=6 loading_only=False
+07-06-2026  06:16:47    Data rows for dried fish: 6
+07-06-2026  06:16:58    Static parse: product_divs=13 real_products=13 loading_only=False
+07-06-2026  06:16:58    Data rows for baby milk: 13
+07-06-2026  06:17:08    Static parse: product_divs=19 real_products=19 loading_only=False
+07-06-2026  06:17:08    Data rows for other baby food: 19
+07-06-2026  06:17:19    Static parse: product_divs=8 real_products=8 loading_only=False
+07-06-2026  06:17:19    Data rows for diapars smallest size: 8
+07-06-2026  06:17:29    Static parse: product_divs=17 real_products=17 loading_only=False
+07-06-2026  06:17:29    Data rows for diapars small size: 17
+07-06-2026  06:17:39    Static parse: product_divs=21 real_products=21 loading_only=False
+07-06-2026  06:17:39    Data rows for diapars large size: 21
+07-06-2026  06:17:46    script ends for testing github action

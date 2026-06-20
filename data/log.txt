@@ -11293,3 +11293,70 @@ Call log:
 19-06-2026  06:59:17    Static parse: product_divs=21 real_products=21 loading_only=False
 19-06-2026  06:59:17    Data rows for diapars large size: 21
 19-06-2026  06:59:24    script ends for testing github action
+20-06-2026  06:08:06    script starts for testing github action
+20-06-2026  06:08:16    Static parse: product_divs=48 real_products=48 loading_only=False
+20-06-2026  06:08:16    Data rows for oil: 48
+20-06-2026  06:08:42    Static parse: product_divs=0 real_products=0 loading_only=False
+20-06-2026  06:08:42    Static HTML had no products, trying rendered HTML
+20-06-2026  06:08:42    Rendered parse: product_divs=37 real_products=37 loading_only=False
+20-06-2026  06:08:42    Data rows for rice: 37
+20-06-2026  06:08:52    Static parse: product_divs=25 real_products=25 loading_only=False
+20-06-2026  06:08:52    Data rows for lentil: 25
+20-06-2026  06:10:04    Static parse: product_divs=1 real_products=0 loading_only=True
+20-06-2026  06:10:04    Static HTML had no products, trying rendered HTML
+20-06-2026  06:10:04    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/spices", waiting until "networkidle"
+
+20-06-2026  06:10:04    Rendered HTML not available
+20-06-2026  06:10:04    Data rows for spices: 0
+20-06-2026  06:10:14    Retry for url: spices
+20-06-2026  06:11:18    Static parse: product_divs=1 real_products=0 loading_only=True
+20-06-2026  06:11:18    Static HTML had no products, trying rendered HTML
+20-06-2026  06:11:18    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/spices", waiting until "networkidle"
+
+20-06-2026  06:11:18    Rendered HTML not available
+20-06-2026  06:11:18    Data rows for spices: 0
+20-06-2026  06:12:26    EXception occured: HTTP Error 504: Gateway Time-out
+20-06-2026  06:12:26    Data not found for url = https://chaldal.com/flour
+20-06-2026  06:12:36    Retry for url: flour
+20-06-2026  06:12:40    Static parse: product_divs=21 real_products=21 loading_only=False
+20-06-2026  06:12:40    Data rows for flour: 21
+20-06-2026  06:12:50    Static parse: product_divs=8 real_products=8 loading_only=False
+20-06-2026  06:12:50    Data rows for egg: 8
+20-06-2026  06:13:00    Static parse: product_divs=24 real_products=24 loading_only=False
+20-06-2026  06:13:00    Data rows for powder milk: 24
+20-06-2026  06:13:11    Static parse: product_divs=25 real_products=25 loading_only=False
+20-06-2026  06:13:11    Data rows for liquid milk: 25
+20-06-2026  06:13:22    Static parse: product_divs=32 real_products=32 loading_only=False
+20-06-2026  06:13:22    Data rows for fruits: 32
+20-06-2026  06:14:29    EXception occured: HTTP Error 504: Gateway Time-out
+20-06-2026  06:14:29    Data not found for url = https://chaldal.com/fresh-vegetable
+20-06-2026  06:14:39    Retry for url: vegetable
+20-06-2026  06:14:58    Static parse: product_divs=1 real_products=0 loading_only=True
+20-06-2026  06:14:58    Static HTML had no products, trying rendered HTML
+20-06-2026  06:14:58    Rendered parse: product_divs=77 real_products=77 loading_only=False
+20-06-2026  06:14:58    Data rows for vegetable: 77
+20-06-2026  06:15:08    Static parse: product_divs=21 real_products=21 loading_only=False
+20-06-2026  06:15:08    Data rows for chicken: 21
+20-06-2026  06:15:20    Static parse: product_divs=50 real_products=50 loading_only=False
+20-06-2026  06:15:20    Data rows for meat: 50
+20-06-2026  06:15:45    Static parse: product_divs=1 real_products=0 loading_only=True
+20-06-2026  06:15:45    Static HTML had no products, trying rendered HTML
+20-06-2026  06:15:45    Rendered parse: product_divs=58 real_products=58 loading_only=False
+20-06-2026  06:15:45    Data rows for frozen fish: 58
+20-06-2026  06:15:55    Static parse: product_divs=6 real_products=6 loading_only=False
+20-06-2026  06:15:55    Data rows for dried fish: 6
+20-06-2026  06:16:06    Static parse: product_divs=13 real_products=13 loading_only=False
+20-06-2026  06:16:06    Data rows for baby milk: 13
+20-06-2026  06:16:16    Static parse: product_divs=19 real_products=19 loading_only=False
+20-06-2026  06:16:16    Data rows for other baby food: 19
+20-06-2026  06:16:27    Static parse: product_divs=8 real_products=8 loading_only=False
+20-06-2026  06:16:27    Data rows for diapars smallest size: 8
+20-06-2026  06:16:38    Static parse: product_divs=17 real_products=17 loading_only=False
+20-06-2026  06:16:38    Data rows for diapars small size: 17
+20-06-2026  06:16:48    Static parse: product_divs=21 real_products=21 loading_only=False
+20-06-2026  06:16:48    Data rows for diapars large size: 21
+20-06-2026  06:16:55    script ends for testing github action

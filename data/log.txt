@@ -13256,3 +13256,136 @@ Call log:
 15-07-2026  05:04:00    Static parse: product_divs=21 real_products=21 loading_only=False
 15-07-2026  05:04:00    Data rows for diapars large size: 21
 15-07-2026  05:04:07    script ends for testing github action
+16-07-2026  04:47:56    script starts for testing github action
+16-07-2026  04:48:07    Static parse: product_divs=48 real_products=48 loading_only=False
+16-07-2026  04:48:07    Data rows for oil: 48
+16-07-2026  04:49:16    Static parse: product_divs=37 real_products=37 loading_only=False
+16-07-2026  04:49:16    Data rows for rice: 37
+16-07-2026  04:49:26    Static parse: product_divs=25 real_products=25 loading_only=False
+16-07-2026  04:49:26    Data rows for lentil: 25
+16-07-2026  04:50:34    EXception occured: HTTP Error 504: Gateway Time-out
+16-07-2026  04:50:34    Data not found for url = https://chaldal.com/spices
+16-07-2026  04:50:44    Retry for url: spices
+16-07-2026  04:51:50    Static parse: product_divs=1 real_products=0 loading_only=True
+16-07-2026  04:51:50    Static HTML had no products, trying rendered HTML
+16-07-2026  04:51:50    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/spices", waiting until "networkidle"
+
+16-07-2026  04:51:50    Rendered HTML not available
+16-07-2026  04:51:50    Data rows for spices: 0
+16-07-2026  04:52:57    EXception occured: HTTP Error 504: Gateway Time-out
+16-07-2026  04:52:57    Data not found for url = https://chaldal.com/flour
+16-07-2026  04:53:07    Retry for url: flour
+16-07-2026  04:53:11    Static parse: product_divs=21 real_products=21 loading_only=False
+16-07-2026  04:53:11    Data rows for flour: 21
+16-07-2026  04:53:21    Static parse: product_divs=8 real_products=8 loading_only=False
+16-07-2026  04:53:21    Data rows for egg: 8
+16-07-2026  04:54:31    Static parse: product_divs=0 real_products=0 loading_only=False
+16-07-2026  04:54:31    Static HTML had no products, trying rendered HTML
+16-07-2026  04:54:31    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/powder-milk", waiting until "networkidle"
+
+16-07-2026  04:54:31    Rendered HTML not available
+16-07-2026  04:54:31    Data rows for powder milk: 0
+16-07-2026  04:54:41    Retry for url: powder milk
+16-07-2026  04:55:45    Static parse: product_divs=0 real_products=0 loading_only=False
+16-07-2026  04:55:45    Static HTML had no products, trying rendered HTML
+16-07-2026  04:55:45    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/powder-milk", waiting until "networkidle"
+
+16-07-2026  04:55:45    Rendered HTML not available
+16-07-2026  04:55:45    Data rows for powder milk: 0
+16-07-2026  04:56:53    EXception occured: HTTP Error 504: Gateway Time-out
+16-07-2026  04:56:53    Data not found for url = https://chaldal.com/liquid-uht-milk
+16-07-2026  04:57:03    Retry for url: liquid milk
+16-07-2026  04:58:04    EXception occured: HTTP Error 504: Gateway Time-out
+16-07-2026  04:58:04    Data not found for url = https://chaldal.com/liquid-uht-milk
+16-07-2026  04:59:12    EXception occured: HTTP Error 504: Gateway Time-out
+16-07-2026  04:59:12    Data not found for url = https://chaldal.com/fresh-fruit
+16-07-2026  04:59:22    Retry for url: fruits
+16-07-2026  04:59:25    Static parse: product_divs=26 real_products=26 loading_only=False
+16-07-2026  04:59:25    Data rows for fruits: 26
+16-07-2026  05:00:37    Static parse: product_divs=1 real_products=0 loading_only=True
+16-07-2026  05:00:37    Static HTML had no products, trying rendered HTML
+16-07-2026  05:00:37    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/fresh-vegetable", waiting until "networkidle"
+
+16-07-2026  05:00:37    Rendered HTML not available
+16-07-2026  05:00:37    Data rows for vegetable: 0
+16-07-2026  05:00:47    Retry for url: vegetable
+16-07-2026  05:01:51    Static parse: product_divs=1 real_products=0 loading_only=True
+16-07-2026  05:01:51    Static HTML had no products, trying rendered HTML
+16-07-2026  05:01:51    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/fresh-vegetable", waiting until "networkidle"
+
+16-07-2026  05:01:51    Rendered HTML not available
+16-07-2026  05:01:51    Data rows for vegetable: 0
+16-07-2026  05:03:02    Static parse: product_divs=0 real_products=0 loading_only=False
+16-07-2026  05:03:02    Static HTML had no products, trying rendered HTML
+16-07-2026  05:03:02    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/chicken-poultry", waiting until "networkidle"
+
+16-07-2026  05:03:02    Rendered HTML not available
+16-07-2026  05:03:02    Data rows for chicken: 0
+16-07-2026  05:03:12    Retry for url: chicken
+16-07-2026  05:03:15    Static parse: product_divs=21 real_products=21 loading_only=False
+16-07-2026  05:03:15    Data rows for chicken: 21
+16-07-2026  05:03:32    Static parse: product_divs=50 real_products=50 loading_only=False
+16-07-2026  05:03:32    Data rows for meat: 50
+16-07-2026  05:04:43    Static parse: product_divs=1 real_products=0 loading_only=True
+16-07-2026  05:04:43    Static HTML had no products, trying rendered HTML
+16-07-2026  05:04:43    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/frozen-fish", waiting until "networkidle"
+
+16-07-2026  05:04:43    Rendered HTML not available
+16-07-2026  05:04:43    Data rows for frozen fish: 0
+16-07-2026  05:04:53    Retry for url: frozen fish
+16-07-2026  05:05:54    EXception occured: HTTP Error 504: Gateway Time-out
+16-07-2026  05:05:54    Data not found for url = https://chaldal.com/frozen-fish
+16-07-2026  05:07:02    EXception occured: HTTP Error 504: Gateway Time-out
+16-07-2026  05:07:02    Data not found for url = https://chaldal.com/dried-fish
+16-07-2026  05:07:12    Retry for url: dried fish
+16-07-2026  05:08:13    EXception occured: HTTP Error 504: Gateway Time-out
+16-07-2026  05:08:13    Data not found for url = https://chaldal.com/dried-fish
+16-07-2026  05:08:40    Static parse: product_divs=13 real_products=13 loading_only=False
+16-07-2026  05:08:40    Data rows for baby milk: 13
+16-07-2026  05:09:51    Static parse: product_divs=0 real_products=0 loading_only=False
+16-07-2026  05:09:51    Static HTML had no products, trying rendered HTML
+16-07-2026  05:09:51    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/toddler-food", waiting until "networkidle"
+
+16-07-2026  05:09:51    Rendered HTML not available
+16-07-2026  05:09:51    Data rows for other baby food: 0
+16-07-2026  05:10:01    Retry for url: other baby food
+16-07-2026  05:10:04    Static parse: product_divs=19 real_products=19 loading_only=False
+16-07-2026  05:10:04    Data rows for other baby food: 19
+16-07-2026  05:11:15    Static parse: product_divs=0 real_products=0 loading_only=False
+16-07-2026  05:11:15    Static HTML had no products, trying rendered HTML
+16-07-2026  05:11:15    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/newborn-2", waiting until "networkidle"
+
+16-07-2026  05:11:15    Rendered HTML not available
+16-07-2026  05:11:15    Data rows for diapars smallest size: 0
+16-07-2026  05:11:25    Retry for url: diapars smallest size
+16-07-2026  05:11:28    Static parse: product_divs=8 real_products=8 loading_only=False
+16-07-2026  05:11:28    Data rows for diapars smallest size: 8
+16-07-2026  05:12:36    EXception occured: HTTP Error 504: Gateway Time-out
+16-07-2026  05:12:36    Data not found for url = https://chaldal.com/small-2
+16-07-2026  05:12:46    Retry for url: diapars small size
+16-07-2026  05:13:47    EXception occured: HTTP Error 504: Gateway Time-out
+16-07-2026  05:13:47    Data not found for url = https://chaldal.com/small-2
+16-07-2026  05:14:55    EXception occured: HTTP Error 504: Gateway Time-out
+16-07-2026  05:14:55    Data not found for url = https://chaldal.com/large-2
+16-07-2026  05:15:05    Retry for url: diapars large size
+16-07-2026  05:15:15    Static parse: product_divs=21 real_products=21 loading_only=False
+16-07-2026  05:15:15    Data rows for diapars large size: 21
+16-07-2026  05:15:22    script ends for testing github action

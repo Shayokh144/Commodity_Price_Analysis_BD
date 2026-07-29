@@ -14348,3 +14348,85 @@ Call log:
 28-07-2026  04:59:24    Static parse: product_divs=18 real_products=18 loading_only=False
 28-07-2026  04:59:24    Data rows for diapars large size: 18
 28-07-2026  04:59:31    script ends for testing github action
+29-07-2026  04:56:19    script starts for testing github action
+29-07-2026  04:57:27    EXception occured: HTTP Error 504: Gateway Time-out
+29-07-2026  04:57:27    Data not found for url = https://chaldal.com/oil
+29-07-2026  04:57:37    Retry for url: oil
+29-07-2026  04:57:40    Static parse: product_divs=44 real_products=44 loading_only=False
+29-07-2026  04:57:40    Data rows for oil: 44
+29-07-2026  04:57:51    Static parse: product_divs=37 real_products=37 loading_only=False
+29-07-2026  04:57:51    Data rows for rice: 37
+29-07-2026  04:58:01    Static parse: product_divs=25 real_products=25 loading_only=False
+29-07-2026  04:58:01    Data rows for lentil: 25
+29-07-2026  04:58:26    Static parse: product_divs=0 real_products=0 loading_only=False
+29-07-2026  04:58:26    Static HTML had no products, trying rendered HTML
+29-07-2026  04:58:26    Rendered parse: product_divs=90 real_products=90 loading_only=False
+29-07-2026  04:58:26    Data rows for spices: 90
+29-07-2026  04:59:00    Static parse: product_divs=0 real_products=0 loading_only=False
+29-07-2026  04:59:00    Static HTML had no products, trying rendered HTML
+29-07-2026  04:59:00    No product selector visible after 10s
+29-07-2026  04:59:00    Rendered parse: product_divs=0 real_products=0 loading_only=False
+29-07-2026  04:59:00    Rendered HTML saved: ./data/debug/rendered_chaldal_com_flour.html
+29-07-2026  04:59:00    Data rows for flour: 0
+29-07-2026  04:59:10    Retry for url: flour
+29-07-2026  05:00:11    EXception occured: HTTP Error 504: Gateway Time-out
+29-07-2026  05:00:11    Data not found for url = https://chaldal.com/flour
+29-07-2026  05:00:21    Static parse: product_divs=8 real_products=8 loading_only=False
+29-07-2026  05:00:21    Data rows for egg: 8
+29-07-2026  05:00:31    Static parse: product_divs=24 real_products=24 loading_only=False
+29-07-2026  05:00:31    Data rows for powder milk: 24
+29-07-2026  05:00:42    Static parse: product_divs=25 real_products=25 loading_only=False
+29-07-2026  05:00:42    Data rows for liquid milk: 25
+29-07-2026  05:01:06    Static parse: product_divs=0 real_products=0 loading_only=False
+29-07-2026  05:01:06    Static HTML had no products, trying rendered HTML
+29-07-2026  05:01:06    Rendered parse: product_divs=26 real_products=26 loading_only=False
+29-07-2026  05:01:06    Data rows for fruits: 26
+29-07-2026  05:01:30    Static parse: product_divs=1 real_products=0 loading_only=True
+29-07-2026  05:01:30    Static HTML had no products, trying rendered HTML
+29-07-2026  05:01:30    Rendered parse: product_divs=77 real_products=77 loading_only=False
+29-07-2026  05:01:30    Data rows for vegetable: 77
+29-07-2026  05:01:41    Static parse: product_divs=21 real_products=21 loading_only=False
+29-07-2026  05:01:41    Data rows for chicken: 21
+29-07-2026  05:02:05    Static parse: product_divs=0 real_products=0 loading_only=False
+29-07-2026  05:02:05    Static HTML had no products, trying rendered HTML
+29-07-2026  05:02:05    Rendered parse: product_divs=50 real_products=50 loading_only=False
+29-07-2026  05:02:05    Data rows for meat: 50
+29-07-2026  05:03:16    Static parse: product_divs=1 real_products=0 loading_only=True
+29-07-2026  05:03:16    Static HTML had no products, trying rendered HTML
+29-07-2026  05:03:16    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/frozen-fish", waiting until "networkidle"
+
+29-07-2026  05:03:16    Rendered HTML not available
+29-07-2026  05:03:16    Data rows for frozen fish: 0
+29-07-2026  05:03:26    Retry for url: frozen fish
+29-07-2026  05:03:44    Static parse: product_divs=1 real_products=0 loading_only=True
+29-07-2026  05:03:44    Static HTML had no products, trying rendered HTML
+29-07-2026  05:03:44    Rendered parse: product_divs=58 real_products=58 loading_only=False
+29-07-2026  05:03:44    Data rows for frozen fish: 58
+29-07-2026  05:03:54    Static parse: product_divs=5 real_products=5 loading_only=False
+29-07-2026  05:03:54    Data rows for dried fish: 5
+29-07-2026  05:04:27    Static parse: product_divs=0 real_products=0 loading_only=False
+29-07-2026  05:04:27    Static HTML had no products, trying rendered HTML
+29-07-2026  05:04:27    No product selector visible after 10s
+29-07-2026  05:04:27    Rendered parse: product_divs=0 real_products=0 loading_only=False
+29-07-2026  05:04:27    Rendered HTML saved: ./data/debug/rendered_chaldal_com_milk_juice_drinks.html
+29-07-2026  05:04:27    Data rows for baby milk: 0
+29-07-2026  05:04:37    Retry for url: baby milk
+29-07-2026  05:05:03    Static parse: product_divs=0 real_products=0 loading_only=False
+29-07-2026  05:05:03    Static HTML had no products, trying rendered HTML
+29-07-2026  05:05:03    No product selector visible after 10s
+29-07-2026  05:05:03    Rendered parse: product_divs=0 real_products=0 loading_only=False
+29-07-2026  05:05:03    Rendered HTML saved: ./data/debug/rendered_chaldal_com_milk_juice_drinks.html
+29-07-2026  05:05:03    Data rows for baby milk: 0
+29-07-2026  05:05:14    Static parse: product_divs=19 real_products=19 loading_only=False
+29-07-2026  05:05:14    Data rows for other baby food: 19
+29-07-2026  05:05:37    Static parse: product_divs=0 real_products=0 loading_only=False
+29-07-2026  05:05:37    Static HTML had no products, trying rendered HTML
+29-07-2026  05:05:37    Rendered parse: product_divs=6 real_products=6 loading_only=False
+29-07-2026  05:05:37    Data rows for diapars smallest size: 6
+29-07-2026  05:05:47    Static parse: product_divs=13 real_products=13 loading_only=False
+29-07-2026  05:05:47    Data rows for diapars small size: 13
+29-07-2026  05:05:58    Static parse: product_divs=18 real_products=18 loading_only=False
+29-07-2026  05:05:58    Data rows for diapars large size: 18
+29-07-2026  05:06:05    script ends for testing github action

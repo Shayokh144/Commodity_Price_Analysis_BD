@@ -14827,3 +14827,55 @@ Call log:
 03-08-2026  05:37:29    Static parse: product_divs=18 real_products=18 loading_only=False
 03-08-2026  05:37:29    Data rows for diapars large size: 18
 03-08-2026  05:37:36    script ends for testing github action
+04-08-2026  04:52:19    script starts for testing github action
+04-08-2026  04:52:30    Static parse: product_divs=44 real_products=44 loading_only=False
+04-08-2026  04:52:30    Data rows for oil: 44
+04-08-2026  04:52:39    Static parse: product_divs=37 real_products=37 loading_only=False
+04-08-2026  04:52:39    Data rows for rice: 37
+04-08-2026  04:52:50    Static parse: product_divs=25 real_products=25 loading_only=False
+04-08-2026  04:52:50    Data rows for lentil: 25
+04-08-2026  04:53:15    Static parse: product_divs=1 real_products=0 loading_only=True
+04-08-2026  04:53:15    Static HTML had no products, trying rendered HTML
+04-08-2026  04:53:15    Rendered parse: product_divs=90 real_products=90 loading_only=False
+04-08-2026  04:53:15    Data rows for spices: 90
+04-08-2026  04:53:26    Static parse: product_divs=21 real_products=21 loading_only=False
+04-08-2026  04:53:26    Data rows for flour: 21
+04-08-2026  04:53:36    Static parse: product_divs=8 real_products=8 loading_only=False
+04-08-2026  04:53:36    Data rows for egg: 8
+04-08-2026  04:53:47    Static parse: product_divs=24 real_products=24 loading_only=False
+04-08-2026  04:53:47    Data rows for powder milk: 24
+04-08-2026  04:54:09    Static parse: product_divs=0 real_products=0 loading_only=False
+04-08-2026  04:54:09    Static HTML had no products, trying rendered HTML
+04-08-2026  04:54:09    Rendered parse: product_divs=25 real_products=25 loading_only=False
+04-08-2026  04:54:09    Data rows for liquid milk: 25
+04-08-2026  04:54:19    Static parse: product_divs=25 real_products=25 loading_only=False
+04-08-2026  04:54:19    Data rows for fruits: 25
+04-08-2026  04:54:43    Static parse: product_divs=0 real_products=0 loading_only=False
+04-08-2026  04:54:43    Static HTML had no products, trying rendered HTML
+04-08-2026  04:54:43    Rendered parse: product_divs=77 real_products=77 loading_only=False
+04-08-2026  04:54:43    Data rows for vegetable: 77
+04-08-2026  04:54:52    Static parse: product_divs=21 real_products=21 loading_only=False
+04-08-2026  04:54:52    Data rows for chicken: 21
+04-08-2026  04:55:03    Static parse: product_divs=50 real_products=50 loading_only=False
+04-08-2026  04:55:03    Data rows for meat: 50
+04-08-2026  04:55:27    Static parse: product_divs=1 real_products=0 loading_only=True
+04-08-2026  04:55:27    Static HTML had no products, trying rendered HTML
+04-08-2026  04:55:27    Rendered parse: product_divs=58 real_products=58 loading_only=False
+04-08-2026  04:55:27    Data rows for frozen fish: 58
+04-08-2026  04:55:50    Static parse: product_divs=0 real_products=0 loading_only=False
+04-08-2026  04:55:50    Static HTML had no products, trying rendered HTML
+04-08-2026  04:55:50    Rendered parse: product_divs=5 real_products=5 loading_only=False
+04-08-2026  04:55:50    Data rows for dried fish: 5
+04-08-2026  04:56:13    Static parse: product_divs=0 real_products=0 loading_only=False
+04-08-2026  04:56:13    Static HTML had no products, trying rendered HTML
+04-08-2026  04:56:13    Rendered parse: product_divs=13 real_products=13 loading_only=False
+04-08-2026  04:56:13    Data rows for baby milk: 13
+04-08-2026  04:56:24    Static parse: product_divs=19 real_products=19 loading_only=False
+04-08-2026  04:56:24    Data rows for other baby food: 19
+04-08-2026  04:56:35    Static parse: product_divs=6 real_products=6 loading_only=False
+04-08-2026  04:56:35    Data rows for diapars smallest size: 6
+04-08-2026  04:56:45    Static parse: product_divs=13 real_products=13 loading_only=False
+04-08-2026  04:56:45    Data rows for diapars small size: 13
+04-08-2026  04:56:55    Static parse: product_divs=18 real_products=18 loading_only=False
+04-08-2026  04:56:55    Data rows for diapars large size: 18
+04-08-2026  04:57:02    script ends for testing github action

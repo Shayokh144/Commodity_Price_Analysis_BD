@@ -18318,3 +18318,64 @@ Call log:
 13-09-2026  06:58:52    Static parse: product_divs=18 real_products=18 loading_only=False
 13-09-2026  06:58:52    Data rows for diapars large size: 18
 13-09-2026  06:58:59    script ends for testing github action
+14-09-2026  07:17:17    script starts for testing github action
+14-09-2026  07:17:27    Static parse: product_divs=44 real_products=44 loading_only=False
+14-09-2026  07:17:27    Data rows for oil: 44
+14-09-2026  07:17:37    Static parse: product_divs=37 real_products=37 loading_only=False
+14-09-2026  07:17:37    Data rows for rice: 37
+14-09-2026  07:18:01    Static parse: product_divs=0 real_products=0 loading_only=False
+14-09-2026  07:18:01    Static HTML had no products, trying rendered HTML
+14-09-2026  07:18:01    Rendered parse: product_divs=25 real_products=25 loading_only=False
+14-09-2026  07:18:01    Data rows for lentil: 25
+14-09-2026  07:18:33    Static parse: product_divs=0 real_products=0 loading_only=False
+14-09-2026  07:18:33    Static HTML had no products, trying rendered HTML
+14-09-2026  07:18:33    No product selector visible after 10s
+14-09-2026  07:18:33    Rendered parse: product_divs=0 real_products=0 loading_only=False
+14-09-2026  07:18:33    Rendered HTML saved: ./data/debug/rendered_chaldal_com_spices.html
+14-09-2026  07:18:33    Data rows for spices: 0
+14-09-2026  07:18:43    Retry for url: spices
+14-09-2026  07:19:10    Static parse: product_divs=1 real_products=0 loading_only=True
+14-09-2026  07:19:10    Static HTML had no products, trying rendered HTML
+14-09-2026  07:19:10    No product selector visible after 10s
+14-09-2026  07:19:10    Rendered parse: product_divs=0 real_products=0 loading_only=False
+14-09-2026  07:19:10    Rendered HTML saved: ./data/debug/rendered_chaldal_com_spices.html
+14-09-2026  07:19:10    Data rows for spices: 0
+14-09-2026  07:19:20    Static parse: product_divs=21 real_products=21 loading_only=False
+14-09-2026  07:19:20    Data rows for flour: 21
+14-09-2026  07:19:31    Static parse: product_divs=8 real_products=8 loading_only=False
+14-09-2026  07:19:31    Data rows for egg: 8
+14-09-2026  07:19:41    Static parse: product_divs=24 real_products=24 loading_only=False
+14-09-2026  07:19:41    Data rows for powder milk: 24
+14-09-2026  07:20:05    Static parse: product_divs=0 real_products=0 loading_only=False
+14-09-2026  07:20:05    Static HTML had no products, trying rendered HTML
+14-09-2026  07:20:05    Rendered parse: product_divs=25 real_products=25 loading_only=False
+14-09-2026  07:20:05    Data rows for liquid milk: 25
+14-09-2026  07:20:14    Static parse: product_divs=25 real_products=25 loading_only=False
+14-09-2026  07:20:14    Data rows for fruits: 25
+14-09-2026  07:20:38    Static parse: product_divs=1 real_products=0 loading_only=True
+14-09-2026  07:20:38    Static HTML had no products, trying rendered HTML
+14-09-2026  07:20:38    Rendered parse: product_divs=77 real_products=77 loading_only=False
+14-09-2026  07:20:38    Data rows for vegetable: 77
+14-09-2026  07:20:48    Static parse: product_divs=20 real_products=20 loading_only=False
+14-09-2026  07:20:48    Data rows for chicken: 20
+14-09-2026  07:20:58    Static parse: product_divs=49 real_products=49 loading_only=False
+14-09-2026  07:20:58    Data rows for meat: 49
+14-09-2026  07:21:21    Static parse: product_divs=0 real_products=0 loading_only=False
+14-09-2026  07:21:21    Static HTML had no products, trying rendered HTML
+14-09-2026  07:21:21    Rendered parse: product_divs=57 real_products=57 loading_only=False
+14-09-2026  07:21:21    Data rows for frozen fish: 57
+14-09-2026  07:21:31    Static parse: product_divs=5 real_products=5 loading_only=False
+14-09-2026  07:21:31    Data rows for dried fish: 5
+14-09-2026  07:21:41    Static parse: product_divs=13 real_products=13 loading_only=False
+14-09-2026  07:21:41    Data rows for baby milk: 13
+14-09-2026  07:21:51    Static parse: product_divs=19 real_products=19 loading_only=False
+14-09-2026  07:21:51    Data rows for other baby food: 19
+14-09-2026  07:22:14    Static parse: product_divs=0 real_products=0 loading_only=False
+14-09-2026  07:22:14    Static HTML had no products, trying rendered HTML
+14-09-2026  07:22:14    Rendered parse: product_divs=6 real_products=6 loading_only=False
+14-09-2026  07:22:14    Data rows for diapars smallest size: 6
+14-09-2026  07:22:24    Static parse: product_divs=13 real_products=13 loading_only=False
+14-09-2026  07:22:24    Data rows for diapars small size: 13
+14-09-2026  07:22:33    Static parse: product_divs=18 real_products=18 loading_only=False
+14-09-2026  07:22:33    Data rows for diapars large size: 18
+14-09-2026  07:22:40    script ends for testing github action

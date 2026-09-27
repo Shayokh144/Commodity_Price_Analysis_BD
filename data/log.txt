@@ -19291,3 +19291,100 @@ Call log:
 26-09-2026  06:58:50    Static parse: product_divs=18 real_products=18 loading_only=False
 26-09-2026  06:58:50    Data rows for diapars large size: 18
 26-09-2026  06:58:57    script ends for testing github action
+27-09-2026  07:15:06    script starts for testing github action
+27-09-2026  07:15:33    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:15:33    Data not found for url = https://chaldal.com/oil
+27-09-2026  07:15:43    Retry for url: oil
+27-09-2026  07:16:03    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:16:03    Data not found for url = https://chaldal.com/oil
+27-09-2026  07:16:31    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:16:31    Data not found for url = https://chaldal.com/rices
+27-09-2026  07:16:41    Retry for url: rice
+27-09-2026  07:17:01    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:17:01    Data not found for url = https://chaldal.com/rices
+27-09-2026  07:17:29    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:17:29    Data not found for url = https://chaldal.com/dal-or-lentil
+27-09-2026  07:17:39    Retry for url: lentil
+27-09-2026  07:17:59    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:17:59    Data not found for url = https://chaldal.com/dal-or-lentil
+27-09-2026  07:18:27    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:18:27    Data not found for url = https://chaldal.com/spices
+27-09-2026  07:18:37    Retry for url: spices
+27-09-2026  07:18:57    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:18:57    Data not found for url = https://chaldal.com/spices
+27-09-2026  07:19:24    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:19:24    Data not found for url = https://chaldal.com/flour
+27-09-2026  07:19:34    Retry for url: flour
+27-09-2026  07:19:54    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:19:54    Data not found for url = https://chaldal.com/flour
+27-09-2026  07:20:22    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:20:22    Data not found for url = https://chaldal.com/eggs
+27-09-2026  07:20:32    Retry for url: egg
+27-09-2026  07:20:53    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:20:53    Data not found for url = https://chaldal.com/eggs
+27-09-2026  07:21:20    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:21:20    Data not found for url = https://chaldal.com/powder-milk
+27-09-2026  07:21:30    Retry for url: powder milk
+27-09-2026  07:21:51    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:21:51    Data not found for url = https://chaldal.com/powder-milk
+27-09-2026  07:22:18    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:22:18    Data not found for url = https://chaldal.com/liquid-uht-milk
+27-09-2026  07:22:28    Retry for url: liquid milk
+27-09-2026  07:22:49    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:22:49    Data not found for url = https://chaldal.com/liquid-uht-milk
+27-09-2026  07:23:16    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:23:16    Data not found for url = https://chaldal.com/fresh-fruit
+27-09-2026  07:23:26    Retry for url: fruits
+27-09-2026  07:23:47    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:23:47    Data not found for url = https://chaldal.com/fresh-fruit
+27-09-2026  07:24:14    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:24:14    Data not found for url = https://chaldal.com/fresh-vegetable
+27-09-2026  07:24:24    Retry for url: vegetable
+27-09-2026  07:24:45    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:24:45    Data not found for url = https://chaldal.com/fresh-vegetable
+27-09-2026  07:25:12    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:25:12    Data not found for url = https://chaldal.com/chicken-poultry
+27-09-2026  07:25:22    Retry for url: chicken
+27-09-2026  07:25:43    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:25:43    Data not found for url = https://chaldal.com/chicken-poultry
+27-09-2026  07:26:10    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:26:10    Data not found for url = https://chaldal.com/meat-new
+27-09-2026  07:26:20    Retry for url: meat
+27-09-2026  07:26:40    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:26:40    Data not found for url = https://chaldal.com/meat-new
+27-09-2026  07:27:08    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:27:08    Data not found for url = https://chaldal.com/frozen-fish
+27-09-2026  07:27:18    Retry for url: frozen fish
+27-09-2026  07:27:38    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:27:38    Data not found for url = https://chaldal.com/frozen-fish
+27-09-2026  07:28:06    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:28:06    Data not found for url = https://chaldal.com/dried-fish
+27-09-2026  07:28:16    Retry for url: dried fish
+27-09-2026  07:28:36    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:28:36    Data not found for url = https://chaldal.com/dried-fish
+27-09-2026  07:29:03    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:29:03    Data not found for url = https://chaldal.com/milk-juice-drinks
+27-09-2026  07:29:13    Retry for url: baby milk
+27-09-2026  07:29:33    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:29:33    Data not found for url = https://chaldal.com/milk-juice-drinks
+27-09-2026  07:30:01    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:30:01    Data not found for url = https://chaldal.com/toddler-food
+27-09-2026  07:30:11    Retry for url: other baby food
+27-09-2026  07:30:31    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:30:31    Data not found for url = https://chaldal.com/toddler-food
+27-09-2026  07:30:59    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:30:59    Data not found for url = https://chaldal.com/newborn-2
+27-09-2026  07:31:09    Retry for url: diapars smallest size
+27-09-2026  07:31:29    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:31:29    Data not found for url = https://chaldal.com/newborn-2
+27-09-2026  07:31:57    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:31:57    Data not found for url = https://chaldal.com/small-2
+27-09-2026  07:32:07    Retry for url: diapars small size
+27-09-2026  07:32:27    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:32:27    Data not found for url = https://chaldal.com/small-2
+27-09-2026  07:33:54    EXception occured: HTTP Error 504: Gateway Timeout
+27-09-2026  07:33:54    Data not found for url = https://chaldal.com/large-2
+27-09-2026  07:34:04    Retry for url: diapars large size
+27-09-2026  07:34:25    EXception occured: HTTP Error 502: Bad Gateway
+27-09-2026  07:34:25    Data not found for url = https://chaldal.com/large-2
+27-09-2026  07:34:32    script ends for testing github action

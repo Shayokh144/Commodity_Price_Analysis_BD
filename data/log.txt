@@ -19388,3 +19388,100 @@ Call log:
 27-09-2026  07:34:25    EXception occured: HTTP Error 502: Bad Gateway
 27-09-2026  07:34:25    Data not found for url = https://chaldal.com/large-2
 27-09-2026  07:34:32    script ends for testing github action
+28-09-2026  07:50:13    script starts for testing github action
+28-09-2026  07:50:40    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:50:40    Data not found for url = https://chaldal.com/oil
+28-09-2026  07:50:50    Retry for url: oil
+28-09-2026  07:51:11    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:51:11    Data not found for url = https://chaldal.com/oil
+28-09-2026  07:51:38    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:51:38    Data not found for url = https://chaldal.com/rices
+28-09-2026  07:51:48    Retry for url: rice
+28-09-2026  07:52:08    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:52:08    Data not found for url = https://chaldal.com/rices
+28-09-2026  07:52:36    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:52:36    Data not found for url = https://chaldal.com/dal-or-lentil
+28-09-2026  07:52:46    Retry for url: lentil
+28-09-2026  07:53:06    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:53:06    Data not found for url = https://chaldal.com/dal-or-lentil
+28-09-2026  07:53:33    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:53:33    Data not found for url = https://chaldal.com/spices
+28-09-2026  07:53:43    Retry for url: spices
+28-09-2026  07:54:04    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:54:04    Data not found for url = https://chaldal.com/spices
+28-09-2026  07:54:31    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:54:31    Data not found for url = https://chaldal.com/flour
+28-09-2026  07:54:41    Retry for url: flour
+28-09-2026  07:55:01    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:55:01    Data not found for url = https://chaldal.com/flour
+28-09-2026  07:55:29    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:55:29    Data not found for url = https://chaldal.com/eggs
+28-09-2026  07:55:39    Retry for url: egg
+28-09-2026  07:55:59    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:55:59    Data not found for url = https://chaldal.com/eggs
+28-09-2026  07:56:27    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:56:27    Data not found for url = https://chaldal.com/powder-milk
+28-09-2026  07:56:37    Retry for url: powder milk
+28-09-2026  07:56:57    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:56:57    Data not found for url = https://chaldal.com/powder-milk
+28-09-2026  07:57:25    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:57:25    Data not found for url = https://chaldal.com/liquid-uht-milk
+28-09-2026  07:57:35    Retry for url: liquid milk
+28-09-2026  07:57:55    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:57:55    Data not found for url = https://chaldal.com/liquid-uht-milk
+28-09-2026  07:58:22    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:58:22    Data not found for url = https://chaldal.com/fresh-fruit
+28-09-2026  07:58:32    Retry for url: fruits
+28-09-2026  07:58:53    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:58:53    Data not found for url = https://chaldal.com/fresh-fruit
+28-09-2026  07:59:20    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:59:20    Data not found for url = https://chaldal.com/fresh-vegetable
+28-09-2026  07:59:30    Retry for url: vegetable
+28-09-2026  07:59:51    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  07:59:51    Data not found for url = https://chaldal.com/fresh-vegetable
+28-09-2026  08:00:18    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:00:18    Data not found for url = https://chaldal.com/chicken-poultry
+28-09-2026  08:00:28    Retry for url: chicken
+28-09-2026  08:00:48    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:00:48    Data not found for url = https://chaldal.com/chicken-poultry
+28-09-2026  08:01:16    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:01:16    Data not found for url = https://chaldal.com/meat-new
+28-09-2026  08:01:26    Retry for url: meat
+28-09-2026  08:01:46    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:01:46    Data not found for url = https://chaldal.com/meat-new
+28-09-2026  08:02:14    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:02:14    Data not found for url = https://chaldal.com/frozen-fish
+28-09-2026  08:02:24    Retry for url: frozen fish
+28-09-2026  08:02:44    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:02:44    Data not found for url = https://chaldal.com/frozen-fish
+28-09-2026  08:03:12    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:03:12    Data not found for url = https://chaldal.com/dried-fish
+28-09-2026  08:03:22    Retry for url: dried fish
+28-09-2026  08:03:42    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:03:42    Data not found for url = https://chaldal.com/dried-fish
+28-09-2026  08:04:10    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:04:10    Data not found for url = https://chaldal.com/milk-juice-drinks
+28-09-2026  08:04:20    Retry for url: baby milk
+28-09-2026  08:04:40    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:04:40    Data not found for url = https://chaldal.com/milk-juice-drinks
+28-09-2026  08:05:07    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:05:07    Data not found for url = https://chaldal.com/toddler-food
+28-09-2026  08:05:17    Retry for url: other baby food
+28-09-2026  08:05:37    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:05:37    Data not found for url = https://chaldal.com/toddler-food
+28-09-2026  08:06:05    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:06:05    Data not found for url = https://chaldal.com/newborn-2
+28-09-2026  08:06:15    Retry for url: diapars smallest size
+28-09-2026  08:06:36    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:06:36    Data not found for url = https://chaldal.com/newborn-2
+28-09-2026  08:07:03    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:07:03    Data not found for url = https://chaldal.com/small-2
+28-09-2026  08:07:13    Retry for url: diapars small size
+28-09-2026  08:07:34    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:07:34    Data not found for url = https://chaldal.com/small-2
+28-09-2026  08:08:01    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:08:01    Data not found for url = https://chaldal.com/large-2
+28-09-2026  08:08:11    Retry for url: diapars large size
+28-09-2026  08:08:31    EXception occured: HTTP Error 503: Service Unavailable
+28-09-2026  08:08:31    Data not found for url = https://chaldal.com/large-2
+28-09-2026  08:08:38    script ends for testing github action

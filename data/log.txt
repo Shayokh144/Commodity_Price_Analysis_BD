@@ -20663,3 +20663,103 @@ Call log:
 13-10-2026  08:50:18    Rendered parse: product_divs=18 real_products=18 loading_only=False
 13-10-2026  08:50:18    Data rows for diapars large size: 18
 13-10-2026  08:50:25    script ends for testing github action
+14-10-2026  06:49:37    script starts for testing github action
+14-10-2026  06:50:06    Static parse: product_divs=44 real_products=44 loading_only=False
+14-10-2026  06:50:06    Data rows for oil: 44
+14-10-2026  06:50:36    Static parse: product_divs=37 real_products=37 loading_only=False
+14-10-2026  06:50:36    Data rows for rice: 37
+14-10-2026  06:51:05    Static parse: product_divs=25 real_products=25 loading_only=False
+14-10-2026  06:51:05    Data rows for lentil: 25
+14-10-2026  06:52:47    Static parse: product_divs=1 real_products=0 loading_only=True
+14-10-2026  06:52:47    Static HTML had no products, trying rendered HTML
+14-10-2026  06:52:47    No product selector visible after 10s
+14-10-2026  06:52:47    Rendered parse: product_divs=0 real_products=0 loading_only=False
+14-10-2026  06:52:47    Rendered HTML saved: ./data/debug/rendered_chaldal_com_spices.html
+14-10-2026  06:52:47    Data rows for spices: 0
+14-10-2026  06:52:57    Retry for url: spices
+14-10-2026  06:54:49    Static parse: product_divs=0 real_products=0 loading_only=False
+14-10-2026  06:54:49    Static HTML had no products, trying rendered HTML
+14-10-2026  06:54:49    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/spices", waiting until "networkidle"
+
+14-10-2026  06:54:49    Rendered HTML not available
+14-10-2026  06:54:49    Data rows for spices: 0
+14-10-2026  06:55:18    Static parse: product_divs=21 real_products=21 loading_only=False
+14-10-2026  06:55:18    Data rows for flour: 21
+14-10-2026  06:55:47    Static parse: product_divs=8 real_products=8 loading_only=False
+14-10-2026  06:55:47    Data rows for egg: 8
+14-10-2026  06:56:16    Static parse: product_divs=24 real_products=24 loading_only=False
+14-10-2026  06:56:16    Data rows for powder milk: 24
+14-10-2026  06:56:45    Static parse: product_divs=25 real_products=25 loading_only=False
+14-10-2026  06:56:45    Data rows for liquid milk: 25
+14-10-2026  06:57:14    Static parse: product_divs=25 real_products=25 loading_only=False
+14-10-2026  06:57:14    Data rows for fruits: 25
+14-10-2026  06:58:43    Static parse: product_divs=1 real_products=0 loading_only=True
+14-10-2026  06:58:43    Static HTML had no products, trying rendered HTML
+14-10-2026  06:58:43    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/fresh-vegetable", waiting until "networkidle"
+
+14-10-2026  06:58:43    Rendered HTML not available
+14-10-2026  06:58:43    Data rows for vegetable: 0
+14-10-2026  06:58:53    Retry for url: vegetable
+14-10-2026  07:00:08    Static parse: product_divs=1 real_products=0 loading_only=True
+14-10-2026  07:00:08    Static HTML had no products, trying rendered HTML
+14-10-2026  07:00:08    Rendered parse: product_divs=77 real_products=77 loading_only=False
+14-10-2026  07:00:08    Data rows for vegetable: 77
+14-10-2026  07:02:19    Static parse: product_divs=0 real_products=0 loading_only=False
+14-10-2026  07:02:19    Static HTML had no products, trying rendered HTML
+14-10-2026  07:02:19    No product selector visible after 10s
+14-10-2026  07:02:19    Rendered parse: product_divs=0 real_products=0 loading_only=False
+14-10-2026  07:02:19    Rendered HTML saved: ./data/debug/rendered_chaldal_com_chicken_poultry.html
+14-10-2026  07:02:19    Data rows for chicken: 0
+14-10-2026  07:02:29    Retry for url: chicken
+14-10-2026  07:02:53    Static parse: product_divs=20 real_products=20 loading_only=False
+14-10-2026  07:02:53    Data rows for chicken: 20
+14-10-2026  07:03:22    Static parse: product_divs=49 real_products=49 loading_only=False
+14-10-2026  07:03:22    Data rows for meat: 49
+14-10-2026  07:05:34    Static parse: product_divs=0 real_products=0 loading_only=False
+14-10-2026  07:05:34    Static HTML had no products, trying rendered HTML
+14-10-2026  07:05:34    No product selector visible after 10s
+14-10-2026  07:05:34    Rendered parse: product_divs=0 real_products=0 loading_only=False
+14-10-2026  07:05:34    Rendered HTML saved: ./data/debug/rendered_chaldal_com_frozen_fish.html
+14-10-2026  07:05:34    Data rows for frozen fish: 0
+14-10-2026  07:05:44    Retry for url: frozen fish
+14-10-2026  07:07:09    Static parse: product_divs=1 real_products=0 loading_only=True
+14-10-2026  07:07:09    Static HTML had no products, trying rendered HTML
+14-10-2026  07:07:09    Playwright render failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chaldal.com/frozen-fish", waiting until "networkidle"
+
+14-10-2026  07:07:09    Rendered HTML not available
+14-10-2026  07:07:09    Data rows for frozen fish: 0
+14-10-2026  07:07:37    Static parse: product_divs=5 real_products=5 loading_only=False
+14-10-2026  07:07:37    Data rows for dried fish: 5
+14-10-2026  07:08:06    Static parse: product_divs=13 real_products=13 loading_only=False
+14-10-2026  07:08:06    Data rows for baby milk: 13
+14-10-2026  07:10:20    Static parse: product_divs=0 real_products=0 loading_only=False
+14-10-2026  07:10:20    Static HTML had no products, trying rendered HTML
+14-10-2026  07:10:20    No product selector visible after 10s
+14-10-2026  07:10:20    Rendered parse: product_divs=0 real_products=0 loading_only=False
+14-10-2026  07:10:20    Rendered HTML saved: ./data/debug/rendered_chaldal_com_toddler_food.html
+14-10-2026  07:10:20    Data rows for other baby food: 0
+14-10-2026  07:10:30    Retry for url: other baby food
+14-10-2026  07:10:51    Static parse: product_divs=19 real_products=19 loading_only=False
+14-10-2026  07:10:51    Data rows for other baby food: 19
+14-10-2026  07:12:41    Static parse: product_divs=0 real_products=0 loading_only=False
+14-10-2026  07:12:41    Static HTML had no products, trying rendered HTML
+14-10-2026  07:12:41    Rendered parse: product_divs=6 real_products=6 loading_only=False
+14-10-2026  07:12:41    Data rows for diapars smallest size: 6
+14-10-2026  07:14:52    Static parse: product_divs=0 real_products=0 loading_only=False
+14-10-2026  07:14:52    Static HTML had no products, trying rendered HTML
+14-10-2026  07:14:52    No product selector visible after 10s
+14-10-2026  07:14:52    Rendered parse: product_divs=0 real_products=0 loading_only=False
+14-10-2026  07:14:52    Rendered HTML saved: ./data/debug/rendered_chaldal_com_small_2.html
+14-10-2026  07:14:52    Data rows for diapars small size: 0
+14-10-2026  07:15:02    Retry for url: diapars small size
+14-10-2026  07:15:24    Static parse: product_divs=13 real_products=13 loading_only=False
+14-10-2026  07:15:24    Data rows for diapars small size: 13
+14-10-2026  07:15:54    Static parse: product_divs=18 real_products=18 loading_only=False
+14-10-2026  07:15:54    Data rows for diapars large size: 18
+14-10-2026  07:16:01    script ends for testing github action

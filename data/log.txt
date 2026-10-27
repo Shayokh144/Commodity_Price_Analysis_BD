@@ -21805,3 +21805,100 @@ Call log:
 26-10-2026  07:25:23    EXception occured: HTTP Error 403: Forbidden
 26-10-2026  07:25:23    Data not found for url = https://chaldal.com/large-2
 26-10-2026  07:25:30    script ends for testing github action
+27-10-2026  06:56:21    script starts for testing github action
+27-10-2026  06:56:28    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:56:28    Data not found for url = https://chaldal.com/oil
+27-10-2026  06:56:38    Retry for url: oil
+27-10-2026  06:56:38    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:56:38    Data not found for url = https://chaldal.com/oil
+27-10-2026  06:56:45    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:56:45    Data not found for url = https://chaldal.com/rices
+27-10-2026  06:56:55    Retry for url: rice
+27-10-2026  06:56:55    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:56:55    Data not found for url = https://chaldal.com/rices
+27-10-2026  06:57:02    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:57:02    Data not found for url = https://chaldal.com/dal-or-lentil
+27-10-2026  06:57:12    Retry for url: lentil
+27-10-2026  06:57:13    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:57:13    Data not found for url = https://chaldal.com/dal-or-lentil
+27-10-2026  06:57:20    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:57:20    Data not found for url = https://chaldal.com/spices
+27-10-2026  06:57:30    Retry for url: spices
+27-10-2026  06:57:30    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:57:30    Data not found for url = https://chaldal.com/spices
+27-10-2026  06:57:37    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:57:37    Data not found for url = https://chaldal.com/flour
+27-10-2026  06:57:47    Retry for url: flour
+27-10-2026  06:57:47    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:57:47    Data not found for url = https://chaldal.com/flour
+27-10-2026  06:57:54    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:57:54    Data not found for url = https://chaldal.com/eggs
+27-10-2026  06:58:04    Retry for url: egg
+27-10-2026  06:58:04    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:58:04    Data not found for url = https://chaldal.com/eggs
+27-10-2026  06:58:11    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:58:11    Data not found for url = https://chaldal.com/powder-milk
+27-10-2026  06:58:21    Retry for url: powder milk
+27-10-2026  06:58:21    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:58:21    Data not found for url = https://chaldal.com/powder-milk
+27-10-2026  06:58:28    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:58:28    Data not found for url = https://chaldal.com/liquid-uht-milk
+27-10-2026  06:58:38    Retry for url: liquid milk
+27-10-2026  06:58:38    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:58:38    Data not found for url = https://chaldal.com/liquid-uht-milk
+27-10-2026  06:58:45    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:58:45    Data not found for url = https://chaldal.com/fresh-fruit
+27-10-2026  06:58:55    Retry for url: fruits
+27-10-2026  06:58:55    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:58:55    Data not found for url = https://chaldal.com/fresh-fruit
+27-10-2026  06:59:02    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:59:02    Data not found for url = https://chaldal.com/fresh-vegetable
+27-10-2026  06:59:12    Retry for url: vegetable
+27-10-2026  06:59:12    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:59:12    Data not found for url = https://chaldal.com/fresh-vegetable
+27-10-2026  06:59:19    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:59:19    Data not found for url = https://chaldal.com/chicken-poultry
+27-10-2026  06:59:29    Retry for url: chicken
+27-10-2026  06:59:29    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:59:29    Data not found for url = https://chaldal.com/chicken-poultry
+27-10-2026  06:59:37    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:59:37    Data not found for url = https://chaldal.com/meat-new
+27-10-2026  06:59:47    Retry for url: meat
+27-10-2026  06:59:47    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:59:47    Data not found for url = https://chaldal.com/meat-new
+27-10-2026  06:59:54    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  06:59:54    Data not found for url = https://chaldal.com/frozen-fish
+27-10-2026  07:00:04    Retry for url: frozen fish
+27-10-2026  07:00:04    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  07:00:04    Data not found for url = https://chaldal.com/frozen-fish
+27-10-2026  07:00:11    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  07:00:11    Data not found for url = https://chaldal.com/dried-fish
+27-10-2026  07:00:21    Retry for url: dried fish
+27-10-2026  07:00:21    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  07:00:21    Data not found for url = https://chaldal.com/dried-fish
+27-10-2026  07:00:28    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  07:00:28    Data not found for url = https://chaldal.com/milk-juice-drinks
+27-10-2026  07:00:38    Retry for url: baby milk
+27-10-2026  07:00:38    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  07:00:38    Data not found for url = https://chaldal.com/milk-juice-drinks
+27-10-2026  07:00:45    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  07:00:45    Data not found for url = https://chaldal.com/toddler-food
+27-10-2026  07:00:55    Retry for url: other baby food
+27-10-2026  07:00:55    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  07:00:55    Data not found for url = https://chaldal.com/toddler-food
+27-10-2026  07:01:02    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  07:01:02    Data not found for url = https://chaldal.com/newborn-2
+27-10-2026  07:01:12    Retry for url: diapars smallest size
+27-10-2026  07:01:12    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  07:01:12    Data not found for url = https://chaldal.com/newborn-2
+27-10-2026  07:01:19    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  07:01:19    Data not found for url = https://chaldal.com/small-2
+27-10-2026  07:01:29    Retry for url: diapars small size
+27-10-2026  07:01:29    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  07:01:29    Data not found for url = https://chaldal.com/small-2
+27-10-2026  07:01:36    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  07:01:36    Data not found for url = https://chaldal.com/large-2
+27-10-2026  07:01:46    Retry for url: diapars large size
+27-10-2026  07:01:46    EXception occured: HTTP Error 403: Forbidden
+27-10-2026  07:01:46    Data not found for url = https://chaldal.com/large-2
+27-10-2026  07:01:53    script ends for testing github action

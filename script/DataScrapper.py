@@ -13,9 +13,22 @@ import csv
 from datetime import datetime
 import os
 
+# Cloudflare rejects the bare "Mozilla/5.0" token with a 403 challenge page.
+# A full browser User-Agent still receives the catalog HTML.
+_BROWSER_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/131.0.0.0 Safari/537.36"
+)
+_BROWSER_HEADERS = {
+    "User-Agent": _BROWSER_UA,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+}
+
+
 def _fetch_html(productPageUrl):
-    hdr = {'User-Agent': 'Mozilla/5.0'}
-    req = Request(productPageUrl, headers=hdr)
+    req = Request(productPageUrl, headers=_BROWSER_HEADERS)
     response = urlopen(req)
     statusCode = response.getcode()
     html = response.read().decode("utf-8", errors="ignore")
@@ -31,12 +44,16 @@ def _fetch_rendered_html(productPageUrl, log_data):
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
-            page = browser.new_page()
+            # Set the UA on the context. Overriding it to "Mozilla/5.0"
+            # makes Cloudflare return the same 403 challenge as urllib.
+            context = browser.new_context(user_agent=_BROWSER_UA, locale="en-US")
+            page = context.new_page()
             page.set_extra_http_headers({
-                "User-Agent": "Mozilla/5.0",
                 "Accept-Language": "en-US,en;q=0.9"
             })
-            page.goto(productPageUrl, wait_until="networkidle", timeout=60000)
+            # networkidle often never settles on this site and the 60s
+            # timeout skips the render entirely.
+            page.goto(productPageUrl, wait_until="domcontentloaded", timeout=60000)
             # Give the app time to render products after initial load.
             try:
                 page.wait_for_selector("div.productV2Catalog, div.product", timeout=10000)
@@ -148,6 +165,26 @@ def _extract_products_from_html(html, date, time):
     return productData, len(productDivs), hasRealProduct, loadingOnly
 
 
+def _load_rendered_products(productPageUrl, date, time, log_data):
+    rendered_html = _fetch_rendered_html(productPageUrl, log_data)
+    if not rendered_html:
+        log_data.append("Rendered HTML not available")
+        return []
+    productData, renderDivs, renderHasReal, renderLoadingOnly = _extract_products_from_html(
+        rendered_html, date, time
+    )
+    log_data.append(
+        "Rendered parse: product_divs=" + str(renderDivs) +
+        " real_products=" + str(len(productData)) +
+        " loading_only=" + str(renderLoadingOnly)
+    )
+    if renderHasReal == False:
+        debugName = "rendered_" + _slug_from_url(productPageUrl) + ".html"
+        debugPath = _save_debug_html(rendered_html, debugName)
+        log_data.append("Rendered HTML saved: " + debugPath)
+    return productData
+
+
 def _slug_from_url(url):
     slug = re.sub(r'^https?://', '', url)
     slug = re.sub(r'[^a-zA-Z0-9]+', '_', slug)
@@ -183,30 +220,21 @@ def get_product_data(productPageUrl, urlLabel = ""):
             )
             if productDivCount == 0 or hasRealProduct == False:
                 LOG_DATA.append("Static HTML had no products, trying rendered HTML")
-                rendered_html = _fetch_rendered_html(productPageUrl, LOG_DATA)
-                if rendered_html:
-                    productData, renderDivs, renderHasReal, renderLoadingOnly = _extract_products_from_html(
-                        rendered_html, date, time
-                    )
-                    LOG_DATA.append(
-                        "Rendered parse: product_divs=" + str(renderDivs) +
-                        " real_products=" + str(len(productData)) +
-                        " loading_only=" + str(renderLoadingOnly)
-                    )
-                    if renderHasReal == False:
-                        debugName = "rendered_" + _slug_from_url(productPageUrl) + ".html"
-                        debugPath = _save_debug_html(rendered_html, debugName)
-                        LOG_DATA.append("Rendered HTML saved: " + debugPath)
-                else:
-                    LOG_DATA.append("Rendered HTML not available")
-            if urlLabel != "":
-                LOG_DATA.append("Data rows for " + urlLabel + ": " + str(len(productData)))
+                productData = _load_rendered_products(productPageUrl, date, time, LOG_DATA)
         else:
             LOG_DATA.append("Non-200 status: " + str(statusCode))
+            LOG_DATA.append("Static fetch failed, trying rendered HTML")
+            productData = _load_rendered_products(productPageUrl, date, time, LOG_DATA)
     except Exception as e:
-        shouldRetry = True
+        # urllib raises on Cloudflare 403, which used to skip rendering entirely.
         LOG_DATA.append("EXception occured: " + str(e))
-        LOG_DATA.append("Data not found for url = " + productPageUrl)
+        LOG_DATA.append("Static fetch failed, trying rendered HTML")
+        productData = _load_rendered_products(productPageUrl, date, time, LOG_DATA)
+        if len(productData) == 0:
+            shouldRetry = True
+            LOG_DATA.append("Data not found for url = " + productPageUrl)
+    if urlLabel != "":
+        LOG_DATA.append("Data rows for " + urlLabel + ": " + str(len(productData)))
 
     write_log(LOG_DATA)
     return productData, shouldRetry

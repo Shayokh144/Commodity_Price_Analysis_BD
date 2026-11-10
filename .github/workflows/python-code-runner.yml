@@ -4,8 +4,8 @@
 name: Python Script Runner
 
 on:
-  schedule: ## schedule job at 8:00 AM BD time (UTC+6) daily
-    - cron: '0 2 * * *'
+  schedule: ## schedule job at ~6:17 AM Bangkok (UTC+7) / 5:17 AM BD (UTC+6) daily; off-minute to reduce GitHub scheduler delays
+    - cron: '17 23 * * *'
   workflow_dispatch:
 jobs:
   build:

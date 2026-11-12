@@ -4,8 +4,8 @@
 name: Python Script Runner
 
 on:
-  schedule: ## targets 2:17 AM Bangkok time (UTC+7) / 1:17 AM BD time (UTC+6); GitHub may delay scheduled runs
-    - cron: '17 19 * * *'
+  schedule: ## targets 17:17 UTC = 12:17 AM Bangkok (UTC+7) = 11:17 PM Bangladesh (UTC+6, previous day); GitHub may delay scheduled runs
+    - cron: '17 17 * * *'
   workflow_dispatch:
 jobs:
   build:

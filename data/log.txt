@@ -24221,3 +24221,290 @@ Call log:
 22-11-2026  22:58:08    Static parse: product_divs=18 real_products=18 loading_only=False
 22-11-2026  22:58:08    Data rows for diapars large size: 18
 22-11-2026  22:58:15    script ends for testing github action
+24-11-2026  03:30:06    script starts for testing github action
+24-11-2026  03:31:14    EXception occured: HTTP Error 526: <none>
+24-11-2026  03:31:14    Static fetch failed, trying rendered HTML
+24-11-2026  03:31:14    No product selector visible after 10s
+24-11-2026  03:31:14    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:31:14    Rendered HTML saved: ./data/debug/rendered_chaldal_com_oil.html
+24-11-2026  03:31:14    Data not found for url = https://chaldal.com/oil
+24-11-2026  03:31:14    Data rows for oil: 0
+24-11-2026  03:31:24    Retry for url: oil
+24-11-2026  03:32:22    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:32:22    Static fetch failed, trying rendered HTML
+24-11-2026  03:32:22    No product selector visible after 10s
+24-11-2026  03:32:22    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:32:22    Rendered HTML saved: ./data/debug/rendered_chaldal_com_oil.html
+24-11-2026  03:32:22    Data not found for url = https://chaldal.com/oil
+24-11-2026  03:32:22    Data rows for oil: 0
+24-11-2026  03:33:28    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:33:28    Static fetch failed, trying rendered HTML
+24-11-2026  03:33:28    No product selector visible after 10s
+24-11-2026  03:33:28    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:33:28    Rendered HTML saved: ./data/debug/rendered_chaldal_com_rices.html
+24-11-2026  03:33:28    Data not found for url = https://chaldal.com/rices
+24-11-2026  03:33:28    Data rows for rice: 0
+24-11-2026  03:33:38    Retry for url: rice
+24-11-2026  03:34:36    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:34:36    Static fetch failed, trying rendered HTML
+24-11-2026  03:34:36    No product selector visible after 10s
+24-11-2026  03:34:36    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:34:36    Rendered HTML saved: ./data/debug/rendered_chaldal_com_rices.html
+24-11-2026  03:34:36    Data not found for url = https://chaldal.com/rices
+24-11-2026  03:34:36    Data rows for rice: 0
+24-11-2026  03:35:42    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:35:42    Static fetch failed, trying rendered HTML
+24-11-2026  03:35:42    No product selector visible after 10s
+24-11-2026  03:35:42    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:35:42    Rendered HTML saved: ./data/debug/rendered_chaldal_com_dal_or_lentil.html
+24-11-2026  03:35:42    Data not found for url = https://chaldal.com/dal-or-lentil
+24-11-2026  03:35:42    Data rows for lentil: 0
+24-11-2026  03:35:52    Retry for url: lentil
+24-11-2026  03:36:51    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:36:51    Static fetch failed, trying rendered HTML
+24-11-2026  03:36:51    No product selector visible after 10s
+24-11-2026  03:36:51    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:36:51    Rendered HTML saved: ./data/debug/rendered_chaldal_com_dal_or_lentil.html
+24-11-2026  03:36:51    Data not found for url = https://chaldal.com/dal-or-lentil
+24-11-2026  03:36:51    Data rows for lentil: 0
+24-11-2026  03:37:56    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:37:56    Static fetch failed, trying rendered HTML
+24-11-2026  03:37:56    No product selector visible after 10s
+24-11-2026  03:37:56    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:37:56    Rendered HTML saved: ./data/debug/rendered_chaldal_com_spices.html
+24-11-2026  03:37:56    Data not found for url = https://chaldal.com/spices
+24-11-2026  03:37:56    Data rows for spices: 0
+24-11-2026  03:38:06    Retry for url: spices
+24-11-2026  03:39:05    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:39:05    Static fetch failed, trying rendered HTML
+24-11-2026  03:39:05    No product selector visible after 10s
+24-11-2026  03:39:05    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:39:05    Rendered HTML saved: ./data/debug/rendered_chaldal_com_spices.html
+24-11-2026  03:39:05    Data not found for url = https://chaldal.com/spices
+24-11-2026  03:39:05    Data rows for spices: 0
+24-11-2026  03:40:11    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:40:11    Static fetch failed, trying rendered HTML
+24-11-2026  03:40:11    No product selector visible after 10s
+24-11-2026  03:40:11    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:40:11    Rendered HTML saved: ./data/debug/rendered_chaldal_com_flour.html
+24-11-2026  03:40:11    Data not found for url = https://chaldal.com/flour
+24-11-2026  03:40:11    Data rows for flour: 0
+24-11-2026  03:40:21    Retry for url: flour
+24-11-2026  03:41:20    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:41:20    Static fetch failed, trying rendered HTML
+24-11-2026  03:41:20    No product selector visible after 10s
+24-11-2026  03:41:20    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:41:20    Rendered HTML saved: ./data/debug/rendered_chaldal_com_flour.html
+24-11-2026  03:41:20    Data not found for url = https://chaldal.com/flour
+24-11-2026  03:41:20    Data rows for flour: 0
+24-11-2026  03:42:26    EXception occured: HTTP Error 526: <none>
+24-11-2026  03:42:26    Static fetch failed, trying rendered HTML
+24-11-2026  03:42:26    No product selector visible after 10s
+24-11-2026  03:42:26    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:42:26    Rendered HTML saved: ./data/debug/rendered_chaldal_com_eggs.html
+24-11-2026  03:42:26    Data not found for url = https://chaldal.com/eggs
+24-11-2026  03:42:26    Data rows for egg: 0
+24-11-2026  03:42:36    Retry for url: egg
+24-11-2026  03:43:34    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:43:34    Static fetch failed, trying rendered HTML
+24-11-2026  03:43:34    No product selector visible after 10s
+24-11-2026  03:43:34    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:43:34    Rendered HTML saved: ./data/debug/rendered_chaldal_com_eggs.html
+24-11-2026  03:43:34    Data not found for url = https://chaldal.com/eggs
+24-11-2026  03:43:34    Data rows for egg: 0
+24-11-2026  03:44:40    EXception occured: HTTP Error 526: <none>
+24-11-2026  03:44:40    Static fetch failed, trying rendered HTML
+24-11-2026  03:44:40    No product selector visible after 10s
+24-11-2026  03:44:40    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:44:40    Rendered HTML saved: ./data/debug/rendered_chaldal_com_powder_milk.html
+24-11-2026  03:44:40    Data not found for url = https://chaldal.com/powder-milk
+24-11-2026  03:44:40    Data rows for powder milk: 0
+24-11-2026  03:44:50    Retry for url: powder milk
+24-11-2026  03:45:48    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:45:48    Static fetch failed, trying rendered HTML
+24-11-2026  03:45:48    No product selector visible after 10s
+24-11-2026  03:45:48    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:45:48    Rendered HTML saved: ./data/debug/rendered_chaldal_com_powder_milk.html
+24-11-2026  03:45:48    Data not found for url = https://chaldal.com/powder-milk
+24-11-2026  03:45:48    Data rows for powder milk: 0
+24-11-2026  03:46:54    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:46:54    Static fetch failed, trying rendered HTML
+24-11-2026  03:46:54    No product selector visible after 10s
+24-11-2026  03:46:54    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:46:54    Rendered HTML saved: ./data/debug/rendered_chaldal_com_liquid_uht_milk.html
+24-11-2026  03:46:54    Data not found for url = https://chaldal.com/liquid-uht-milk
+24-11-2026  03:46:54    Data rows for liquid milk: 0
+24-11-2026  03:47:04    Retry for url: liquid milk
+24-11-2026  03:48:03    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:48:03    Static fetch failed, trying rendered HTML
+24-11-2026  03:48:03    No product selector visible after 10s
+24-11-2026  03:48:03    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:48:03    Rendered HTML saved: ./data/debug/rendered_chaldal_com_liquid_uht_milk.html
+24-11-2026  03:48:03    Data not found for url = https://chaldal.com/liquid-uht-milk
+24-11-2026  03:48:03    Data rows for liquid milk: 0
+24-11-2026  03:49:08    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:49:08    Static fetch failed, trying rendered HTML
+24-11-2026  03:49:08    No product selector visible after 10s
+24-11-2026  03:49:08    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:49:08    Rendered HTML saved: ./data/debug/rendered_chaldal_com_fresh_fruit.html
+24-11-2026  03:49:08    Data not found for url = https://chaldal.com/fresh-fruit
+24-11-2026  03:49:08    Data rows for fruits: 0
+24-11-2026  03:49:18    Retry for url: fruits
+24-11-2026  03:50:17    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:50:17    Static fetch failed, trying rendered HTML
+24-11-2026  03:50:17    No product selector visible after 10s
+24-11-2026  03:50:17    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:50:17    Rendered HTML saved: ./data/debug/rendered_chaldal_com_fresh_fruit.html
+24-11-2026  03:50:17    Data not found for url = https://chaldal.com/fresh-fruit
+24-11-2026  03:50:17    Data rows for fruits: 0
+24-11-2026  03:51:22    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:51:22    Static fetch failed, trying rendered HTML
+24-11-2026  03:51:22    No product selector visible after 10s
+24-11-2026  03:51:22    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:51:22    Rendered HTML saved: ./data/debug/rendered_chaldal_com_fresh_vegetable.html
+24-11-2026  03:51:22    Data not found for url = https://chaldal.com/fresh-vegetable
+24-11-2026  03:51:22    Data rows for vegetable: 0
+24-11-2026  03:51:32    Retry for url: vegetable
+24-11-2026  03:52:31    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:52:31    Static fetch failed, trying rendered HTML
+24-11-2026  03:52:31    No product selector visible after 10s
+24-11-2026  03:52:31    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:52:31    Rendered HTML saved: ./data/debug/rendered_chaldal_com_fresh_vegetable.html
+24-11-2026  03:52:31    Data not found for url = https://chaldal.com/fresh-vegetable
+24-11-2026  03:52:31    Data rows for vegetable: 0
+24-11-2026  03:53:37    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:53:37    Static fetch failed, trying rendered HTML
+24-11-2026  03:53:37    No product selector visible after 10s
+24-11-2026  03:53:37    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:53:37    Rendered HTML saved: ./data/debug/rendered_chaldal_com_chicken_poultry.html
+24-11-2026  03:53:37    Data not found for url = https://chaldal.com/chicken-poultry
+24-11-2026  03:53:37    Data rows for chicken: 0
+24-11-2026  03:53:47    Retry for url: chicken
+24-11-2026  03:54:46    EXception occured: HTTP Error 526: <none>
+24-11-2026  03:54:46    Static fetch failed, trying rendered HTML
+24-11-2026  03:54:46    No product selector visible after 10s
+24-11-2026  03:54:46    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:54:46    Rendered HTML saved: ./data/debug/rendered_chaldal_com_chicken_poultry.html
+24-11-2026  03:54:46    Data not found for url = https://chaldal.com/chicken-poultry
+24-11-2026  03:54:46    Data rows for chicken: 0
+24-11-2026  03:55:51    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:55:51    Static fetch failed, trying rendered HTML
+24-11-2026  03:55:51    No product selector visible after 10s
+24-11-2026  03:55:51    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:55:51    Rendered HTML saved: ./data/debug/rendered_chaldal_com_meat_new.html
+24-11-2026  03:55:51    Data not found for url = https://chaldal.com/meat-new
+24-11-2026  03:55:51    Data rows for meat: 0
+24-11-2026  03:56:01    Retry for url: meat
+24-11-2026  03:57:00    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:57:00    Static fetch failed, trying rendered HTML
+24-11-2026  03:57:00    No product selector visible after 10s
+24-11-2026  03:57:00    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:57:00    Rendered HTML saved: ./data/debug/rendered_chaldal_com_meat_new.html
+24-11-2026  03:57:00    Data not found for url = https://chaldal.com/meat-new
+24-11-2026  03:57:00    Data rows for meat: 0
+24-11-2026  03:58:06    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:58:06    Static fetch failed, trying rendered HTML
+24-11-2026  03:58:06    No product selector visible after 10s
+24-11-2026  03:58:06    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:58:06    Rendered HTML saved: ./data/debug/rendered_chaldal_com_frozen_fish.html
+24-11-2026  03:58:06    Data not found for url = https://chaldal.com/frozen-fish
+24-11-2026  03:58:06    Data rows for frozen fish: 0
+24-11-2026  03:58:16    Retry for url: frozen fish
+24-11-2026  03:59:15    EXception occured: HTTP Error 522: <none>
+24-11-2026  03:59:15    Static fetch failed, trying rendered HTML
+24-11-2026  03:59:15    No product selector visible after 10s
+24-11-2026  03:59:15    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  03:59:15    Rendered HTML saved: ./data/debug/rendered_chaldal_com_frozen_fish.html
+24-11-2026  03:59:15    Data not found for url = https://chaldal.com/frozen-fish
+24-11-2026  03:59:15    Data rows for frozen fish: 0
+24-11-2026  04:00:21    EXception occured: HTTP Error 522: <none>
+24-11-2026  04:00:21    Static fetch failed, trying rendered HTML
+24-11-2026  04:00:21    No product selector visible after 10s
+24-11-2026  04:00:21    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  04:00:21    Rendered HTML saved: ./data/debug/rendered_chaldal_com_dried_fish.html
+24-11-2026  04:00:21    Data not found for url = https://chaldal.com/dried-fish
+24-11-2026  04:00:21    Data rows for dried fish: 0
+24-11-2026  04:00:31    Retry for url: dried fish
+24-11-2026  04:01:29    EXception occured: HTTP Error 522: <none>
+24-11-2026  04:01:29    Static fetch failed, trying rendered HTML
+24-11-2026  04:01:29    No product selector visible after 10s
+24-11-2026  04:01:29    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  04:01:29    Rendered HTML saved: ./data/debug/rendered_chaldal_com_dried_fish.html
+24-11-2026  04:01:29    Data not found for url = https://chaldal.com/dried-fish
+24-11-2026  04:01:29    Data rows for dried fish: 0
+24-11-2026  04:02:35    EXception occured: HTTP Error 522: <none>
+24-11-2026  04:02:35    Static fetch failed, trying rendered HTML
+24-11-2026  04:02:35    No product selector visible after 10s
+24-11-2026  04:02:35    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  04:02:35    Rendered HTML saved: ./data/debug/rendered_chaldal_com_milk_juice_drinks.html
+24-11-2026  04:02:35    Data not found for url = https://chaldal.com/milk-juice-drinks
+24-11-2026  04:02:35    Data rows for baby milk: 0
+24-11-2026  04:02:45    Retry for url: baby milk
+24-11-2026  04:03:44    EXception occured: HTTP Error 522: <none>
+24-11-2026  04:03:44    Static fetch failed, trying rendered HTML
+24-11-2026  04:03:44    No product selector visible after 10s
+24-11-2026  04:03:44    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  04:03:44    Rendered HTML saved: ./data/debug/rendered_chaldal_com_milk_juice_drinks.html
+24-11-2026  04:03:44    Data not found for url = https://chaldal.com/milk-juice-drinks
+24-11-2026  04:03:44    Data rows for baby milk: 0
+24-11-2026  04:04:50    EXception occured: HTTP Error 522: <none>
+24-11-2026  04:04:50    Static fetch failed, trying rendered HTML
+24-11-2026  04:04:50    No product selector visible after 10s
+24-11-2026  04:04:50    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  04:04:50    Rendered HTML saved: ./data/debug/rendered_chaldal_com_toddler_food.html
+24-11-2026  04:04:50    Data not found for url = https://chaldal.com/toddler-food
+24-11-2026  04:04:50    Data rows for other baby food: 0
+24-11-2026  04:05:00    Retry for url: other baby food
+24-11-2026  04:05:58    EXception occured: HTTP Error 522: <none>
+24-11-2026  04:05:58    Static fetch failed, trying rendered HTML
+24-11-2026  04:05:58    No product selector visible after 10s
+24-11-2026  04:05:58    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  04:05:58    Rendered HTML saved: ./data/debug/rendered_chaldal_com_toddler_food.html
+24-11-2026  04:05:58    Data not found for url = https://chaldal.com/toddler-food
+24-11-2026  04:05:58    Data rows for other baby food: 0
+24-11-2026  04:07:04    EXception occured: HTTP Error 522: <none>
+24-11-2026  04:07:04    Static fetch failed, trying rendered HTML
+24-11-2026  04:07:04    No product selector visible after 10s
+24-11-2026  04:07:04    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  04:07:04    Rendered HTML saved: ./data/debug/rendered_chaldal_com_newborn_2.html
+24-11-2026  04:07:04    Data not found for url = https://chaldal.com/newborn-2
+24-11-2026  04:07:04    Data rows for diapars smallest size: 0
+24-11-2026  04:07:14    Retry for url: diapars smallest size
+24-11-2026  04:08:14    EXception occured: HTTP Error 522: <none>
+24-11-2026  04:08:14    Static fetch failed, trying rendered HTML
+24-11-2026  04:08:14    No product selector visible after 10s
+24-11-2026  04:08:14    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  04:08:14    Rendered HTML saved: ./data/debug/rendered_chaldal_com_newborn_2.html
+24-11-2026  04:08:14    Data not found for url = https://chaldal.com/newborn-2
+24-11-2026  04:08:14    Data rows for diapars smallest size: 0
+24-11-2026  04:09:19    EXception occured: HTTP Error 526: <none>
+24-11-2026  04:09:19    Static fetch failed, trying rendered HTML
+24-11-2026  04:09:19    No product selector visible after 10s
+24-11-2026  04:09:19    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  04:09:19    Rendered HTML saved: ./data/debug/rendered_chaldal_com_small_2.html
+24-11-2026  04:09:19    Data not found for url = https://chaldal.com/small-2
+24-11-2026  04:09:19    Data rows for diapars small size: 0
+24-11-2026  04:09:29    Retry for url: diapars small size
+24-11-2026  04:10:28    EXception occured: HTTP Error 522: <none>
+24-11-2026  04:10:28    Static fetch failed, trying rendered HTML
+24-11-2026  04:10:28    No product selector visible after 10s
+24-11-2026  04:10:28    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  04:10:28    Rendered HTML saved: ./data/debug/rendered_chaldal_com_small_2.html
+24-11-2026  04:10:28    Data not found for url = https://chaldal.com/small-2
+24-11-2026  04:10:28    Data rows for diapars small size: 0
+24-11-2026  04:11:34    EXception occured: HTTP Error 522: <none>
+24-11-2026  04:11:34    Static fetch failed, trying rendered HTML
+24-11-2026  04:11:34    No product selector visible after 10s
+24-11-2026  04:11:34    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  04:11:34    Rendered HTML saved: ./data/debug/rendered_chaldal_com_large_2.html
+24-11-2026  04:11:34    Data not found for url = https://chaldal.com/large-2
+24-11-2026  04:11:34    Data rows for diapars large size: 0
+24-11-2026  04:11:44    Retry for url: diapars large size
+24-11-2026  04:12:42    EXception occured: HTTP Error 522: <none>
+24-11-2026  04:12:42    Static fetch failed, trying rendered HTML
+24-11-2026  04:12:42    No product selector visible after 10s
+24-11-2026  04:12:42    Rendered parse: product_divs=0 real_products=0 loading_only=False
+24-11-2026  04:12:42    Rendered HTML saved: ./data/debug/rendered_chaldal_com_large_2.html
+24-11-2026  04:12:42    Data not found for url = https://chaldal.com/large-2
+24-11-2026  04:12:42    Data rows for diapars large size: 0
+24-11-2026  04:12:49    script ends for testing github action
